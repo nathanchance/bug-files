@@ -1,0 +1,644 @@
+diff --git a/good-slb.s b/bad-slb.s
+index 06a5778..06bc1b3 100644
+--- a/good-slb.s
++++ b/bad-slb.s
+@@ -232,14 +232,21 @@ slb_dump_contents:                      # @slb_dump_contents
+ .Lfunc_lep6:
+ 	.localentry	slb_dump_contents, .Lfunc_lep6-.Lfunc_gep6
+ # %bb.0:                                # %entry
++	cmpldi	3, 0
++	beqlr	0
++# %bb.1:                                # %do.end
+ 	mfocrf 12, 32
+ 	mflr 0
+ 	stw 12, 8(1)
+ 	stdu 1, -240(1)
+-	cmpldi	3, 0
+ 	std 0, 256(1)
++	std 30, 224(1)                          # 8-byte Folded Spill
++	mr	30, 3
++	addis 3, 2, .L.str.1@toc@ha
++	lhz 4, 10(13)
+ 	std 15, 104(1)                          # 8-byte Folded Spill
+ 	std 16, 112(1)                          # 8-byte Folded Spill
++	addi 3, 3, .L.str.1@toc@l
+ 	std 17, 120(1)                          # 8-byte Folded Spill
+ 	std 18, 128(1)                          # 8-byte Folded Spill
+ 	std 19, 136(1)                          # 8-byte Folded Spill
+@@ -253,44 +260,14 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	std 27, 200(1)                          # 8-byte Folded Spill
+ 	std 28, 208(1)                          # 8-byte Folded Spill
+ 	std 29, 216(1)                          # 8-byte Folded Spill
+-	std 30, 224(1)                          # 8-byte Folded Spill
+-	bne	0, .LBB6_2
+-.LBB6_1:                                # %cleanup
+-	ld 30, 224(1)                           # 8-byte Folded Reload
+-	ld 29, 216(1)                           # 8-byte Folded Reload
+-	ld 28, 208(1)                           # 8-byte Folded Reload
+-	ld 27, 200(1)                           # 8-byte Folded Reload
+-	ld 26, 192(1)                           # 8-byte Folded Reload
+-	ld 25, 184(1)                           # 8-byte Folded Reload
+-	ld 24, 176(1)                           # 8-byte Folded Reload
+-	ld 23, 168(1)                           # 8-byte Folded Reload
+-	ld 22, 160(1)                           # 8-byte Folded Reload
+-	ld 21, 152(1)                           # 8-byte Folded Reload
+-	ld 20, 144(1)                           # 8-byte Folded Reload
+-	ld 19, 136(1)                           # 8-byte Folded Reload
+-	ld 18, 128(1)                           # 8-byte Folded Reload
+-	ld 17, 120(1)                           # 8-byte Folded Reload
+-	ld 16, 112(1)                           # 8-byte Folded Reload
+-	ld 15, 104(1)                           # 8-byte Folded Reload
+-	addi 1, 1, 240
+-	ld 0, 16(1)
+-	lwz 12, 8(1)
+-	mtlr 0
+-	mtocrf 32, 12
+-	blr
+-.LBB6_2:                                # %do.end
+-	lhz 4, 10(13)
+-	mr	30, 3
+-	addis 3, 2, .L.str.1@toc@ha
+-	addi 3, 3, .L.str.1@toc@l
+ 	bl _printk
+ 	nop
+ 	addis 3, 2, .LC0@toc@ha
+ 	ld 27, .LC0@toc@l(3)
+ 	lhz 3, 0(27)
+ 	cmplwi	3, 0
+-	beq	0, .LBB6_14
+-# %bb.3:                                # %for.body.preheader
++	beq	0, .LBB6_13
++# %bb.2:                                # %for.body.preheader
+ 	addis 3, 2, .L.str.3@toc@ha
+ 	addi 26, 30, -16
+ 	li 25, 0
+@@ -310,76 +287,99 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	addi 20, 3, .L.str.5@toc@l
+ 	addis 3, 2, .L.str.6@toc@ha
+ 	addi 19, 3, .L.str.6@toc@l
+-	b .LBB6_5
++	b .LBB6_4
+ 	.p2align	4
+-.LBB6_4:                                # %for.inc
+-                                        #   in Loop: Header=BB6_5 Depth=1
++.LBB6_3:                                # %for.inc
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	lhz 3, 0(27)
+ 	addi 25, 25, 1
+ 	cmplw	25, 3
+-	bge 0, .LBB6_14
+-.LBB6_5:                                # %for.body
++	bge 0, .LBB6_13
++.LBB6_4:                                # %for.body
+                                         # =>This Inner Loop Header: Depth=1
+ 	ldu 28, 16(26)
+ 	ld 29, 8(26)
+ 	or. 3, 28, 29
+-	beq	0, .LBB6_4
+-# %bb.6:                                # %do.end9
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	beq	0, .LBB6_3
++# %bb.5:                                # %do.end9
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	andis. 3, 28, 2048
+ 	extsw 4, 25
+ 	mr	3, 30
+ 	mr	5, 28
+ 	mr	6, 29
+ 	mcrf 2, 0
+-	bc 12, 10, .LBB6_8
+-# %bb.7:                                # %do.end9
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	bc 12, 10, .LBB6_7
++# %bb.6:                                # %do.end9
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	ori 7, 24, 0
+-	b .LBB6_9
+-.LBB6_8:                                # %do.end9
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	b .LBB6_8
++.LBB6_7:                                # %do.end9
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	addi 7, 23, 0
+-.LBB6_9:                                # %do.end9
+-                                        #   in Loop: Header=BB6_5 Depth=1
++.LBB6_8:                                # %do.end9
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	bl _printk
+ 	nop
+-	beq	2, .LBB6_4
+-# %bb.10:                               # %if.end16
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	beq	2, .LBB6_3
++# %bb.9:                                # %if.end16
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	rldicl 3, 29, 2, 62
+ 	andi. 6, 29, 304
+ 	rldicl. 3, 3, 62, 1
+-	bc 12, 2, .LBB6_12
+-# %bb.11:                               # %if.end16
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	bc 12, 2, .LBB6_11
++# %bb.10:                               # %if.end16
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	ori 7, 16, 0
+ 	ori 5, 22, 0
+ 	ori 4, 18, 0
+ 	ori 3, 20, 0
+-	b .LBB6_13
+-.LBB6_12:                               # %if.end16
+-                                        #   in Loop: Header=BB6_5 Depth=1
++	b .LBB6_12
++.LBB6_11:                               # %if.end16
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	addi 7, 15, 0
+ 	addi 5, 21, 0
+ 	addi 4, 17, 0
+ 	addi 3, 19, 0
+-.LBB6_13:                               # %if.end16
+-                                        #   in Loop: Header=BB6_5 Depth=1
++.LBB6_12:                               # %if.end16
++                                        #   in Loop: Header=BB6_4 Depth=1
+ 	srd 7, 29, 7
+ 	srd 4, 28, 4
+ 	and 5, 7, 5
+ 	bl _printk
+ 	nop
+-	b .LBB6_4
+-.LBB6_14:                               # %for.end
++	b .LBB6_3
++.LBB6_13:                               # %for.end
+ 	addis 3, 2, .LC1@toc@ha
+ 	ld 3, .LC1@toc@l(3)
+ 	ld 3, 0(3)
+ 	lbz 3, 18(3)
+ 	andi. 3, 3, 2
+-	bne	0, .LBB6_1
+-# %bb.15:                               # %do.end43
++	beq	0, .LBB6_15
++.LBB6_14:
++	ld 30, 224(1)                           # 8-byte Folded Reload
++	ld 29, 216(1)                           # 8-byte Folded Reload
++	ld 28, 208(1)                           # 8-byte Folded Reload
++	ld 27, 200(1)                           # 8-byte Folded Reload
++	ld 26, 192(1)                           # 8-byte Folded Reload
++	ld 25, 184(1)                           # 8-byte Folded Reload
++	ld 24, 176(1)                           # 8-byte Folded Reload
++	ld 23, 168(1)                           # 8-byte Folded Reload
++	ld 22, 160(1)                           # 8-byte Folded Reload
++	ld 21, 152(1)                           # 8-byte Folded Reload
++	ld 20, 144(1)                           # 8-byte Folded Reload
++	ld 19, 136(1)                           # 8-byte Folded Reload
++	ld 18, 128(1)                           # 8-byte Folded Reload
++	ld 17, 120(1)                           # 8-byte Folded Reload
++	ld 16, 112(1)                           # 8-byte Folded Reload
++	ld 15, 104(1)                           # 8-byte Folded Reload
++	addi 1, 1, 240
++	ld 0, 16(1)
++	lwz 12, 8(1)
++	mtlr 0
++	mtocrf 32, 12
++	blr
++.LBB6_15:                               # %do.end43
+ 	lbz 4, 211(13)
+ 	addis 3, 2, .L.str.7@toc@ha
+ 	addi 3, 3, .L.str.7@toc@l
+@@ -412,6 +412,7 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	li 26, 220
+ 	mr	25, 28
+ 	addi 30, 3, .L.str.10@toc@l
++	.p2align	4
+ .LBB6_20:                               # %do.end70
+                                         # =>This Inner Loop Header: Depth=1
+ 	lwzx 5, 13, 26
+@@ -430,7 +431,7 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	bl _printk
+ 	nop
+ 	cmplwi	29, 7
+-	bgt	0, .LBB6_1
++	bgt	0, .LBB6_14
+ # %bb.22:                               # %do.end87.preheader
+ 	sub	3, 29, 28
+ 	sldi 4, 29, 2
+@@ -452,7 +453,7 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	addi 28, 28, 4
+ 	cmpldi	27, 0
+ 	bc 12, 1, .LBB6_23
+-	b .LBB6_1
++	b .LBB6_14
+ 	.long	0
+ 	.quad	0
+ .Lfunc_end6:
+@@ -2647,21 +2648,14 @@ slb_insert_entry:                       # @slb_insert_entry
+ # %bb.0:                                # %entry
+ 	mr	8, 3
+ 	rldicl 3, 3, 12, 52
+-	std 28, -32(1)                          # 8-byte Folded Spill
+-	std 29, -24(1)                          # 8-byte Folded Spill
+ 	rldicl. 3, 3, 52, 2
+ 	li 3, -14
+-	std 30, -16(1)                          # 8-byte Folded Spill
+-	beq	0, .LBB14_2
+-.LBB14_1:                               # Block address taken
+-                                        # %cleanup
+-                                        # Label of block must be emitted
+-	ld 30, -16(1)                           # 8-byte Folded Reload
+-	ld 29, -24(1)                           # 8-byte Folded Reload
+-	ld 28, -32(1)                           # 8-byte Folded Reload
+-	blr
+-.LBB14_2:                               # %if.end.i
++	bnelr	0
++# %bb.1:                                # %if.end.i
+ 	li 9, 65
++	std 28, -32(1)                          # 8-byte Folded Spill
++	std 29, -24(1)                          # 8-byte Folded Spill
++	std 30, -16(1)                          # 8-byte Folded Spill
+ 	#APP
+ .Ltmp124:
+ 	nop	# arch_static_branch
+@@ -2669,16 +2663,16 @@ slb_insert_entry:                       # @slb_insert_entry
+ .Ltmp125:
+ 	.long	.Ltmp124-.Ltmp125
+ .Ltmp126:
+-	.long	.LBB14_4-.Ltmp126
++	.long	.LBB14_3-.Ltmp126
+ .Ltmp127:
+ 	.quad	(mmu_feature_keys+209)-.Ltmp127
+ 	.text
+ 
+ 
+ 	#NO_APP
+-# %bb.3:
++# %bb.2:
+ 	li 9, 68
+-.LBB14_4:                               # Block address taken
++.LBB14_3:                               # Block address taken
+                                         # %mmu_has_feature.exit.i
+                                         # Label of block must be emitted
+ 	lis 10, 191
+@@ -2701,36 +2695,36 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	sld 30, 30, 4
+ 	clrldi	9, 4, 32
+ 	mulld 10, 12, 10
+-	bc 12, 6, .LBB14_6
+-# %bb.5:                                # %mmu_has_feature.exit.i
++	bc 12, 6, .LBB14_5
++# %bb.4:                                # %mmu_has_feature.exit.i
+ 	ori 9, 0, 0
+-	b .LBB14_6
+-.LBB14_6:                               # %mmu_has_feature.exit.i
++	b .LBB14_5
++.LBB14_5:                               # %mmu_has_feature.exit.i
+ 	not	29, 30
+ 	srd 4, 10, 4
+ 	andc 10, 10, 30
+ 	add 4, 10, 4
+-	bc 12, 6, .LBB14_8
+-# %bb.7:                                # %mmu_has_feature.exit.i
++	bc 12, 6, .LBB14_7
++# %bb.6:                                # %mmu_has_feature.exit.i
+ 	ori 10, 28, 0
+ 	ori 4, 11, 0
+-	b .LBB14_9
+-.LBB14_8:                               # %mmu_has_feature.exit.i
++	b .LBB14_8
++.LBB14_7:                               # %mmu_has_feature.exit.i
+ 	addi 10, 29, 0
+-.LBB14_9:                               # %mmu_has_feature.exit.i
++.LBB14_8:                               # %mmu_has_feature.exit.i
+ 	addi 11, 4, 1
+ 	srd 9, 11, 9
+ 	add 4, 9, 4
+ 	and. 4, 4, 10
+-	beq	0, .LBB14_1
+-# %bb.10:                               # %if.end
++	beq	0, .LBB14_28
++# %bb.9:                                # %if.end
+ 	#APP
+ 	#NO_APP
+ 	cmplwi	7, 0
+ 	lwz 3, 212(13)
+ 	cmpwi 5, 3, -1
+-	beq	5, .LBB14_13
+-# %bb.11:                               # %if.then.i
++	beq	5, .LBB14_12
++# %bb.10:                               # %if.then.i
+ 	not	7, 3
+ 	clrldi	7, 7, 32
+ 	addi 9, 7, -1
+@@ -2741,13 +2735,13 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	slw 7, 7, 9
+ 	or 3, 7, 3
+ 	stw 3, 212(13)
+-	beq	0, .LBB14_20
+-# %bb.12:                               # %if.then4.i46
++	beq	0, .LBB14_19
++# %bb.11:                               # %if.then4.i46
+ 	lwz 3, 216(13)
+ 	or 3, 3, 7
+ 	stw 3, 216(13)
+-	b .LBB14_20
+-.LBB14_13:                              # %if.else.i
++	b .LBB14_19
++.LBB14_12:                              # %if.else.i
+ 	addis 7, 2, .LC0@toc@ha
+ 	lbz 3, 211(13)
+ 	ld 7, .LC0@toc@l(7)
+@@ -2756,29 +2750,29 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	addi 7, 7, -1
+ 	cmplw 5, 7, 3
+ 	li 3, 2
+-	bc 12, 21, .LBB14_14
+-	b .LBB14_15
+-.LBB14_14:                              # %if.else.i
++	bc 12, 21, .LBB14_13
++	b .LBB14_14
++.LBB14_13:                              # %if.else.i
+ 	addi 3, 9, 0
+-.LBB14_15:                              # %if.else.i
++.LBB14_14:                              # %if.else.i
+ 	cmplwi 5, 3, 31
+ 	stb 3, 211(13)
+-	bgt	5, .LBB14_20
+-# %bb.16:                               # %if.then18.i
++	bgt	5, .LBB14_19
++# %bb.15:                               # %if.then18.i
+ 	li 7, 1
+ 	slw 7, 7, 3
+-	beq	0, .LBB14_18
+-# %bb.17:                               # %if.then20.i
++	beq	0, .LBB14_17
++# %bb.16:                               # %if.then20.i
+ 	lwz 9, 216(13)
+ 	or 7, 9, 7
+-	b .LBB14_19
+-.LBB14_18:                              # %if.else24.i
++	b .LBB14_18
++.LBB14_17:                              # %if.else24.i
+ 	lwz 9, 216(13)
+ 	andc 7, 9, 7
+-.LBB14_19:                              # %if.else42.i
++.LBB14_18:                              # %if.else42.i
+ 	mr	9, 3
+ 	stw 7, 216(13)
+-.LBB14_20:                              # %if.else42.i
++.LBB14_19:                              # %if.else42.i
+ 	li 3, -1
+ 	cmplwi 5, 9, 2
+ 	li 10, 1
+@@ -2788,11 +2782,11 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	li 3, 0
+ 	or 5, 6, 5
+ 	oris 6, 9, 2048
+-	bc 12, 20, .LBB14_22
+-# %bb.21:                               # %if.else42.i
++	bc 12, 20, .LBB14_21
++# %bb.20:                               # %if.else42.i
+ 	ori 10, 3, 0
+-	b .LBB14_22
+-.LBB14_22:                              # %if.else42.i
++	b .LBB14_21
++.LBB14_21:                              # %if.else42.i
+ 	#APP
+ .Ltmp128:
+ 	tdnei	10, 0
+@@ -2811,19 +2805,19 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	#NO_APP
+ 	li 10, 24
+ 	clrldi	6, 6, 32
+-	bc 12, 6, .LBB14_23
+-	b .LBB14_24
+-.LBB14_23:                              # %if.else42.i
++	bc 12, 6, .LBB14_22
++	b .LBB14_23
++.LBB14_22:                              # %if.else42.i
+ 	addi 10, 11, 0
+-.LBB14_24:                              # %if.else42.i
++.LBB14_23:                              # %if.else42.i
+ 	sld 4, 4, 10
+ 	or 5, 5, 4
+ 	lis 4, -4096
+-	bc 12, 6, .LBB14_26
+-# %bb.25:                               # %if.else42.i
++	bc 12, 6, .LBB14_25
++# %bb.24:                               # %if.else42.i
+ 	ori 4, 7, 0
+-	b .LBB14_26
+-.LBB14_26:                              # %if.else42.i
++	b .LBB14_25
++.LBB14_25:                              # %if.else42.i
+ 	and 4, 4, 8
+ 	or 4, 4, 6
+ 	#APP
+@@ -2833,21 +2827,21 @@ slb_insert_entry:                       # @slb_insert_entry
+ .Ltmp133:
+ 	.long	.Ltmp132-.Ltmp133
+ .Ltmp134:
+-	.long	.LBB14_32-.Ltmp134
++	.long	.LBB14_30-.Ltmp134
+ .Ltmp135:
+ 	.quad	stress_slb_key-.Ltmp135
+ 	.text
+ 
+ 
+ 	#NO_APP
+-.LBB14_27:                              # %if.end20
++.LBB14_26:                              # %if.end20
+ 	#APP
+ 	slbmte 5, 4
+ 	#NO_APP
+ 	#APP
+ 	#NO_APP
+-	bne	0, .LBB14_1
+-# %bb.28:                               # %if.then22
++	bne	0, .LBB14_28
++# %bb.27:                               # %if.then22
+ 	#APP
+ .Ltmp136:
+ 	nop	# arch_static_branch
+@@ -2855,58 +2849,35 @@ slb_insert_entry:                       # @slb_insert_entry
+ .Ltmp137:
+ 	.long	.Ltmp136-.Ltmp137
+ .Ltmp138:
+-	.long	.LBB14_29-.Ltmp138
++	.long	.LBB14_43-.Ltmp138
+ .Ltmp139:
+ 	.quad	(cpu_feature_keys+273)-.Ltmp139
+ 	.text
+ 
+ 
+ 	#NO_APP
+-	b .LBB14_1
++.LBB14_28:
++	ld 30, -16(1)                           # 8-byte Folded Reload
++	ld 29, -24(1)                           # 8-byte Folded Reload
++	ld 28, -32(1)                           # 8-byte Folded Reload
+ .LBB14_29:                              # Block address taken
+-                                        # %if.end.i60
++                                        # %cleanup
+                                         # Label of block must be emitted
+-	#APP
+-.Ltmp140:
+-	nop	# arch_static_branch
+-	.section	__jump_table,"aw",@progbits
+-.Ltmp141:
+-	.long	.Ltmp140-.Ltmp141
+-.Ltmp142:
+-	.long	.LBB14_1-.Ltmp142
+-.Ltmp143:
+-	.quad	stress_slb_key-.Ltmp143
+-	.text
+-
+-
+-	#NO_APP
+-# %bb.30:                               # %if.end3.i
+-	lbz 5, 210(13)
+-	cmpldi	5, 7
+-	bgt	0, .LBB14_45
+-# %bb.31:                               # %if.then5.i
+-	sldi 5, 5, 2
+-	rldicl 4, 4, 36, 28
+-	add 5, 13, 5
+-	stw 4, 220(5)
+-	lbz 4, 210(13)
+-	addi 4, 4, 1
+-	stb 4, 210(13)
+-	b .LBB14_1
+-.LBB14_32:                              # Block address taken
++	blr
++.LBB14_30:                              # Block address taken
+                                         # %if.then6
+                                         # Label of block must be emitted
+ 	lbz 9, 210(13)
+-	beq	0, .LBB14_34
+-# %bb.33:                               # %if.then6
++	beq	0, .LBB14_32
++# %bb.31:                               # %if.then6
+ 	cmplwi 1, 9, 3
+ 	mr	6, 9
+-	bne	1, .LBB14_42
+-.LBB14_34:                              # %for.cond.preheader
++	bne	1, .LBB14_40
++.LBB14_32:                              # %for.cond.preheader
+ 	li 6, 0
+ 	cmplwi 1, 9, 0
+-	beq	1, .LBB14_42
+-# %bb.35:                               # %for.body.preheader
++	beq	1, .LBB14_40
++# %bb.33:                               # %for.body.preheader
+ 	addis 8, 2, .LC6@toc@ha
+ 	li 10, -1
+ 	lis 11, -4096
+@@ -2914,33 +2885,33 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	lwz 12, 0(8)
+ 	mtctr 9
+ 	li 9, 220
+-	b .LBB14_37
+-.LBB14_36:                              # %slb_cache_slbie_kernel.exit
+-                                        #   in Loop: Header=BB14_37 Depth=1
++	b .LBB14_35
++.LBB14_34:                              # %slb_cache_slbie_kernel.exit
++                                        #   in Loop: Header=BB14_35 Depth=1
+ 	addi 9, 9, 4
+-	bdz .LBB14_42
+-.LBB14_37:                              # %for.body
++	bdz .LBB14_40
++.LBB14_35:                              # %for.body
+                                         # =>This Inner Loop Header: Depth=1
+ 	lwzx 0, 13, 9
+ 	ld 30, 2320(13)
+ 	cmplwi 1, 12, 0
+-	bc 12, 6, .LBB14_39
+-# %bb.38:                               # %for.body
+-                                        #   in Loop: Header=BB14_37 Depth=1
++	bc 12, 6, .LBB14_37
++# %bb.36:                               # %for.body
++                                        #   in Loop: Header=BB14_35 Depth=1
+ 	ori 29, 7, 0
+-	b .LBB14_40
+-.LBB14_39:                              # %for.body
+-                                        #   in Loop: Header=BB14_37 Depth=1
++	b .LBB14_38
++.LBB14_37:                              # %for.body
++                                        #   in Loop: Header=BB14_35 Depth=1
+ 	addi 29, 11, 0
+-.LBB14_40:                              # %for.body
+-                                        #   in Loop: Header=BB14_37 Depth=1
++.LBB14_38:                              # %for.body
++                                        #   in Loop: Header=BB14_35 Depth=1
+ 	sldi 0, 0, 28
+ 	and 30, 29, 30
+ 	rldimi 0, 10, 62, 0
+ 	cmpld 1, 30, 0
+-	beq	1, .LBB14_36
+-# %bb.41:                               # %if.end.i59
+-                                        #   in Loop: Header=BB14_37 Depth=1
++	beq	1, .LBB14_34
++# %bb.39:                               # %if.end.i59
++                                        #   in Loop: Header=BB14_35 Depth=1
+ 	slwi 12, 12, 25
+ 	extsw 12, 12
+ 	or 12, 0, 12
+@@ -2948,23 +2919,54 @@ slb_insert_entry:                       # @slb_insert_entry
+ 	slbie 12
+ 	#NO_APP
+ 	lwz 12, 0(8)
+-	b .LBB14_36
+-.LBB14_42:                              # %if.end12
+-	beq	0, .LBB14_44
+-# %bb.43:                               # %if.then14
++	b .LBB14_34
++.LBB14_40:                              # %if.end12
++	beq	0, .LBB14_42
++# %bb.41:                               # %if.then14
+ 	rldic 8, 6, 2, 30
+ 	rldicl 7, 4, 36, 28
+ 	addi 6, 6, 1
+                                         # kill: def $r6 killed $r6 def $x6
+ 	add 8, 13, 8
+ 	stw 7, 220(8)
+-.LBB14_44:                              # %if.end17
++.LBB14_42:                              # %if.end17
+ 	stb 6, 210(13)
+-	b .LBB14_27
+-.LBB14_45:                              # %if.else.i65
++	b .LBB14_26
++.LBB14_43:                              # Block address taken
++                                        # %if.end.i60
++                                        # Label of block must be emitted
++	#APP
++.Ltmp140:
++	nop	# arch_static_branch
++	.section	__jump_table,"aw",@progbits
++.Ltmp141:
++	.long	.Ltmp140-.Ltmp141
++.Ltmp142:
++	.long	.LBB14_29-.Ltmp142
++.Ltmp143:
++	.quad	stress_slb_key-.Ltmp143
++	.text
++
++
++	#NO_APP
++	b .LBB14_28
++# %bb.44:                               # %if.end3.i
++	lbz 5, 210(13)
++	cmpldi	5, 7
++	bgt	0, .LBB14_46
++# %bb.45:                               # %if.then5.i
++	sldi 5, 5, 2
++	rldicl 4, 4, 36, 28
++	add 5, 13, 5
++	stw 4, 220(5)
++	lbz 4, 210(13)
++	addi 4, 4, 1
++	stb 4, 210(13)
++	b .LBB14_28
++.LBB14_46:                              # %if.else.i65
+ 	li 4, 9
+ 	stb 4, 210(13)
+-	b .LBB14_1
++	b .LBB14_28
+ 	.long	0
+ 	.quad	0
+ .Lfunc_end14:
