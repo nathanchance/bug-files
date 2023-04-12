@@ -1,16 +1,16 @@
 	.text
-	.abiversion 2
 	.file	"slb.c"
 	.section	.init.text,"ax",@progbits
 	.p2align	2                               # -- Begin function parse_stress_slb
 	.type	parse_stress_slb,@function
+	.section	.opd,"aw",@progbits
 parse_stress_slb:                       # @parse_stress_slb
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin0
+	.quad	.TOC.@tocbase
+	.quad	0
+	.section	.init.text,"ax",@progbits
 .Lfunc_begin0:
-.Lfunc_gep0:
-	addis 2, 12, .TOC.-.Lfunc_gep0@ha
-	addi 2, 2, .TOC.-.Lfunc_gep0@l
-.Lfunc_lep0:
-	.localentry	parse_stress_slb, .Lfunc_lep0-.Lfunc_gep0
 # %bb.0:                                # %entry
 	addis 3, 2, stress_slb_enabled@toc@ha
 	li 4, 1
@@ -26,7 +26,13 @@ parse_stress_slb:                       # @parse_stress_slb
 	.globl	__slb_restore_bolted_realmode   # -- Begin function __slb_restore_bolted_realmode
 	.p2align	4
 	.type	__slb_restore_bolted_realmode,@function
+	.section	.opd,"aw",@progbits
 __slb_restore_bolted_realmode:          # @__slb_restore_bolted_realmode
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin1
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin1:
 # %bb.0:                                # %entry
 	ld 3, 64(13)
@@ -49,7 +55,13 @@ __slb_restore_bolted_realmode:          # @__slb_restore_bolted_realmode
 	.globl	slb_restore_bolted_realmode     # -- Begin function slb_restore_bolted_realmode
 	.p2align	4
 	.type	slb_restore_bolted_realmode,@function
+	.section	.opd,"aw",@progbits
 slb_restore_bolted_realmode:            # @slb_restore_bolted_realmode
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin2
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin2:
 # %bb.0:                                # %entry
 	ld 3, 64(13)
@@ -78,7 +90,13 @@ slb_restore_bolted_realmode:            # @slb_restore_bolted_realmode
 	.globl	slb_flush_all_realmode          # -- Begin function slb_flush_all_realmode
 	.p2align	4
 	.type	slb_flush_all_realmode,@function
+	.section	.opd,"aw",@progbits
 slb_flush_all_realmode:                 # @slb_flush_all_realmode
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin3
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin3:
 # %bb.0:                                # %entry
 	li 3, 0
@@ -95,7 +113,13 @@ slb_flush_all_realmode:                 # @slb_flush_all_realmode
 	.globl	slb_flush_and_restore_bolted    # -- Begin function slb_flush_and_restore_bolted
 	.p2align	4
 	.type	slb_flush_and_restore_bolted,@function
+	.section	.opd,"aw",@progbits
 slb_flush_and_restore_bolted:           # @slb_flush_and_restore_bolted
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin4
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin4:
 # %bb.0:                                # %entry
 	#APP
@@ -179,13 +203,14 @@ slb_flush_and_restore_bolted:           # @slb_flush_and_restore_bolted
 	.globl	slb_save_contents               # -- Begin function slb_save_contents
 	.p2align	4
 	.type	slb_save_contents,@function
+	.section	.opd,"aw",@progbits
 slb_save_contents:                      # @slb_save_contents
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin5
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin5:
-.Lfunc_gep5:
-	addis 2, 12, .TOC.-.Lfunc_gep5@ha
-	addi 2, 2, .TOC.-.Lfunc_gep5@l
-.Lfunc_lep5:
-	.localentry	slb_save_contents, .Lfunc_lep5-.Lfunc_gep5
 # %bb.0:                                # %entry
 	lbz 4, 210(13)
 	cmpldi	3, 0
@@ -224,55 +249,56 @@ slb_save_contents:                      # @slb_save_contents
 	.globl	slb_dump_contents               # -- Begin function slb_dump_contents
 	.p2align	4
 	.type	slb_dump_contents,@function
+	.section	.opd,"aw",@progbits
 slb_dump_contents:                      # @slb_dump_contents
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin6
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin6:
-.Lfunc_gep6:
-	addis 2, 12, .TOC.-.Lfunc_gep6@ha
-	addi 2, 2, .TOC.-.Lfunc_gep6@l
-.Lfunc_lep6:
-	.localentry	slb_dump_contents, .Lfunc_lep6-.Lfunc_gep6
 # %bb.0:                                # %entry
-	mfocrf 12, 32
+	mfcr 12
 	mflr 0
 	stw 12, 8(1)
-	stdu 1, -240(1)
+	stdu 1, -256(1)
 	cmpldi	3, 0
-	std 0, 256(1)
-	std 15, 104(1)                          # 8-byte Folded Spill
-	std 16, 112(1)                          # 8-byte Folded Spill
-	std 17, 120(1)                          # 8-byte Folded Spill
-	std 18, 128(1)                          # 8-byte Folded Spill
-	std 19, 136(1)                          # 8-byte Folded Spill
-	std 20, 144(1)                          # 8-byte Folded Spill
-	std 21, 152(1)                          # 8-byte Folded Spill
-	std 22, 160(1)                          # 8-byte Folded Spill
-	std 23, 168(1)                          # 8-byte Folded Spill
-	std 24, 176(1)                          # 8-byte Folded Spill
-	std 25, 184(1)                          # 8-byte Folded Spill
-	std 26, 192(1)                          # 8-byte Folded Spill
-	std 27, 200(1)                          # 8-byte Folded Spill
-	std 28, 208(1)                          # 8-byte Folded Spill
-	std 29, 216(1)                          # 8-byte Folded Spill
-	std 30, 224(1)                          # 8-byte Folded Spill
+	std 0, 272(1)
+	std 15, 120(1)                          # 8-byte Folded Spill
+	std 16, 128(1)                          # 8-byte Folded Spill
+	std 17, 136(1)                          # 8-byte Folded Spill
+	std 18, 144(1)                          # 8-byte Folded Spill
+	std 19, 152(1)                          # 8-byte Folded Spill
+	std 20, 160(1)                          # 8-byte Folded Spill
+	std 21, 168(1)                          # 8-byte Folded Spill
+	std 22, 176(1)                          # 8-byte Folded Spill
+	std 23, 184(1)                          # 8-byte Folded Spill
+	std 24, 192(1)                          # 8-byte Folded Spill
+	std 25, 200(1)                          # 8-byte Folded Spill
+	std 26, 208(1)                          # 8-byte Folded Spill
+	std 27, 216(1)                          # 8-byte Folded Spill
+	std 28, 224(1)                          # 8-byte Folded Spill
+	std 29, 232(1)                          # 8-byte Folded Spill
+	std 30, 240(1)                          # 8-byte Folded Spill
 	bne	0, .LBB6_2
 .LBB6_1:                                # %cleanup
-	ld 30, 224(1)                           # 8-byte Folded Reload
-	ld 29, 216(1)                           # 8-byte Folded Reload
-	ld 28, 208(1)                           # 8-byte Folded Reload
-	ld 27, 200(1)                           # 8-byte Folded Reload
-	ld 26, 192(1)                           # 8-byte Folded Reload
-	ld 25, 184(1)                           # 8-byte Folded Reload
-	ld 24, 176(1)                           # 8-byte Folded Reload
-	ld 23, 168(1)                           # 8-byte Folded Reload
-	ld 22, 160(1)                           # 8-byte Folded Reload
-	ld 21, 152(1)                           # 8-byte Folded Reload
-	ld 20, 144(1)                           # 8-byte Folded Reload
-	ld 19, 136(1)                           # 8-byte Folded Reload
-	ld 18, 128(1)                           # 8-byte Folded Reload
-	ld 17, 120(1)                           # 8-byte Folded Reload
-	ld 16, 112(1)                           # 8-byte Folded Reload
-	ld 15, 104(1)                           # 8-byte Folded Reload
-	addi 1, 1, 240
+	ld 30, 240(1)                           # 8-byte Folded Reload
+	ld 29, 232(1)                           # 8-byte Folded Reload
+	ld 28, 224(1)                           # 8-byte Folded Reload
+	ld 27, 216(1)                           # 8-byte Folded Reload
+	ld 26, 208(1)                           # 8-byte Folded Reload
+	ld 25, 200(1)                           # 8-byte Folded Reload
+	ld 24, 192(1)                           # 8-byte Folded Reload
+	ld 23, 184(1)                           # 8-byte Folded Reload
+	ld 22, 176(1)                           # 8-byte Folded Reload
+	ld 21, 168(1)                           # 8-byte Folded Reload
+	ld 20, 160(1)                           # 8-byte Folded Reload
+	ld 19, 152(1)                           # 8-byte Folded Reload
+	ld 18, 144(1)                           # 8-byte Folded Reload
+	ld 17, 136(1)                           # 8-byte Folded Reload
+	ld 16, 128(1)                           # 8-byte Folded Reload
+	ld 15, 120(1)                           # 8-byte Folded Reload
+	addi 1, 1, 256
 	ld 0, 16(1)
 	lwz 12, 8(1)
 	mtlr 0
@@ -376,7 +402,7 @@ slb_dump_contents:                      # @slb_dump_contents
 	addis 3, 2, .LC1@toc@ha
 	ld 3, .LC1@toc@l(3)
 	ld 3, 0(3)
-	lbz 3, 18(3)
+	lbz 3, 21(3)
 	andi. 3, 3, 2
 	bne	0, .LBB6_1
 # %bb.15:                               # %do.end43
@@ -461,7 +487,13 @@ slb_dump_contents:                      # @slb_dump_contents
 	.globl	slb_vmalloc_update              # -- Begin function slb_vmalloc_update
 	.p2align	4
 	.type	slb_vmalloc_update,@function
+	.section	.opd,"aw",@progbits
 slb_vmalloc_update:                     # @slb_vmalloc_update
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin7
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin7:
 # %bb.0:                                # %entry
 	#APP
@@ -545,21 +577,22 @@ slb_vmalloc_update:                     # @slb_vmalloc_update
 	.globl	slb_setup_new_exec              # -- Begin function slb_setup_new_exec
 	.p2align	4
 	.type	slb_setup_new_exec,@function
+	.section	.opd,"aw",@progbits
 slb_setup_new_exec:                     # @slb_setup_new_exec
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin8
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin8:
-.Lfunc_gep8:
-	addis 2, 12, .TOC.-.Lfunc_gep8@ha
-	addi 2, 2, .TOC.-.Lfunc_gep8@l
-.Lfunc_lep8:
-	.localentry	slb_setup_new_exec, .Lfunc_lep8-.Lfunc_gep8
 # %bb.0:                                # %entry
 	mflr 0
-	std 27, -40(1)                          # 8-byte Folded Spill
-	std 28, -32(1)                          # 8-byte Folded Spill
-	std 29, -24(1)                          # 8-byte Folded Spill
-	std 30, -16(1)                          # 8-byte Folded Spill
-	stdu 1, -80(1)
-	std 0, 96(1)
+	stdu 1, -160(1)
+	std 0, 176(1)
+	std 27, 120(1)                          # 8-byte Folded Spill
+	std 28, 128(1)                          # 8-byte Folded Spill
+	std 29, 136(1)                          # 8-byte Folded Spill
+	std 30, 144(1)                          # 8-byte Folded Spill
 	#APP
 	ld 28, 2312(13)
 	#NO_APP
@@ -689,7 +722,7 @@ slb_setup_new_exec:                     # @slb_setup_new_exec
 	cmpld	3, 4
 	blt	0, .LBB8_16
 # %bb.14:                               # %if.end.i
-	lwz 3, 1096(30)
+	lwz 3, 1100(30)
 	cmpldi	3, 0
 	beq	0, .LBB8_16
 # %bb.15:                               # %if.end29.i
@@ -793,9 +826,9 @@ slb_setup_new_exec:                     # @slb_setup_new_exec
 	bne	0, .LBB8_37
 # %bb.30:                               # %get_user_context.exit.i
 	rotldi	4, 29, 15
-	addi 3, 30, 1096
+	addi 3, 30, 1100
 	rldic 4, 4, 3, 46
-	lwzx 3, 3, 4
+	lwzx 3, 4, 3
 	cmpldi	3, 0
 	beq	0, .LBB8_35
 # %bb.31:                               # %if.end29.i152
@@ -837,13 +870,13 @@ slb_setup_new_exec:                     # @slb_setup_new_exec
 	bl arch_local_irq_restore
 	nop
 .LBB8_36:                               # %cleanup
-	addi 1, 1, 80
+	ld 30, 144(1)                           # 8-byte Folded Reload
+	ld 29, 136(1)                           # 8-byte Folded Reload
+	ld 28, 128(1)                           # 8-byte Folded Reload
+	ld 27, 120(1)                           # 8-byte Folded Reload
+	addi 1, 1, 160
 	ld 0, 16(1)
-	ld 30, -16(1)                           # 8-byte Folded Reload
 	mtlr 0
-	ld 29, -24(1)                           # 8-byte Folded Reload
-	ld 28, -32(1)                           # 8-byte Folded Reload
-	ld 27, -40(1)                           # 8-byte Folded Reload
 	blr
 .LBB8_37:                               # %if.end.i.i
 	#APP
@@ -878,26 +911,27 @@ slb_setup_new_exec:                     # @slb_setup_new_exec
 	.globl	preload_new_slb_context         # -- Begin function preload_new_slb_context
 	.p2align	4
 	.type	preload_new_slb_context,@function
+	.section	.opd,"aw",@progbits
 preload_new_slb_context:                # @preload_new_slb_context
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin9
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin9:
-.Lfunc_gep9:
-	addis 2, 12, .TOC.-.Lfunc_gep9@ha
-	addi 2, 2, .TOC.-.Lfunc_gep9@l
-.Lfunc_lep9:
-	.localentry	preload_new_slb_context, .Lfunc_lep9-.Lfunc_gep9
 # %bb.0:                                # %entry
 	mflr 0
-	std 23, -72(1)                          # 8-byte Folded Spill
-	std 24, -64(1)                          # 8-byte Folded Spill
-	std 25, -56(1)                          # 8-byte Folded Spill
-	std 26, -48(1)                          # 8-byte Folded Spill
-	std 27, -40(1)                          # 8-byte Folded Spill
-	std 28, -32(1)                          # 8-byte Folded Spill
-	std 29, -24(1)                          # 8-byte Folded Spill
-	std 30, -16(1)                          # 8-byte Folded Spill
-	stdu 1, -112(1)
-	std 0, 128(1)
+	stdu 1, -192(1)
+	std 0, 208(1)
+	std 23, 120(1)                          # 8-byte Folded Spill
+	std 24, 128(1)                          # 8-byte Folded Spill
+	std 25, 136(1)                          # 8-byte Folded Spill
+	std 26, 144(1)                          # 8-byte Folded Spill
+	std 27, 152(1)                          # 8-byte Folded Spill
 	mr	27, 3
+	std 28, 160(1)                          # 8-byte Folded Spill
+	std 29, 168(1)                          # 8-byte Folded Spill
+	std 30, 176(1)                          # 8-byte Folded Spill
 	#APP
 	ld 25, 2312(13)
 	#NO_APP
@@ -1043,9 +1077,9 @@ preload_new_slb_context:                # @preload_new_slb_context
 	bne	0, .LBB9_63
 # %bb.18:                               # %get_user_context.exit.i
 	rotldi	4, 27, 15
-	addi 3, 29, 1096
+	addi 3, 29, 1100
 	rldic 4, 4, 3, 46
-	lwzx 3, 3, 4
+	lwzx 3, 4, 3
 	cmpldi	3, 0
 	beq	0, .LBB9_23
 # %bb.19:                               # %if.end29.i
@@ -1160,9 +1194,9 @@ preload_new_slb_context:                # @preload_new_slb_context
 	bne	0, .LBB9_65
 # %bb.37:                               # %get_user_context.exit.i169
 	rotldi	4, 28, 15
-	addi 3, 29, 1096
+	addi 3, 29, 1100
 	rldic 4, 4, 3, 46
-	lwzx 3, 3, 4
+	lwzx 3, 4, 3
 	cmpldi	3, 0
 	beq	0, .LBB9_42
 # %bb.38:                               # %if.end29.i178
@@ -1282,9 +1316,9 @@ preload_new_slb_context:                # @preload_new_slb_context
 	bne	0, .LBB9_67
 # %bb.56:                               # %get_user_context.exit.i231
 	rotldi	4, 30, 15
-	addi 3, 29, 1096
+	addi 3, 29, 1100
 	rldic 4, 4, 3, 46
-	lwzx 3, 3, 4
+	lwzx 3, 4, 3
 	cmpldi	3, 0
 	beq	0, .LBB9_61
 # %bb.57:                               # %if.end29.i240
@@ -1326,17 +1360,17 @@ preload_new_slb_context:                # @preload_new_slb_context
 	bl arch_local_irq_restore
 	nop
 .LBB9_62:                               # %cleanup
-	addi 1, 1, 112
+	ld 30, 176(1)                           # 8-byte Folded Reload
+	ld 29, 168(1)                           # 8-byte Folded Reload
+	ld 28, 160(1)                           # 8-byte Folded Reload
+	ld 27, 152(1)                           # 8-byte Folded Reload
+	ld 26, 144(1)                           # 8-byte Folded Reload
+	ld 25, 136(1)                           # 8-byte Folded Reload
+	ld 24, 128(1)                           # 8-byte Folded Reload
+	ld 23, 120(1)                           # 8-byte Folded Reload
+	addi 1, 1, 192
 	ld 0, 16(1)
-	ld 30, -16(1)                           # 8-byte Folded Reload
 	mtlr 0
-	ld 29, -24(1)                           # 8-byte Folded Reload
-	ld 28, -32(1)                           # 8-byte Folded Reload
-	ld 27, -40(1)                           # 8-byte Folded Reload
-	ld 26, -48(1)                           # 8-byte Folded Reload
-	ld 25, -56(1)                           # 8-byte Folded Reload
-	ld 24, -64(1)                           # 8-byte Folded Reload
-	ld 23, -72(1)                           # 8-byte Folded Reload
 	blr
 .LBB9_63:                               # %if.end.i.i
 	#APP
@@ -1421,38 +1455,39 @@ preload_new_slb_context:                # @preload_new_slb_context
 	.globl	switch_slb                      # -- Begin function switch_slb
 	.p2align	4
 	.type	switch_slb,@function
+	.section	.opd,"aw",@progbits
 switch_slb:                             # @switch_slb
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin10
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin10:
-.Lfunc_gep10:
-	addis 2, 12, .TOC.-.Lfunc_gep10@ha
-	addi 2, 2, .TOC.-.Lfunc_gep10@l
-.Lfunc_lep10:
-	.localentry	switch_slb, .Lfunc_lep10-.Lfunc_gep10
 # %bb.0:                                # %entry
 	mflr 0
-	std 20, -96(1)                          # 8-byte Folded Spill
-	std 21, -88(1)                          # 8-byte Folded Spill
-	std 22, -80(1)                          # 8-byte Folded Spill
-	std 23, -72(1)                          # 8-byte Folded Spill
-	std 24, -64(1)                          # 8-byte Folded Spill
-	std 25, -56(1)                          # 8-byte Folded Spill
-	std 26, -48(1)                          # 8-byte Folded Spill
-	std 27, -40(1)                          # 8-byte Folded Spill
-	std 28, -32(1)                          # 8-byte Folded Spill
-	std 29, -24(1)                          # 8-byte Folded Spill
-	std 30, -16(1)                          # 8-byte Folded Spill
-	stdu 1, -128(1)
-	std 0, 144(1)
+	stdu 1, -208(1)
+	std 0, 224(1)
+	std 20, 112(1)                          # 8-byte Folded Spill
+	std 21, 120(1)                          # 8-byte Folded Spill
+	std 22, 128(1)                          # 8-byte Folded Spill
+	std 23, 136(1)                          # 8-byte Folded Spill
+	std 24, 144(1)                          # 8-byte Folded Spill
+	std 25, 152(1)                          # 8-byte Folded Spill
+	std 26, 160(1)                          # 8-byte Folded Spill
+	std 27, 168(1)                          # 8-byte Folded Spill
+	std 28, 176(1)                          # 8-byte Folded Spill
+	std 29, 184(1)                          # 8-byte Folded Spill
 	mr	29, 3
 	li 3, 2
-	mr	30, 4
-	li 4, 3
+	std 30, 192(1)                          # 8-byte Folded Spill
 	#APP
 	mtmsrd 3, 1
 	#NO_APP
+	mr	30, 4
 	#APP
 	lbz 3, 2354(13)
 	#NO_APP
+	li 4, 3
 	#APP
 	stb 4, 2354(13)
 	#NO_APP
@@ -1646,7 +1681,8 @@ switch_slb:                             # @switch_slb
                                         #   in Loop: Header=BB10_25 Depth=1
 	rotldi	4, 3, 43
 	rldic 4, 4, 3, 18
-	lwzx 4, 25, 4
+	add 4, 25, 4
+	lwz 4, 4(4)
 	cmpldi	4, 0
 	beq	0, .LBB10_24
 # %bb.28:                               # %if.end29.i
@@ -1709,20 +1745,20 @@ switch_slb:                             # @switch_slb
 	#APP
 	isync
 	#NO_APP
-	addi 1, 1, 128
+	ld 30, 192(1)                           # 8-byte Folded Reload
+	ld 29, 184(1)                           # 8-byte Folded Reload
+	ld 28, 176(1)                           # 8-byte Folded Reload
+	ld 27, 168(1)                           # 8-byte Folded Reload
+	ld 26, 160(1)                           # 8-byte Folded Reload
+	ld 25, 152(1)                           # 8-byte Folded Reload
+	ld 24, 144(1)                           # 8-byte Folded Reload
+	ld 23, 136(1)                           # 8-byte Folded Reload
+	ld 22, 128(1)                           # 8-byte Folded Reload
+	ld 21, 120(1)                           # 8-byte Folded Reload
+	ld 20, 112(1)                           # 8-byte Folded Reload
+	addi 1, 1, 208
 	ld 0, 16(1)
-	ld 30, -16(1)                           # 8-byte Folded Reload
 	mtlr 0
-	ld 29, -24(1)                           # 8-byte Folded Reload
-	ld 28, -32(1)                           # 8-byte Folded Reload
-	ld 27, -40(1)                           # 8-byte Folded Reload
-	ld 26, -48(1)                           # 8-byte Folded Reload
-	ld 25, -56(1)                           # 8-byte Folded Reload
-	ld 24, -64(1)                           # 8-byte Folded Reload
-	ld 23, -72(1)                           # 8-byte Folded Reload
-	ld 22, -80(1)                           # 8-byte Folded Reload
-	ld 21, -88(1)                           # 8-byte Folded Reload
-	ld 20, -96(1)                           # 8-byte Folded Reload
 	blr
 .LBB10_35:                              # Block address taken
                                         # %if.then7
@@ -1868,13 +1904,14 @@ switch_slb:                             # @switch_slb
 	.globl	slb_set_size                    # -- Begin function slb_set_size
 	.p2align	4
 	.type	slb_set_size,@function
+	.section	.opd,"aw",@progbits
 slb_set_size:                           # @slb_set_size
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin11
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin11:
-.Lfunc_gep11:
-	addis 2, 12, .TOC.-.Lfunc_gep11@ha
-	addi 2, 2, .TOC.-.Lfunc_gep11@l
-.Lfunc_lep11:
-	.localentry	slb_set_size, .Lfunc_lep11-.Lfunc_gep11
 # %bb.0:                                # %entry
 	addis 4, 2, .LC0@toc@ha
 	ld 4, .LC0@toc@l(4)
@@ -1888,13 +1925,14 @@ slb_set_size:                           # @slb_set_size
 	.globl	slb_initialize                  # -- Begin function slb_initialize
 	.p2align	4
 	.type	slb_initialize,@function
+	.section	.opd,"aw",@progbits
 slb_initialize:                         # @slb_initialize
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin12
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin12:
-.Lfunc_gep12:
-	addis 2, 12, .TOC.-.Lfunc_gep12@ha
-	addi 2, 2, .TOC.-.Lfunc_gep12@l
-.Lfunc_lep12:
-	.localentry	slb_initialize, .Lfunc_lep12-.Lfunc_gep12
 # %bb.0:                                # %entry
 	addis 3, 2, .LC4@toc@ha
 	addis 5, 2, .LC5@toc@ha
@@ -1913,7 +1951,7 @@ slb_initialize:                         # @slb_initialize
 	mulli 5, 5, 96
 	add 3, 4, 3
 	add 4, 4, 5
-	lhz 4, 88(4)
+	lhz 4, 94(4)
 	ld 3, 88(3)
 	ori 4, 4, 1024
 	sth 4, 208(13)
@@ -2301,23 +2339,24 @@ slb_initialize:                         # @slb_initialize
 	.globl	do_slb_fault                    # -- Begin function do_slb_fault
 	.p2align	4
 	.type	do_slb_fault,@function
+	.section	.opd,"aw",@progbits
 do_slb_fault:                           # @do_slb_fault
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin13
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin13:
-.Lfunc_gep13:
-	addis 2, 12, .TOC.-.Lfunc_gep13@ha
-	addi 2, 2, .TOC.-.Lfunc_gep13@l
-.Lfunc_lep13:
-	.localentry	do_slb_fault, .Lfunc_lep13-.Lfunc_gep13
 # %bb.0:                                # %entry
 	mflr 0
-	std 27, -40(1)                          # 8-byte Folded Spill
-	std 28, -32(1)                          # 8-byte Folded Spill
-	std 29, -24(1)                          # 8-byte Folded Spill
-	std 30, -16(1)                          # 8-byte Folded Spill
-	stdu 1, -80(1)
-	std 0, 96(1)
+	stdu 1, -160(1)
+	std 0, 176(1)
+	std 27, 120(1)                          # 8-byte Folded Spill
 	mr	4, 3
 	li 3, 2
+	std 28, 128(1)                          # 8-byte Folded Spill
+	std 29, 136(1)                          # 8-byte Folded Spill
+	std 30, 144(1)                          # 8-byte Folded Spill
 	#APP
 	mtmsrd 3, 1
 	#NO_APP
@@ -2325,7 +2364,7 @@ do_slb_fault:                           # @do_slb_fault
 	rldicl. 3, 30, 4, 60
 	bne	0, .LBB13_19
 # %bb.1:                                # %get_region_id.exit.thread.i
-	lbz 4, 264(4)
+	lbz 4, 271(4)
 	li 3, -22
 	andi. 4, 4, 2
 	beq	0, .LBB13_23
@@ -2347,9 +2386,9 @@ do_slb_fault:                           # @do_slb_fault
 	bne	0, .LBB13_44
 # %bb.5:                                # %get_user_context.exit.i.i
 	rotldi	6, 30, 15
-	addi 5, 4, 1096
+	addi 5, 4, 1100
 	rldic 6, 6, 3, 46
-	lwzx 5, 5, 6
+	lwzx 5, 6, 5
 	cmpldi	5, 0
 	beq	0, .LBB13_23
 # %bb.6:                                # %slb_allocate_user.exit.i
@@ -2465,20 +2504,20 @@ do_slb_fault:                           # @do_slb_fault
 .LBB13_21:                              # %if.end6.i.i
 	addi 5, 3, 0
 .LBB13_22:                              # %get_region_id.exit.i
-	lbz 4, 264(4)
+	lbz 4, 271(4)
 	li 3, -22
 	andi. 4, 4, 2
 	bne	0, .LBB13_24
 .LBB13_23:                              # Block address taken
                                         # %____do_slb_fault.exit
                                         # Label of block must be emitted
-	addi 1, 1, 80
+	ld 30, 144(1)                           # 8-byte Folded Reload
+	ld 29, 136(1)                           # 8-byte Folded Reload
+	ld 28, 128(1)                           # 8-byte Folded Reload
+	ld 27, 120(1)                           # 8-byte Folded Reload
+	addi 1, 1, 160
 	ld 0, 16(1)
-	ld 30, -16(1)                           # 8-byte Folded Reload
 	mtlr 0
-	ld 29, -24(1)                           # 8-byte Folded Reload
-	ld 28, -32(1)                           # 8-byte Folded Reload
-	ld 27, -40(1)                           # 8-byte Folded Reload
 	blr
 .LBB13_24:                              # %if.then3.i
 	addi 4, 5, -1
@@ -2556,7 +2595,10 @@ do_slb_fault:                           # @do_slb_fault
                                         # Label of block must be emitted
 	li 4, 3
 	li 3, 8
+	ld 29, 136(1)                           # 8-byte Folded Reload
+	ld 28, 128(1)                           # 8-byte Folded Reload
 	rldic 4, 4, 62, 0
+	ld 27, 120(1)                           # 8-byte Folded Reload
 	cmpld	7, 4
 	li 7, 2047
 	rldicl 4, 30, 13, 51
@@ -2579,13 +2621,10 @@ do_slb_fault:                           # @do_slb_fault
 	b .LBB13_41
 .LBB13_41:                              # %if.end.i.i.i.i
 	mr	3, 30
-	addi 1, 1, 80
+	ld 30, 144(1)                           # 8-byte Folded Reload
+	addi 1, 1, 160
 	ld 0, 16(1)
-	ld 30, -16(1)                           # 8-byte Folded Reload
 	mtlr 0
-	ld 29, -24(1)                           # 8-byte Folded Reload
-	ld 28, -32(1)                           # 8-byte Folded Reload
-	ld 27, -40(1)                           # 8-byte Folded Reload
 	b slb_insert_entry
 	#TC_RETURNd8 slb_insert_entry 0
 .LBB13_42:                              # %if.end6.thread.i.i
@@ -2637,13 +2676,14 @@ do_slb_fault:                           # @do_slb_fault
 	.text
 	.p2align	4                               # -- Begin function slb_insert_entry
 	.type	slb_insert_entry,@function
+	.section	.opd,"aw",@progbits
 slb_insert_entry:                       # @slb_insert_entry
+	.p2align	3, 0x0
+	.quad	.Lfunc_begin14
+	.quad	.TOC.@tocbase
+	.quad	0
+	.text
 .Lfunc_begin14:
-.Lfunc_gep14:
-	addis 2, 12, .TOC.-.Lfunc_gep14@ha
-	addi 2, 2, .TOC.-.Lfunc_gep14@l
-.Lfunc_lep14:
-	.localentry	slb_insert_entry, .Lfunc_lep14-.Lfunc_gep14
 # %bb.0:                                # %entry
 	mr	8, 3
 	rldicl 3, 3, 12, 52
@@ -2991,6 +3031,7 @@ __setup_parse_stress_slb:
 	.globl	stress_slb_key
 	.p2align	3, 0x0
 stress_slb_key:
+.Lstress_slb_key$local:
 	.space	16
 	.size	stress_slb_key, 16
 
@@ -3068,6 +3109,7 @@ _kbl_addr_do_slb_fault:
 	.section	.init.data,"aw",@progbits
 	.globl	stress_slb_enabled
 stress_slb_enabled:
+.Lstress_slb_enabled$local:
 	.byte	0                               # 0x0
 	.size	stress_slb_enabled, 1
 

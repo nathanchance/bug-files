@@ -1,54 +1,54 @@
 diff --git a/good-slb.s b/bad-slb.s
-index 06a5778..06bc1b3 100644
+index d3ef72b..5dc68e4 100644
 --- a/good-slb.s
 +++ b/bad-slb.s
-@@ -232,14 +232,21 @@ slb_dump_contents:                      # @slb_dump_contents
- .Lfunc_lep6:
- 	.localentry	slb_dump_contents, .Lfunc_lep6-.Lfunc_gep6
+@@ -258,14 +258,21 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	.text
+ .Lfunc_begin6:
  # %bb.0:                                # %entry
 +	cmpldi	3, 0
 +	beqlr	0
 +# %bb.1:                                # %do.end
- 	mfocrf 12, 32
+ 	mfcr 12
  	mflr 0
  	stw 12, 8(1)
- 	stdu 1, -240(1)
+ 	stdu 1, -256(1)
 -	cmpldi	3, 0
- 	std 0, 256(1)
-+	std 30, 224(1)                          # 8-byte Folded Spill
+ 	std 0, 272(1)
++	std 30, 240(1)                          # 8-byte Folded Spill
 +	mr	30, 3
 +	addis 3, 2, .L.str.1@toc@ha
 +	lhz 4, 10(13)
- 	std 15, 104(1)                          # 8-byte Folded Spill
- 	std 16, 112(1)                          # 8-byte Folded Spill
+ 	std 15, 120(1)                          # 8-byte Folded Spill
+ 	std 16, 128(1)                          # 8-byte Folded Spill
 +	addi 3, 3, .L.str.1@toc@l
- 	std 17, 120(1)                          # 8-byte Folded Spill
- 	std 18, 128(1)                          # 8-byte Folded Spill
- 	std 19, 136(1)                          # 8-byte Folded Spill
-@@ -253,44 +260,14 @@ slb_dump_contents:                      # @slb_dump_contents
- 	std 27, 200(1)                          # 8-byte Folded Spill
- 	std 28, 208(1)                          # 8-byte Folded Spill
- 	std 29, 216(1)                          # 8-byte Folded Spill
--	std 30, 224(1)                          # 8-byte Folded Spill
+ 	std 17, 136(1)                          # 8-byte Folded Spill
+ 	std 18, 144(1)                          # 8-byte Folded Spill
+ 	std 19, 152(1)                          # 8-byte Folded Spill
+@@ -279,44 +286,14 @@ slb_dump_contents:                      # @slb_dump_contents
+ 	std 27, 216(1)                          # 8-byte Folded Spill
+ 	std 28, 224(1)                          # 8-byte Folded Spill
+ 	std 29, 232(1)                          # 8-byte Folded Spill
+-	std 30, 240(1)                          # 8-byte Folded Spill
 -	bne	0, .LBB6_2
 -.LBB6_1:                                # %cleanup
--	ld 30, 224(1)                           # 8-byte Folded Reload
--	ld 29, 216(1)                           # 8-byte Folded Reload
--	ld 28, 208(1)                           # 8-byte Folded Reload
--	ld 27, 200(1)                           # 8-byte Folded Reload
--	ld 26, 192(1)                           # 8-byte Folded Reload
--	ld 25, 184(1)                           # 8-byte Folded Reload
--	ld 24, 176(1)                           # 8-byte Folded Reload
--	ld 23, 168(1)                           # 8-byte Folded Reload
--	ld 22, 160(1)                           # 8-byte Folded Reload
--	ld 21, 152(1)                           # 8-byte Folded Reload
--	ld 20, 144(1)                           # 8-byte Folded Reload
--	ld 19, 136(1)                           # 8-byte Folded Reload
--	ld 18, 128(1)                           # 8-byte Folded Reload
--	ld 17, 120(1)                           # 8-byte Folded Reload
--	ld 16, 112(1)                           # 8-byte Folded Reload
--	ld 15, 104(1)                           # 8-byte Folded Reload
--	addi 1, 1, 240
+-	ld 30, 240(1)                           # 8-byte Folded Reload
+-	ld 29, 232(1)                           # 8-byte Folded Reload
+-	ld 28, 224(1)                           # 8-byte Folded Reload
+-	ld 27, 216(1)                           # 8-byte Folded Reload
+-	ld 26, 208(1)                           # 8-byte Folded Reload
+-	ld 25, 200(1)                           # 8-byte Folded Reload
+-	ld 24, 192(1)                           # 8-byte Folded Reload
+-	ld 23, 184(1)                           # 8-byte Folded Reload
+-	ld 22, 176(1)                           # 8-byte Folded Reload
+-	ld 21, 168(1)                           # 8-byte Folded Reload
+-	ld 20, 160(1)                           # 8-byte Folded Reload
+-	ld 19, 152(1)                           # 8-byte Folded Reload
+-	ld 18, 144(1)                           # 8-byte Folded Reload
+-	ld 17, 136(1)                           # 8-byte Folded Reload
+-	ld 16, 128(1)                           # 8-byte Folded Reload
+-	ld 15, 120(1)                           # 8-byte Folded Reload
+-	addi 1, 1, 256
 -	ld 0, 16(1)
 -	lwz 12, 8(1)
 -	mtlr 0
@@ -72,7 +72,7 @@ index 06a5778..06bc1b3 100644
  	addis 3, 2, .L.str.3@toc@ha
  	addi 26, 30, -16
  	li 25, 0
-@@ -310,76 +287,99 @@ slb_dump_contents:                      # @slb_dump_contents
+@@ -336,76 +313,99 @@ slb_dump_contents:                      # @slb_dump_contents
  	addi 20, 3, .L.str.5@toc@l
  	addis 3, 2, .L.str.6@toc@ha
  	addi 19, 3, .L.str.6@toc@l
@@ -171,29 +171,29 @@ index 06a5778..06bc1b3 100644
  	addis 3, 2, .LC1@toc@ha
  	ld 3, .LC1@toc@l(3)
  	ld 3, 0(3)
- 	lbz 3, 18(3)
+ 	lbz 3, 21(3)
  	andi. 3, 3, 2
 -	bne	0, .LBB6_1
 -# %bb.15:                               # %do.end43
 +	beq	0, .LBB6_15
 +.LBB6_14:
-+	ld 30, 224(1)                           # 8-byte Folded Reload
-+	ld 29, 216(1)                           # 8-byte Folded Reload
-+	ld 28, 208(1)                           # 8-byte Folded Reload
-+	ld 27, 200(1)                           # 8-byte Folded Reload
-+	ld 26, 192(1)                           # 8-byte Folded Reload
-+	ld 25, 184(1)                           # 8-byte Folded Reload
-+	ld 24, 176(1)                           # 8-byte Folded Reload
-+	ld 23, 168(1)                           # 8-byte Folded Reload
-+	ld 22, 160(1)                           # 8-byte Folded Reload
-+	ld 21, 152(1)                           # 8-byte Folded Reload
-+	ld 20, 144(1)                           # 8-byte Folded Reload
-+	ld 19, 136(1)                           # 8-byte Folded Reload
-+	ld 18, 128(1)                           # 8-byte Folded Reload
-+	ld 17, 120(1)                           # 8-byte Folded Reload
-+	ld 16, 112(1)                           # 8-byte Folded Reload
-+	ld 15, 104(1)                           # 8-byte Folded Reload
-+	addi 1, 1, 240
++	ld 30, 240(1)                           # 8-byte Folded Reload
++	ld 29, 232(1)                           # 8-byte Folded Reload
++	ld 28, 224(1)                           # 8-byte Folded Reload
++	ld 27, 216(1)                           # 8-byte Folded Reload
++	ld 26, 208(1)                           # 8-byte Folded Reload
++	ld 25, 200(1)                           # 8-byte Folded Reload
++	ld 24, 192(1)                           # 8-byte Folded Reload
++	ld 23, 184(1)                           # 8-byte Folded Reload
++	ld 22, 176(1)                           # 8-byte Folded Reload
++	ld 21, 168(1)                           # 8-byte Folded Reload
++	ld 20, 160(1)                           # 8-byte Folded Reload
++	ld 19, 152(1)                           # 8-byte Folded Reload
++	ld 18, 144(1)                           # 8-byte Folded Reload
++	ld 17, 136(1)                           # 8-byte Folded Reload
++	ld 16, 128(1)                           # 8-byte Folded Reload
++	ld 15, 120(1)                           # 8-byte Folded Reload
++	addi 1, 1, 256
 +	ld 0, 16(1)
 +	lwz 12, 8(1)
 +	mtlr 0
@@ -203,7 +203,7 @@ index 06a5778..06bc1b3 100644
  	lbz 4, 211(13)
  	addis 3, 2, .L.str.7@toc@ha
  	addi 3, 3, .L.str.7@toc@l
-@@ -412,6 +412,7 @@ slb_dump_contents:                      # @slb_dump_contents
+@@ -438,6 +438,7 @@ slb_dump_contents:                      # @slb_dump_contents
  	li 26, 220
  	mr	25, 28
  	addi 30, 3, .L.str.10@toc@l
@@ -211,7 +211,7 @@ index 06a5778..06bc1b3 100644
  .LBB6_20:                               # %do.end70
                                          # =>This Inner Loop Header: Depth=1
  	lwzx 5, 13, 26
-@@ -430,7 +431,7 @@ slb_dump_contents:                      # @slb_dump_contents
+@@ -456,7 +457,7 @@ slb_dump_contents:                      # @slb_dump_contents
  	bl _printk
  	nop
  	cmplwi	29, 7
@@ -220,7 +220,7 @@ index 06a5778..06bc1b3 100644
  # %bb.22:                               # %do.end87.preheader
  	sub	3, 29, 28
  	sldi 4, 29, 2
-@@ -452,7 +453,7 @@ slb_dump_contents:                      # @slb_dump_contents
+@@ -478,7 +479,7 @@ slb_dump_contents:                      # @slb_dump_contents
  	addi 28, 28, 4
  	cmpldi	27, 0
  	bc 12, 1, .LBB6_23
@@ -229,7 +229,7 @@ index 06a5778..06bc1b3 100644
  	.long	0
  	.quad	0
  .Lfunc_end6:
-@@ -2647,21 +2648,14 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2687,21 +2688,14 @@ slb_insert_entry:                       # @slb_insert_entry
  # %bb.0:                                # %entry
  	mr	8, 3
  	rldicl 3, 3, 12, 52
@@ -256,7 +256,7 @@ index 06a5778..06bc1b3 100644
  	#APP
  .Ltmp124:
  	nop	# arch_static_branch
-@@ -2669,16 +2663,16 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2709,16 +2703,16 @@ slb_insert_entry:                       # @slb_insert_entry
  .Ltmp125:
  	.long	.Ltmp124-.Ltmp125
  .Ltmp126:
@@ -276,7 +276,7 @@ index 06a5778..06bc1b3 100644
                                          # %mmu_has_feature.exit.i
                                          # Label of block must be emitted
  	lis 10, 191
-@@ -2701,36 +2695,36 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2741,36 +2735,36 @@ slb_insert_entry:                       # @slb_insert_entry
  	sld 30, 30, 4
  	clrldi	9, 4, 32
  	mulld 10, 12, 10
@@ -326,7 +326,7 @@ index 06a5778..06bc1b3 100644
  	not	7, 3
  	clrldi	7, 7, 32
  	addi 9, 7, -1
-@@ -2741,13 +2735,13 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2781,13 +2775,13 @@ slb_insert_entry:                       # @slb_insert_entry
  	slw 7, 7, 9
  	or 3, 7, 3
  	stw 3, 212(13)
@@ -344,7 +344,7 @@ index 06a5778..06bc1b3 100644
  	addis 7, 2, .LC0@toc@ha
  	lbz 3, 211(13)
  	ld 7, .LC0@toc@l(7)
-@@ -2756,29 +2750,29 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2796,29 +2790,29 @@ slb_insert_entry:                       # @slb_insert_entry
  	addi 7, 7, -1
  	cmplw 5, 7, 3
  	li 3, 2
@@ -386,7 +386,7 @@ index 06a5778..06bc1b3 100644
  	li 3, -1
  	cmplwi 5, 9, 2
  	li 10, 1
-@@ -2788,11 +2782,11 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2828,11 +2822,11 @@ slb_insert_entry:                       # @slb_insert_entry
  	li 3, 0
  	or 5, 6, 5
  	oris 6, 9, 2048
@@ -402,7 +402,7 @@ index 06a5778..06bc1b3 100644
  	#APP
  .Ltmp128:
  	tdnei	10, 0
-@@ -2811,19 +2805,19 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2851,19 +2845,19 @@ slb_insert_entry:                       # @slb_insert_entry
  	#NO_APP
  	li 10, 24
  	clrldi	6, 6, 32
@@ -430,7 +430,7 @@ index 06a5778..06bc1b3 100644
  	and 4, 4, 8
  	or 4, 4, 6
  	#APP
-@@ -2833,21 +2827,21 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2873,21 +2867,21 @@ slb_insert_entry:                       # @slb_insert_entry
  .Ltmp133:
  	.long	.Ltmp132-.Ltmp133
  .Ltmp134:
@@ -456,7 +456,7 @@ index 06a5778..06bc1b3 100644
  	#APP
  .Ltmp136:
  	nop	# arch_static_branch
-@@ -2855,58 +2849,35 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2895,58 +2889,35 @@ slb_insert_entry:                       # @slb_insert_entry
  .Ltmp137:
  	.long	.Ltmp136-.Ltmp137
  .Ltmp138:
@@ -529,7 +529,7 @@ index 06a5778..06bc1b3 100644
  	addis 8, 2, .LC6@toc@ha
  	li 10, -1
  	lis 11, -4096
-@@ -2914,33 +2885,33 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2954,33 +2925,33 @@ slb_insert_entry:                       # @slb_insert_entry
  	lwz 12, 0(8)
  	mtctr 9
  	li 9, 220
@@ -579,7 +579,7 @@ index 06a5778..06bc1b3 100644
  	slwi 12, 12, 25
  	extsw 12, 12
  	or 12, 0, 12
-@@ -2948,23 +2919,54 @@ slb_insert_entry:                       # @slb_insert_entry
+@@ -2988,23 +2959,54 @@ slb_insert_entry:                       # @slb_insert_entry
  	slbie 12
  	#NO_APP
  	lwz 12, 0(8)
