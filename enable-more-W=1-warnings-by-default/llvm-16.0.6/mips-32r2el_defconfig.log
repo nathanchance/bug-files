@@ -1,0 +1,15 @@
+Using /home/nathan/cbl/src/linux-next/arch/mips/configs/generic_defconfig as base
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/32r2.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/el.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-boston.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-marduk.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ni169445.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ocelot.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ranchu.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-sead-3.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-virt.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-xilfpga.config
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.

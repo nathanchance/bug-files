@@ -1,0 +1,305 @@
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/gpu/drm/nouveau/nvkm/subdev/bios/shadow.c:161:10: warning: cast from 'void (*)(const struct firmware *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  161 |         .fini = (void(*)(void *))release_firmware,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+
+OpenSBI v1.2
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name             : riscv-virtio,qemu
+Platform Features         : medeleg
+Platform HART Count       : 1
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer @ 10000000Hz
+Platform Console Device   : uart8250
+Platform HSM Device       : ---
+Platform PMU Device       : ---
+Platform Reboot Device    : sifive_test
+Platform Shutdown Device  : sifive_test
+Firmware Base             : 0x80000000
+Firmware Size             : 212 KB
+Runtime SBI Version       : 1.0
+
+Domain0 Name              : root
+Domain0 Boot HART         : 0
+Domain0 HARTs             : 0*
+Domain0 Region00          : 0x0000000002000000-0x000000000200ffff (I)
+Domain0 Region01          : 0x0000000080000000-0x000000008003ffff ()
+Domain0 Region02          : 0x0000000000000000-0xffffffffffffffff (R,W,X)
+Domain0 Next Address      : 0x0000000080200000
+Domain0 Next Arg1         : 0x000000009fe00000
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+
+Boot HART ID              : 0
+Boot HART Domain          : root
+Boot HART Priv Version    : v1.12
+Boot HART Base ISA        : rv64imafdch
+Boot HART ISA Extensions  : time,sstc
+Boot HART PMP Count       : 16
+Boot HART PMP Granularity : 4
+Boot HART PMP Address Bits: 54
+Boot HART MHPM Count      : 16
+Boot HART MIDELEG         : 0x0000000000001666
+Boot HART MEDELEG         : 0x0000000000f0b509
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 18:53:39 UTC 2023
+[    0.000000] random: crng init done
+[    0.000000] Machine model: riscv-virtio,qemu
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10002
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI SRST extension detected
+[    0.000000] earlycon: ns16550a0 at MMIO 0x0000000010000000 (options '')
+[    0.000000] printk: bootconsole [ns16550a0] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x0000000080000000..0x000000008003ffff (256 KiB) map non-reusable mmode_resv0@80000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] SBI HSM extension detected
+[    0.000000] riscv: base ISA extensions acdfhim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 20 pages/cpu s41016 r8192 d32712 u81920
+[    0.000000] Kernel command line: earlycon
+[    0.000000] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 129024
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]       fixmap : 0xff1bfffffea00000 - 0xff1bffffff000000   (6144 kB)
+[    0.000000]       pci io : 0xff1bffffff000000 - 0xff1c000000000000   (  16 MB)
+[    0.000000]      vmemmap : 0xff1c000000000000 - 0xff20000000000000   (1024 TB)
+[    0.000000]      vmalloc : 0xff20000000000000 - 0xff60000000000000   (16384 TB)
+[    0.000000]      modules : 0xffffffff01388000 - 0xffffffff80000000   (2028 MB)
+[    0.000000]       lowmem : 0xff60000000000000 - 0xff60000020000000   ( 512 MB)
+[    0.000000]       kernel : 0xffffffff80000000 - 0xffffffffffffffff   (2047 MB)
+[    0.000000] Memory: 473348K/524288K available (9260K kernel code, 2966K rwdata, 4096K rodata, 2209K init, 485K bss, 50940K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] rcu: 	RCU debug extended QS entry/exit.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: plic@c000000: mapped 95 interrupts with 1 handlers for 2 contexts.
+[    0.000000] riscv: providing IPIs using SBI IPI extension
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000066] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.000383] riscv-timer: Timer interrupt in S-mode is available via sstc extension
+[    0.009824] Console: colour dummy device 80x25
+[    0.010288] printk: console [tty0] enabled
+[    0.010763] printk: bootconsole [ns16550a0] disabled
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 18:53:39 UTC 2023
+[    0.000000] random: crng init done
+[    0.000000] Machine model: riscv-virtio,qemu
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10002
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI SRST extension detected
+[    0.000000] earlycon: ns16550a0 at MMIO 0x0000000010000000 (options '')
+[    0.000000] printk: bootconsole [ns16550a0] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x0000000080000000..0x000000008003ffff (256 KiB) map non-reusable mmode_resv0@80000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] SBI HSM extension detected
+[    0.000000] riscv: base ISA extensions acdfhim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 20 pages/cpu s41016 r8192 d32712 u81920
+[    0.000000] Kernel command line: earlycon
+[    0.000000] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 129024
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]       fixmap : 0xff1bfffffea00000 - 0xff1bffffff000000   (6144 kB)
+[    0.000000]       pci io : 0xff1bffffff000000 - 0xff1c000000000000   (  16 MB)
+[    0.000000]      vmemmap : 0xff1c000000000000 - 0xff20000000000000   (1024 TB)
+[    0.000000]      vmalloc : 0xff20000000000000 - 0xff60000000000000   (16384 TB)
+[    0.000000]      modules : 0xffffffff01388000 - 0xffffffff80000000   (2028 MB)
+[    0.000000]       lowmem : 0xff60000000000000 - 0xff60000020000000   ( 512 MB)
+[    0.000000]       kernel : 0xffffffff80000000 - 0xffffffffffffffff   (2047 MB)
+[    0.000000] Memory: 473348K/524288K available (9260K kernel code, 2966K rwdata, 4096K rodata, 2209K init, 485K bss, 50940K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] rcu: 	RCU debug extended QS entry/exit.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: plic@c000000: mapped 95 interrupts with 1 handlers for 2 contexts.
+[    0.000000] riscv: providing IPIs using SBI IPI extension
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000066] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.000383] riscv-timer: Timer interrupt in S-mode is available via sstc extension
+[    0.009824] Console: colour dummy device 80x25
+[    0.010288] printk: console [tty0] enabled
+[    0.010763] printk: bootconsole [ns16550a0] disabled
+[    0.012417] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=40000)
+[    0.012604] pid_max: default: 32768 minimum: 301
+[    0.013937] LSM: initializing lsm=capability,integrity
+[    0.016405] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.016475] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.049296] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.049670] riscv: ELF compat mode supported
+[    0.049986] ASID allocator using 16 bits (65536 entries)
+[    0.051191] rcu: Hierarchical SRCU implementation.
+[    0.051256] rcu: 	Max phase no-delay instances is 1000.
+[    0.053183] EFI services will not be available.
+[    0.054818] smp: Bringing up secondary CPUs ...
+[    0.055703] smp: Brought up 1 node, 1 CPU
+[    0.069418] devtmpfs: initialized
+[    0.077847] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.078034] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.080266] pinctrl core: initialized pinctrl subsystem
+[    0.088427] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.097105] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.097396] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.097672] audit: initializing netlink subsys (disabled)
+[    0.101601] thermal_sys: Registered thermal governor 'step_wise'
+[    0.102473] audit: type=2000 audit(0.092:1): state=initialized audit_enabled=0 res=1
+[    0.103085] cpuidle: using governor menu
+[    0.119037] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.119091] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.123521] ACPI: Interpreter disabled.
+[    0.125287] iommu: Default domain type: Translated
+[    0.125348] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.127877] SCSI subsystem initialized
+[    0.129641] usbcore: registered new interface driver usbfs
+[    0.129968] usbcore: registered new interface driver hub
+[    0.130136] usbcore: registered new device driver usb
+[    0.144190] vgaarb: loaded
+[    0.147625] clocksource: Switched to clocksource riscv_clocksource
+[    0.149835] pnp: PnP ACPI: disabled
+[    0.169783] NET: Registered PF_INET protocol family
+[    0.170923] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.176486] tcp_listen_portaddr_hash hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.176668] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.176749] TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.176968] TCP bind hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.177590] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.178756] UDP hash table entries: 256 (order: 2, 24576 bytes, linear)
+[    0.179109] UDP-Lite hash table entries: 256 (order: 2, 24576 bytes, linear)
+[    0.180214] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.183055] RPC: Registered named UNIX socket transport module.
+[    0.183126] RPC: Registered udp transport module.
+[    0.183154] RPC: Registered tcp transport module.
+[    0.183179] RPC: Registered tcp-with-tls transport module.
+[    0.183206] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.183374] PCI: CLS 0 bytes, default 64
+[    0.190195] Unpacking initramfs...
+[    0.202704] workingset: timestamp_bits=46 max_order=17 bucket_order=0
+[    0.206590] NFS: Registering the id_resolver key type
+[    0.207526] Key type id_resolver registered
+[    0.207582] Key type id_legacy registered
+[    0.207886] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.207997] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.210532] 9p: Installing v9fs 9p2000 file system support
+[    0.212155] NET: Registered PF_ALG protocol family
+[    0.212509] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    0.212635] io scheduler mq-deadline registered
+[    0.212715] io scheduler kyber registered
+[    0.212830] io scheduler bfq registered
+[    0.222534] pci-host-generic 30000000.pci: host bridge /soc/pci@30000000 ranges:
+[    0.223387] pci-host-generic 30000000.pci:       IO 0x0003000000..0x000300ffff -> 0x0000000000
+[    0.223931] pci-host-generic 30000000.pci:      MEM 0x0040000000..0x007fffffff -> 0x0040000000
+[    0.224018] pci-host-generic 30000000.pci:      MEM 0x0400000000..0x07ffffffff -> 0x0400000000
+[    0.224549] pci-host-generic 30000000.pci: Memory resource size exceeds max for 32 bits
+[    0.224993] pci-host-generic 30000000.pci: ECAM at [mem 0x30000000-0x3fffffff] for [bus 00-ff]
+[    0.226470] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+[    0.226741] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.226844] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.226901] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+[    0.226934] pci_bus 0000:00: root bus resource [mem 0x400000000-0x7ffffffff]
+[    0.228330] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.296025] Freeing initrd memory: 4684K
+[    0.368243] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.383468] 10000000.serial: ttyS0 at MMIO 0x10000000 (irq = 12, base_baud = 230400) is a 16550A
+[    0.385062] printk: console [ttyS0] enabled
+[    0.401971] SuperH (H)SCI(F) driver initialized
+[    0.418439] loop: module loaded
+[    0.423753] e1000e: Intel(R) PRO/1000 Network Driver
+[    0.423894] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.425980] usbcore: registered new interface driver uas
+[    0.426288] usbcore: registered new interface driver usb-storage
+[    0.427326] mousedev: PS/2 mouse device common for all mice
+[    0.430652] goldfish_rtc 101000.rtc: registered as rtc0
+[    0.431494] goldfish_rtc 101000.rtc: setting system clock to 2023-08-11T18:53:48 UTC (1691780028)
+[    0.434667] syscon-poweroff poweroff: pm_power_off already claimed for sbi_srst_power_off
+[    0.435315] syscon-poweroff: probe of poweroff failed with error -16
+[    0.437151] sdhci: Secure Digital Host Controller Interface driver
+[    0.437316] sdhci: Copyright(c) Pierre Ossman
+[    0.437826] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.438684] usbcore: registered new interface driver usbhid
+[    0.438841] usbhid: USB HID core driver
+[    0.439450] riscv-pmu-sbi: SBI PMU extension is available
+[    0.440053] riscv-pmu-sbi: 16 firmware and 18 hardware counters
+[    0.440230] riscv-pmu-sbi: Perf sampling/filtering is not supported as sscof extension is not available
+[    0.442813] NET: Registered PF_INET6 protocol family
+[    0.449312] Segment Routing with IPv6
+[    0.449598] In-situ OAM (IOAM) with IPv6
+[    0.450178] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.453348] NET: Registered PF_PACKET protocol family
+[    0.454843] 9pnet: Installing 9P2000 support
+[    0.455289] Key type dns_resolver registered
+[    0.491582] debug_vm_pgtable: [debug_vm_pgtable         ]: Validating architecture page table helpers
+[    0.499785] clk: Disabling unused clocks
+[    0.540609] Freeing unused kernel image (initmem) memory: 2208K
+[    0.543073] Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 18:53:39 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+[    4.445465] reboot: Power down
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-riscv64 -display none -nodefaults -bios default -M virt -append earlycon -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/riscv/arch/riscv/boot/Image -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/riscv/rootfs.cpio -m 512m -serial mon:stdio

@@ -1,0 +1,301 @@
+/home/nathan/cbl/src/linux-next/drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+                             u32 event_quota)
+                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/pci/aw2/aw2-alsa.c:363:11: warning: cast from 'void (*)(struct snd_pcm_substream *)' to 'snd_aw2_saa7146_it_cb' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                                    (snd_aw2_saa7146_it_cb)
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/aw2/aw2-alsa.c:392:10: warning: cast from 'void (*)(struct snd_pcm_substream *)' to 'snd_aw2_saa7146_it_cb' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                                   (snd_aw2_saa7146_it_cb)
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:115:25: warning: cast from 'int (*)(struct hw *, struct src_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+        [SRC]           = { .create     = (create_t)src_mgr_create,
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:116:20: warning: cast from 'int (*)(struct src_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                            .destroy    = (destroy_t)src_mgr_destroy    },
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:117:27: warning: cast from 'int (*)(struct hw *, struct srcimp_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+        [SRCIMP]        = { .create     = (create_t)srcimp_mgr_create,
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:118:20: warning: cast from 'int (*)(struct srcimp_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                            .destroy    = (destroy_t)srcimp_mgr_destroy },
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:119:25: warning: cast from 'int (*)(struct hw *, struct amixer_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+        [AMIXER]        = { .create     = (create_t)amixer_mgr_create,
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:120:19: warning: cast from 'int (*)(struct amixer_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                            .destroy    = (destroy_t)amixer_mgr_destroy },
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:121:23: warning: cast from 'int (*)(struct hw *, struct sum_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+        [SUM]           = { .create     = (create_t)sum_mgr_create,
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:122:19: warning: cast from 'int (*)(struct sum_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                            .destroy    = (destroy_t)sum_mgr_destroy    },
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:123:24: warning: cast from 'int (*)(struct hw *, struct daio_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+        [DAIO]          = { .create     = (create_t)daio_mgr_create,
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:124:19: warning: cast from 'int (*)(struct daio_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                            .destroy    = (destroy_t)daio_mgr_destroy   }
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+10 warnings generated.
+/home/nathan/cbl/src/linux-next/sound/core/seq/seq_midi.c:135:30: warning: cast from 'int (*)(struct snd_rawmidi_substream *, const char *, int)' to 'snd_seq_dump_func_t' (aka 'int (*)(void *, void *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+                snd_seq_dump_var_event(ev, (snd_seq_dump_func_t)dump_midi, substream);
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/core/seq/seq_virmidi.c:83:31: warning: cast from 'int (*)(struct snd_rawmidi_substream *, const unsigned char *, int)' to 'snd_seq_dump_func_t' (aka 'int (*)(void *, void *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+                        snd_seq_dump_var_event(ev, (snd_seq_dump_func_t)snd_rawmidi_receive, vmidi->substream);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:815:38: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        if (kunit_add_action_or_reset(test, (kunit_action_t *)kfree, data) != 0)
+                                            ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:827:29: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        kunit_release_action(test, (kunit_action_t *)kfree, (void *)ptr);
+                                   ^~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/kernel/kcov.c:630:29: warning: result of comparison of constant 1152921504606846975 with expression of type '__u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+                if (remote_arg->area_size > LONG_MAX / sizeof(unsigned long))
+                    ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1632:3: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_resource_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+                REMEMBER_STATE_CHANGE(notify_resource_state_change,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+           last_func = (typeof(last_func))func; \
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1641:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_connection_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+                        REMEMBER_STATE_CHANGE(notify_connection_state_change,
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+           last_func = (typeof(last_func))func; \
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1650:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_device_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+                        REMEMBER_STATE_CHANGE(notify_device_state_change,
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+           last_func = (typeof(last_func))func; \
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1664:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_peer_device_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+                        REMEMBER_STATE_CHANGE(notify_peer_device_state_change,
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+           last_func = (typeof(last_func))func; \
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+/home/nathan/cbl/src/linux-next/sound/soc/meson/aiu.c:249:12: warning: cast from 'void (*)(struct clk *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                                       (void(*)(void *))clk_disable_unprepare,
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+        __devm_add_action_or_reset(release, action, data, #action)
+                                            ^~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/soc/meson/t9015.c:274:4: warning: cast from 'void (*)(struct clk *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                        (void(*)(void *))clk_disable_unprepare,
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+        __devm_add_action_or_reset(release, action, data, #action)
+                                            ^~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/pci/sta2x11/sta2x11_vip.c:1057:6: warning: cast from 'irqreturn_t (*)(int, struct sta2x11_vip *)' (aka 'enum irqreturn (*)(int, struct sta2x11_vip *)') to 'irq_handler_t' (aka 'enum irqreturn (*)(int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                          (irq_handler_t) vip_irq,
+                          ^~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/firmware/dmi-id.c:174:17: warning: cast from 'void (*)(const void *)' to 'void (*)(struct device *)' converts to incompatible function type [-Wcast-function-type-strict]
+        .dev_release = (void(*)(struct device *)) kfree,
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/soc/qcom/qdsp6/q6apm-dai.c:355:38: warning: cast from 'void (*)(uint32_t, uint32_t, uint32_t *, void *)' (aka 'void (*)(unsigned int, unsigned int, unsigned int *, void *)') to 'q6apm_cb' (aka 'void (*)(unsigned int, unsigned int, void *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        prtd->graph = q6apm_graph_open(dev, (q6apm_cb)event_handler, prtd, graph_id);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/soc/qcom/qdsp6/q6apm-dai.c:499:38: warning: cast from 'void (*)(uint32_t, uint32_t, uint32_t *, void *)' (aka 'void (*)(unsigned int, unsigned int, unsigned int *, void *)') to 'q6apm_cb' (aka 'void (*)(unsigned int, unsigned int, void *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        prtd->graph = q6apm_graph_open(dev, (q6apm_cb)event_handler_compr, prtd, graph_id);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath5k/mac80211-ops.c:367:62: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ath5k_configure_filter(struct ieee80211_hw *hw, unsigned int changed_flags,
+                                                             ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/platform/mediatek/vcodec/mtk_vcodec_fw_vpu.c:38:32: warning: cast from 'mtk_vcodec_ipi_handler' (aka 'void (*)(void *, unsigned int, void *)') to 'ipi_handler_t' (aka 'void (*)(const void *, unsigned int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        ipi_handler_t handler_const = (ipi_handler_t)handler;
+                                      ^~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                   unsigned int changed_flags,
+                                                ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/brocade/bna/bnad.c:1995:4: warning: cast from 'void (*)(struct delayed_work *)' to 'work_func_t' (aka 'void (*)(struct work_struct *)') converts to incompatible function type [-Wcast-function-type-strict]
+                        (work_func_t)bnad_tx_cleanup);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:320:29: note: expanded from macro 'INIT_DELAYED_WORK'
+        __INIT_DELAYED_WORK(_work, _func, 0)
+                                   ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:305:30: note: expanded from macro '__INIT_DELAYED_WORK'
+                INIT_WORK(&(_work)->work, (_func));                     \
+                                           ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:298:24: note: expanded from macro 'INIT_WORK'
+        __INIT_WORK((_work), (_func), 0)
+                              ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:285:20: note: expanded from macro '__INIT_WORK'
+                (_work)->func = (_func);                                \
+                                 ^~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/brocade/bna/bnad.c:2252:4: warning: cast from 'void (*)(void *)' to 'work_func_t' (aka 'void (*)(struct work_struct *)') converts to incompatible function type [-Wcast-function-type-strict]
+                        (work_func_t)(bnad_rx_cleanup));
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:298:24: note: expanded from macro 'INIT_WORK'
+        __INIT_WORK((_work), (_func), 0)
+                              ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:285:20: note: expanded from macro '__INIT_WORK'
+                (_work)->func = (_func);                                \
+                                 ^~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/broadcom/brcm80211/brcmsmac/phy_shim.c:64:34: warning: cast from 'void (*)(struct brcms_phy *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                        brcms_init_timer(physhim->wl, (void (*)(void *))fn,
+                                                      ^~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 17179869180 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/cavium/liquidio/cn23xx_pf_device.c:1493:16: warning: cast from 'void (*)(struct octeon_device *, struct octeon_mbox_cmd *, void *)' to 'octeon_mbox_callback_t' (aka 'void (*)(void *, void *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        mbox_cmd.fn = (octeon_mbox_callback_t)cn23xx_get_vf_stats_callback;
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/cavium/liquidio/cn23xx_vf_device.c:432:16: warning: cast from 'void (*)(struct octeon_device *, struct octeon_mbox_cmd *, void *)' to 'octeon_mbox_callback_t' (aka 'void (*)(void *, void *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        mbox_cmd.fn = (octeon_mbox_callback_t)octeon_pfvf_hs_callback;
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-v4l2.c:1070:30: warning: cast from 'void (*)(struct pvr2_v4l2_fh *)' to 'pvr2_stream_callback' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        pvr2_stream_set_callback(sp,(pvr2_stream_callback)pvr2_v4l2_notify,fh);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                       unsigned int changed_flags,
+                                                    ^
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-context.c:110:6: warning: cast from 'void (*)(struct pvr2_context *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                                        (void (*)(void *))pvr2_context_notify,
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-dvb.c:152:6: warning: cast from 'void (*)(struct pvr2_dvb_adapter *)' to 'pvr2_stream_callback' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                 (pvr2_stream_callback) pvr2_dvb_notify, adap);
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2138:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+        bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+        (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+                               ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2162:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+        bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp, &fcomp, NULL);
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+        (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+                               ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2446:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+        bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+        (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+                               ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2477:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+        bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+        (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+                               ^~~~~~
+4 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1098:33: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+        return (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_ready));
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1369:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+        if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_uninit)) {
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1373:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+        if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_ready)) {
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1377:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+        if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_offline)) {
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa_core.c:1917:11: warning: cast from 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') to 'bfa_cb_cbfn_status_t' (aka 'void (*)(void *, enum bfa_status)') converts to incompatible function type [-Wcast-function-type-strict]
+                        cbfn = (bfa_cb_cbfn_status_t)(hcb_qe->cbfn);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:170:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                    (ubifs_lpt_scan_callback)scan_for_dirty_cb,
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:449:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                    (ubifs_lpt_scan_callback)scan_for_free_cb,
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:629:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                    (ubifs_lpt_scan_callback)scan_for_idx_cb,
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:757:7: warning: cast from 'int (*)(const struct ubifs_lprops **, const struct ubifs_lprops **)' to 'int (*)(const void *, const void *)' converts to incompatible function type [-Wcast-function-type-strict]
+             (int (*)(const void *, const void *))cmp_dirty_idx, NULL);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:846:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                    (ubifs_lpt_scan_callback)scan_dirty_idx_cb,
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/ubifs/lprops.c:1272:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct ubifs_lp_stats *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+                                    (ubifs_lpt_scan_callback)scan_check_cb,
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/nvmem/meson-efuse.c:78:12: warning: cast from 'void (*)(struct clk *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                                       (void(*)(void *))clk_disable_unprepare,
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+        __devm_add_action_or_reset(release, action, data, #action)
+                                            ^~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/gpu/drm/nouveau/nvkm/subdev/bios/shadow.c:161:10: warning: cast from 'void (*)(const struct firmware *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+        .fini = (void(*)(void *))release_firmware,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/ti/cpts.c:691:12: warning: cast from 'void (*)(struct clk_hw *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                                       (void(*)(void *))clk_hw_unregister_mux,
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+        __devm_add_action_or_reset(release, action, data, #action)
+                                            ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/ti/cpts.c:703:12: warning: cast from 'void (*)(struct device_node *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                                       (void(*)(void *))of_clk_del_provider,
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+        __devm_add_action_or_reset(release, action, data, #action)
+                                            ^~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/ulp/srpt/ib_srpt.c:1811:5: warning: cast from 'void (*)(struct ib_event *, struct srpt_rdma_ch *)' to 'void (*)(struct ib_event *, void *)' converts to incompatible function type [-Wcast-function-type-strict]
+                = (void(*)(struct ib_event *, void*))srpt_qp_event;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+static int qed_send_msg2pf(struct qed_hwfn *p_hwfn, u8 *done, u32 resp_size)
+                                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/mtd/nand/raw/lpc32xx_mlc.c:783:29: warning: cast from 'irqreturn_t (*)(int, struct lpc32xx_nand_host *)' (aka 'enum irqreturn (*)(int, struct lpc32xx_nand_host *)') to 'irq_handler_t' (aka 'enum irqreturn (*)(int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+        if (request_irq(host->irq, (irq_handler_t)&lpc3xxx_nand_irq,
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

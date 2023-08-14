@@ -1,0 +1,47 @@
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: error: parameter 'slot' set but not used [-Werror,-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 error generated.
+make[5]: *** [/home/nathan/cbl/src/linux-next/scripts/Makefile.build:243: lib/radix-tree.o] Error 1
+/home/nathan/cbl/src/linux-next/net/ipv4/tcp_output.c:186:3: error: result of comparison of constant -1 with expression of type 'u8' (aka 'unsigned char') is always false [-Werror,-Wtautological-constant-out-of-range-compare]
+                NET_ADD_STATS(sock_net(sk), LINUX_MIB_TCPACKCOMPRESSED,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/net/ip.h:301:41: note: expanded from macro 'NET_ADD_STATS'
+#define NET_ADD_STATS(net, field, adnd) SNMP_ADD_STATS((net)->mib.net_statistics, field, adnd)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/net/snmp.h:143:4: note: expanded from macro 'SNMP_ADD_STATS'
+                        this_cpu_add(mib->mibs[field], addend)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/percpu-defs.h:491:33: note: expanded from macro 'this_cpu_add'
+#define this_cpu_add(pcp, val)          __pcpu_size_call(this_cpu_add_, pcp, val)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+<scratch space>:99:1: note: expanded from here
+this_cpu_add_4
+^
+/home/nathan/cbl/src/linux-next/arch/x86/include/asm/percpu.h:329:34: note: expanded from macro 'this_cpu_add_4'
+#define this_cpu_add_4(pcp, val)        percpu_add_op(4, volatile, (pcp), val)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/x86/include/asm/percpu.h:127:31: note: expanded from macro 'percpu_add_op'
+                              ((val) == 1 || (val) == -1)) ?            \
+                                             ~~~~~ ^  ~~
+1 error generated.
+make[6]: *** [/home/nathan/cbl/src/linux-next/scripts/Makefile.build:243: net/ipv4/tcp_output.o] Error 1
+make[6]: Target 'net/ipv4/' not remade because of errors.
+make[5]: *** [/home/nathan/cbl/src/linux-next/scripts/Makefile.build:480: net/ipv4] Error 2
+make[5]: Target 'net/' not remade because of errors.
+make[4]: *** [/home/nathan/cbl/src/linux-next/scripts/Makefile.build:480: net] Error 2
+make[5]: Target 'lib/' not remade because of errors.
+make[4]: *** [/home/nathan/cbl/src/linux-next/scripts/Makefile.build:480: lib] Error 2
+make[4]: Target './' not remade because of errors.
+make[3]: *** [/home/nathan/cbl/src/linux-next/Makefile:1943: .] Error 2
+make[3]: Target 'all' not remade because of errors.
+make[2]: *** [/home/nathan/cbl/src/linux-next/Makefile:359: __build_one_by_one] Error 2
+make[2]: Target 'defconfig' not remade because of errors.
+make[2]: Target 'all' not remade because of errors.
+make[1]: *** [/home/nathan/cbl/src/linux-next/Makefile:234: __sub-make] Error 2
+make[1]: Target 'defconfig' not remade because of errors.
+make[1]: Target 'all' not remade because of errors.
+make: *** [Makefile:234: __sub-make] Error 2
+make: Target 'defconfig' not remade because of errors.
+make: Target 'all' not remade because of errors.

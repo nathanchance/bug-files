@@ -1,0 +1,7 @@
+    112 drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+    123 drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+    131 drivers/net/wireless/ath/ath5k/mac80211-ops.c:367:62: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+    149 drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+    148 drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+     36 lib/radix-tree.c:1136:50: error: parameter 'slot' set but not used [-Werror,-Wunused-but-set-parameter]
+    230 lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]

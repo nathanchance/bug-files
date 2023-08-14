@@ -1,0 +1,141 @@
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/mpc5121.dtsi:397.13-406.5: Warning (spi_bus_bridge): /soc@80000000/psc@11400: node name for SPI buses should be 'spi'
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/ac14xx.dts:305.19-326.5
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/mpc5121.dtsi:409.13-418.5: Warning (spi_bus_bridge): /soc@80000000/psc@11500: node name for SPI buses should be 'spi'
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/ac14xx.dts:329.19-344.5
+arch/powerpc/boot/dts/ac14xx.dtb: Warning (spi_bus_reg): Failed prerequisite 'spi_bus_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/bluestone.dts:272.13-277.7: Warning (i2c_bus_reg): /plb/opb/i2c@ef600700/sttm@4C: I2C bus unit address format error, expected "4c"
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/gef_ppc9a.dts:211.22-213.4: Warning (pci_bridge): /pcie@fef09000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:119.7-144.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:129.9-143.4: Warning (pci_bridge): /pcie@fef09000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/gef_ppc9a.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/gef_ppc9a.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/gef_ppc9a.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/gef_sbc610.dts:209.22-211.4: Warning (pci_bridge): /pcie@fef09000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:119.7-144.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:129.9-143.4: Warning (pci_bridge): /pcie@fef09000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/gef_sbc610.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/gef_sbc610.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/gef_sbc610.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/kmcoge4.dts:196.23-198.4: Warning (pci_bridge): /pcie@ffe201000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2041si-post.dtsi:87.7-113.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2041si-post.dtsi:97.9-112.4: Warning (pci_bridge): /pcie@ffe201000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/kmcoge4.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/kmcoge4.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/kmcoge4.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mvme7100.dts:135.22-137.4: Warning (pci_bridge): /pcie@f1008000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:92.7-117.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:102.9-116.4: Warning (pci_bridge): /pcie@f1008000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mvme7100.dts:139.22-141.4: Warning (pci_bridge): /pcie@f1009000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:119.7-144.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8641si-post.dtsi:129.9-143.4: Warning (pci_bridge): /pcie@f1009000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/mvme7100.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/mvme7100.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/mvme7100.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mvme7100.dts:30.11-32.6: Warning (i2c_bus_reg): /soc@f1000000/i2c@3000/rtc@68: missing or empty reg property
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/oca4080.dts:132.23-134.4: Warning (pci_bridge): /pcie@ffe200000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:58.7-84.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:68.9-83.4: Warning (pci_bridge): /pcie@ffe200000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/oca4080.dts:136.23-138.4: Warning (pci_bridge): /pcie@ffe201000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:87.7-113.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:97.9-112.4: Warning (pci_bridge): /pcie@ffe201000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/oca4080.dts:140.23-142.4: Warning (pci_bridge): /pcie@ffe202000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:116.7-142.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p4080si-post.dtsi:126.9-141.4: Warning (pci_bridge): /pcie@ffe202000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/oca4080.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/oca4080.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/oca4080.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p1020rdb-pd.dts:189.11-193.6: Warning (spi_bus_reg): /soc@ffe00000/spi@7000/slic@0: SPI bus unit address format error, expected "1"
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p1020rdb-pd.dts:195.11-199.6: Warning (spi_bus_reg): /soc@ffe00000/spi@7000/slic@1: SPI bus unit address format error, expected "2"
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@ffe00000/mdio@24000/ethernet-phy@0:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@ffe00000/mdio@24000/ethernet-phy@1:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@fffe00000/mdio@24000/ethernet-phy@0:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@fffe00000/mdio@24000/ethernet-phy@1:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@ffe00000/mdio@24000/ethernet-phy@0:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@ffe00000/mdio@24000/ethernet-phy@1:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@fffe00000/mdio@24000/ethernet-phy@0:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/pq3-mpic.dtsi:38.2-25: Warning (interrupts_property): /soc@fffe00000/mdio@24000/ethernet-phy@1:#interrupt-cells: size is (8), expected multiple of 16
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020rdb-pc_32b.dts:59.22-62.4: Warning (pci_bridge): /pcie@ffe08000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:102.7-129.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:112.9-128.4: Warning (pci_bridge): /pcie@ffe08000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_32b.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_32b.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_32b.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020rdb-pc_36b.dts:59.23-62.4: Warning (pci_bridge): /pcie@fffe08000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:102.7-129.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:112.9-128.4: Warning (pci_bridge): /pcie@fffe08000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_36b.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_36b.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb-pc_36b.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020rdb.dts:251.22-254.4: Warning (pci_bridge): /pcie@ffe08000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:43.7-69.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/p2020si-post.dtsi:53.9-68.4: Warning (pci_bridge): /pcie@ffe08000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/p2020rdb.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/p2020rdb.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/ppa8548.dts:34.22-37.4: Warning (pci_bridge): /pci@fe0008000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8548si-post.dtsi:43.7-51.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/ppa8548.dts:39.22-42.4: Warning (pci_bridge): /pci@fe0009000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8548si-post.dtsi:54.7-62.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/ppa8548.dts:44.23-47.4: Warning (pci_bridge): /pcie@fe000a000: missing ranges for PCI bridge (or not a bridge)
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8548si-post.dtsi:65.7-90.3
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/fsl/mpc8548si-post.dtsi:74.9-89.4: Warning (pci_bridge): /pcie@fe000a000/pcie@0: missing ranges for PCI bridge (or not a bridge)
+arch/powerpc/boot/dts/fsl/ppa8548.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/ppa8548.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/powerpc/boot/dts/fsl/ppa8548.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/mpc5121.dtsi:457.13-466.5: Warning (spi_bus_bridge): /soc@80000000/psc@11900: node name for SPI buses should be 'spi'
+  also defined at /home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/pdm360ng.dts:172.13-185.5
+arch/powerpc/boot/dts/pdm360ng.dtb: Warning (spi_bus_reg): Failed prerequisite 'spi_bus_bridge'
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/stxssa8555.dts:342.15-351.5: Warning (pci_device_reg): /pci@e0008000/i8259@19000: PCI unit address format error, expected "12,0"
+/home/nathan/cbl/src/linux-next/arch/powerpc/boot/dts/stxssa8555.dts:331.3-21: Warning (pci_device_bus_num): /pci@e0008000/i8259@19000:bus-range: PCI bus number 1 out of range, expected (0 - 0)
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/kernel/kcov.c:630:29: warning: result of comparison of constant 1152921504606846975 with expression of type '__u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+                if (remote_arg->area_size > LONG_MAX / sizeof(unsigned long))
+                    ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 17179869180 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/mediatek/mtk_eth_soc.c:2092:24: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always true [-Wtautological-constant-out-of-range-compare]
+                        if (ring->frag_size <= PAGE_SIZE)
+                            ~~~~~~~~~~~~~~~ ^  ~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/mediatek/mtk_eth_soc.c:2624:24: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always true [-Wtautological-constant-out-of-range-compare]
+                        if (ring->frag_size <= PAGE_SIZE)
+                            ~~~~~~~~~~~~~~~ ^  ~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/ibmvscsi_tgt/ibmvscsi_tgt.c:1630:32: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if ((olen < min_len) || (olen > PAGE_SIZE)) {
+                                 ~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/nilfs2/ioctl.c:63:19: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (argv->v_size > PAGE_SIZE)
+            ~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:32:22: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (xsk->chunk_size > PAGE_SIZE || xsk->chunk_size < MLX5E_MIN_XSK_CHUNK_SIZE) {
+            ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:90:39: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        WARN_ON_ONCE(method_elm->bundle_size > PAGE_SIZE);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/asm-generic/bug.h:111:25: note: expanded from macro 'WARN_ON_ONCE'
+        int __ret_warn_on = !!(condition);                      \
+                               ^~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:629:17: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (hdr.length > PAGE_SIZE ||
+            ~~~~~~~~~~ ^ ~~~~~~~~~
+2 warnings generated.

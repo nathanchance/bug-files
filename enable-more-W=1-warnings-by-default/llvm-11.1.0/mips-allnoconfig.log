@@ -1,0 +1,6 @@
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:14:1: warning: DWARF2 only supports one section per compilation unit
+.pushsection .note.Linux, "a",@note ; .balign 4 ; .long 2f - 1f ; .long 4484f - 3f ; .long 0 ; 1:.asciz "Linux" ; 2:.balign 4 ; 3:
+^
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:34:2: warning: DWARF2 only supports one section per compilation unit
+ .section .mips_abiflags, "a"
+ ^

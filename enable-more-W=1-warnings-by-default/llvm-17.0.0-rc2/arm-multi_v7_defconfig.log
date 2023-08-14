@@ -1,0 +1,342 @@
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:238.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:247.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:256.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:265.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_bus_num): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #size-cells for I2C bus
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'i2c_bus_bridge'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (spi_bus_reg): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/omap_hwmod.c:1723:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+ 1723 |                 udelay(oh->class->sysc->srst_udelay);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+   84 |           ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+      |            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/wd_timer.c:89:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+   89 |                 udelay(oh->class->sysc->srst_udelay);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+   84 |           ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+      |            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha256_glue.c:37:5: warning: cast from 'void (*)(u32 *, const void *, unsigned int)' (aka 'void (*)(unsigned int *, const void *, unsigned int)') to 'sha256_block_fn *' (aka 'void (*)(struct sha256_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   37 |                                 (sha256_block_fn *)sha256_block_data_order);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha256_glue.c:44:5: warning: cast from 'void (*)(u32 *, const void *, unsigned int)' (aka 'void (*)(unsigned int *, const void *, unsigned int)') to 'sha256_block_fn *' (aka 'void (*)(struct sha256_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   44 |                                 (sha256_block_fn *)sha256_block_data_order);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha256_glue.c:52:10: warning: cast from 'void (*)(u32 *, const void *, unsigned int)' (aka 'void (*)(unsigned int *, const void *, unsigned int)') to 'sha256_block_fn *' (aka 'void (*)(struct sha256_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   52 |                               (sha256_block_fn *)sha256_block_data_order);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha512-glue.c:34:3: warning: cast from 'void (*)(u64 *, const u8 *, int)' (aka 'void (*)(unsigned long long *, const unsigned char *, int)') to 'sha512_block_fn *' (aka 'void (*)(struct sha512_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   34 |                 (sha512_block_fn *)sha512_block_data_order);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha512-glue.c:40:3: warning: cast from 'void (*)(u64 *, const u8 *, int)' (aka 'void (*)(unsigned long long *, const unsigned char *, int)') to 'sha512_block_fn *' (aka 'void (*)(struct sha512_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   40 |                 (sha512_block_fn *)sha512_block_data_order);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/crypto/sha512-glue.c:48:3: warning: cast from 'void (*)(u64 *, const u8 *, int)' (aka 'void (*)(unsigned long long *, const unsigned char *, int)') to 'sha512_block_fn *' (aka 'void (*)(struct sha512_state *, const unsigned char *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   48 |                 (sha512_block_fn *)sha512_block_data_order);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/clk/actions/owl-pll.c:182:2: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+  182 |         udelay(pll_hw->delay);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+   84 |           ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+      |            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/firmware/dmi-id.c:174:17: warning: cast from 'void (*)(const void *)' to 'void (*)(struct device *)' converts to incompatible function type [-Wcast-function-type-strict]
+  174 |         .dev_release = (void(*)(struct device *)) kfree,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:170:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  170 |                                     (ubifs_lpt_scan_callback)scan_for_dirty_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:449:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  449 |                                     (ubifs_lpt_scan_callback)scan_for_free_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:629:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  629 |                                     (ubifs_lpt_scan_callback)scan_for_idx_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:757:7: warning: cast from 'int (*)(const struct ubifs_lprops **, const struct ubifs_lprops **)' to 'int (*)(const void *, const void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  757 |              (int (*)(const void *, const void *))cmp_dirty_idx, NULL);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:846:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  846 |                                     (ubifs_lpt_scan_callback)scan_dirty_idx_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/ubifs/lprops.c:1272:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct ubifs_lp_stats *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1272 |                                     (ubifs_lpt_scan_callback)scan_check_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/ti/cpts.c:691:12: warning: cast from 'void (*)(struct clk_hw *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  691 |                                        (void(*)(void *))clk_hw_unregister_mux,
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+  407 |         __devm_add_action_or_reset(release, action, data, #action)
+      |                                             ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/ti/cpts.c:703:12: warning: cast from 'void (*)(struct device_node *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  703 |                                        (void(*)(void *))of_clk_del_provider,
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/device.h:407:38: note: expanded from macro 'devm_add_action_or_reset'
+  407 |         __devm_add_action_or_reset(release, action, data, #action)
+      |                                             ^~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/gpu/drm/nouveau/nvkm/subdev/bios/shadow.c:161:10: warning: cast from 'void (*)(const struct firmware *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  161 |         .fini = (void(*)(void *))release_firmware,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 16:04:15 UTC 2023
+[    0.000000] CPU: ARMv7 Processor [414fc0f0] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] OF: fdt: Machine model: linux,dummy-virt
+[    0.000000] random: crng init done
+[    0.000000] earlycon: pl11 at MMIO 0x09000000 (options '')
+[    0.000000] printk: bootconsole [pl11] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 64 MiB at 0x5c000000 on node -1
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x000000005fffffff]
+[    0.000000]   Normal   empty
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000005fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000005fffffff]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 16 pages/cpu s36116 r8192 d21228 u65536
+[    0.000000] Kernel command line: console=ttyAMA0 earlycon
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130048
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 420676K/524288K available (16384K kernel code, 2464K rwdata, 6320K rodata, 2048K init, 420K bss, 38076K reserved, 65536K cma-reserved, 0K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000126] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.000391] Switching to timer-based delay loop, resolution 16ns
+[    0.005853] Console: colour dummy device 80x30
+[    0.007316] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.007543] CPU: Testing write buffer coherency: ok
+[    0.012089] CPU0: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.012343] CPU0: Spectre BHB: enabling loop workaround for all CPUs
+[    0.012510] pid_max: default: 32768 minimum: 301
+[    0.014087] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.014220] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.034453] /cpus/cpu@0 missing clock-frequency property
+[    0.034887] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.041919] Setting up static identity map for 0x40300000 - 0x403000ac
+[    0.043962] rcu: Hierarchical SRCU implementation.
+[    0.044066] rcu: 	Max phase no-delay instances is 1000.
+[    0.047562] EFI services will not be available.
+[    0.048446] smp: Bringing up secondary CPUs ...
+[    0.049206] smp: Brought up 1 node, 1 CPU
+[    0.049362] SMP: Total of 1 processors activated (125.00 BogoMIPS).
+[    0.049518] CPU: All CPU(s) started in SVC mode.
+[    0.060145] devtmpfs: initialized
+[    0.068592] VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+[    0.088616] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.090956] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.097487] pinctrl core: initialized pinctrl subsystem
+[    0.110658] DMI not present or invalid.
+[    0.132260] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.144608] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.150300] thermal_sys: Registered thermal governor 'step_wise'
+[    0.150691] cpuidle: using governor menu
+[    0.151407] No ATAGs?
+[    0.152471] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.152623] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.157001] Serial: AMBA PL011 UART driver
+[    0.196028] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 28, base_baud = 0) is a PL011 rev1
+[    0.197575] printk: console [ttyAMA0] enabled
+[    0.197575] printk: console [ttyAMA0] enabled
+[    0.198358] printk: bootconsole [pl11] disabled
+[    0.198358] printk: bootconsole [pl11] disabled
+[    1.326120] iommu: Default domain type: Translated
+[    1.326232] iommu: DMA domain TLB invalidation policy: strict mode
+[    1.328650] SCSI subsystem initialized
+[    1.330406] usbcore: registered new interface driver usbfs
+[    1.330640] usbcore: registered new interface driver hub
+[    1.330880] usbcore: registered new device driver usb
+[    1.332997] pps_core: LinuxPPS API ver. 1 registered
+[    1.333078] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.333256] PTP clock support registered
+[    1.333675] EDAC MC: Ver: 3.0.0
+[    1.335533] scmi_core: SCMI protocol bus registered
+[    1.347344] vgaarb: loaded
+[    1.353155] clocksource: Switched to clocksource arch_sys_counter
+[    1.384324] NET: Registered PF_INET protocol family
+[    1.385675] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.390942] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    1.391147] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.391406] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    1.391665] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    1.392013] TCP: Hash tables configured (established 4096 bind 4096)
+[    1.393399] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.393660] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.394606] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.397036] RPC: Registered named UNIX socket transport module.
+[    1.397154] RPC: Registered udp transport module.
+[    1.397221] RPC: Registered tcp transport module.
+[    1.397286] RPC: Registered tcp-with-tls transport module.
+[    1.397358] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.397506] PCI: CLS 0 bytes, default 64
+[    1.400010] Initialise system trusted keyrings
+[    1.405432] Trying to unpack rootfs image as initramfs...
+[    1.432014] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    1.433848] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.442715] NFS: Registering the id_resolver key type
+[    1.443097] Key type id_resolver registered
+[    1.443183] Key type id_legacy registered
+[    1.443474] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    1.443636] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    1.444011] ntfs: driver 2.1.32 [Flags: R/O].
+[    1.445182] Key type asymmetric registered
+[    1.445298] Asymmetric key parser 'x509' registered
+[    1.445570] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    1.445747] io scheduler mq-deadline registered
+[    1.445863] io scheduler kyber registered
+[    1.446041] io scheduler bfq registered
+[    1.453647] Freeing initrd memory: 3824K
+[    1.474785] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    1.480720] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    1.481603] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    1.482252] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    1.482403] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    1.483342] pci-host-generic 4010000000.pcie: can't claim ECAM area [mem 0x10000000-0x1fffffff]: address conflict with pcie@10000000 [mem 0x10000000-0x3efeffff]
+[    1.483842] pci-host-generic: probe of 4010000000.pcie failed with error -16
+[    1.570062] Serial: 8250/16550 driver, 5 ports, IRQ sharing enabled
+[    1.576244] SuperH (H)SCI(F) driver initialized
+[    1.577482] msm_serial: driver initialized
+[    1.577561] STMicroelectronics ASC driver initialized
+[    1.578756] STM32 USART driver initialized
+[    1.607945] brd: module loaded
+[    1.617102] loop: module loaded
+[    1.624837] physmap-flash 0.flash: physmap platform flash device: [mem 0x00000000-0x03ffffff]
+[    1.626249] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    1.626734] Intel/Sharp Extended Query Table at 0x0031
+[    1.627412] Using buffer write method
+[    1.629420] physmap-flash 0.flash: physmap platform flash device: [mem 0x04000000-0x07ffffff]
+[    1.629910] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    1.630064] Intel/Sharp Extended Query Table at 0x0031
+[    1.630440] Using buffer write method
+[    1.630580] Concatenating MTD devices:
+[    1.630649] (0): "0.flash"
+[    1.630706] (1): "0.flash"
+[    1.630752] into device "0.flash"
+[    1.702353] CAN device driver interface
+[    1.703669] bgmac_bcma: Broadcom 47xx GBit MAC driver loaded
+[    1.705025] e1000e: Intel(R) PRO/1000 Network Driver
+[    1.705100] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.705234] igb: Intel(R) Gigabit Ethernet Network Driver
+[    1.705311] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.709875] pegasus: Pegasus/Pegasus II USB Ethernet driver
+[    1.710014] usbcore: registered new interface driver pegasus
+[    1.710137] usbcore: registered new interface driver asix
+[    1.710256] usbcore: registered new interface driver ax88179_178a
+[    1.710376] usbcore: registered new interface driver cdc_ether
+[    1.710517] usbcore: registered new interface driver smsc75xx
+[    1.710649] usbcore: registered new interface driver smsc95xx
+[    1.710764] usbcore: registered new interface driver net1080
+[    1.710888] usbcore: registered new interface driver cdc_subset
+[    1.711004] usbcore: registered new interface driver zaurus
+[    1.711152] usbcore: registered new interface driver cdc_ncm
+[    1.716793] usbcore: registered new interface driver usb-storage
+[    1.724542] rtc-pl031 9010000.pl031: registered as rtc0
+[    1.725408] rtc-pl031 9010000.pl031: setting system clock to 2023-08-11T16:04:27 UTC (1691769867)
+[    1.728303] i2c_dev: i2c /dev entries driver
+[    1.746819] sdhci: Secure Digital Host Controller Interface driver
+[    1.746922] sdhci: Copyright(c) Pierre Ossman
+[    1.748951] Synopsys Designware Multimedia Card Interface Driver
+[    1.750738] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.754459] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.756391] usbcore: registered new interface driver usbhid
+[    1.756487] usbhid: USB HID core driver
+[    1.764123] NET: Registered PF_INET6 protocol family
+[    1.770371] Segment Routing with IPv6
+[    1.770562] In-situ OAM (IOAM) with IPv6
+[    1.771023] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.773956] NET: Registered PF_PACKET protocol family
+[    1.774068] can: controller area network core
+[    1.774418] NET: Registered PF_CAN protocol family
+[    1.774526] can: raw protocol
+[    1.774698] can: broadcast manager protocol
+[    1.774874] can: netlink gateway - max_hops=1
+[    1.776032] Key type dns_resolver registered
+[    1.776592] ThumbEE CPU extension supported.
+[    1.776715] Registering SWP/SWPB emulation handler
+[    1.790530] Loading compiled-in X.509 certificates
+[    1.813955] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    1.820524] clk: Disabling unused clocks
+[    1.824621] uart-pl011 9000000.pl011: no DMA platform data
+[    1.913121] Freeing unused kernel image (initmem) memory: 2048K
+[    1.940234] Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 16:04:15 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system reboot
+[    4.732978] Flash device refused suspend due to active operation (state 20)
+[    4.733172] Flash device refused suspend due to active operation (state 20)
+[    4.733668] reboot: Restarting system
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-arm -display none -nodefaults -no-reboot -machine virt -append 'console=ttyAMA0 earlycon' -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/arm/arch/arm/boot/zImage -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/arm/rootfs.cpio -m 512m -serial mon:stdio

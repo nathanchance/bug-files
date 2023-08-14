@@ -1,0 +1,69 @@
+Using /home/nathan/cbl/src/linux-next/arch/powerpc/configs/ppc64_defconfig as base
+Merging /home/nathan/cbl/src/linux-next/arch/powerpc/configs/le.config
+#
+# merged configuration written to .config (needs make)
+#
+/home/nathan/cbl/src/linux-next/drivers/block/floppy.c:2001:11: warning: cast from 'void (*)(void)' to 'done_f' (aka 'void (*)(int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2001 |         .done           = (done_f)empty
+      |                           ^~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/floppy.c:2008:11: warning: cast from 'void (*)(void)' to 'done_f' (aka 'void (*)(int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2008 |         .done           = (done_f)empty
+      |                           ^~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:815:38: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  815 |         if (kunit_add_action_or_reset(test, (kunit_action_t *)kfree, data) != 0)
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:827:29: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  827 |         kunit_release_action(test, (kunit_action_t *)kfree, (void *)ptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/main.c:3493:3: warning: cast from 'int (*)(struct cxlflash_cfg *, struct ht_cxlflash_lun_provision *)' to 'hioctl' (aka 'int (*)(struct cxlflash_cfg *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 3493 |                 (hioctl)cxlflash_lun_provision },
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/main.c:3495:3: warning: cast from 'int (*)(struct cxlflash_cfg *, struct ht_cxlflash_afu_debug *)' to 'hioctl' (aka 'int (*)(struct cxlflash_cfg *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 3495 |                 (hioctl)cxlflash_afu_debug },
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2114:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_attach *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2114 |         {sizeof(struct dk_cxlflash_attach), (sioctl)cxlflash_disk_attach},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2116:39: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_release *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2116 |         {sizeof(struct dk_cxlflash_release), (sioctl)cxlflash_disk_release},
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2117:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_detach *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2117 |         {sizeof(struct dk_cxlflash_detach), (sioctl)cxlflash_disk_detach},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2118:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_verify *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2118 |         {sizeof(struct dk_cxlflash_verify), (sioctl)cxlflash_disk_verify},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2119:43: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_recover_afu *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2119 |         {sizeof(struct dk_cxlflash_recover_afu), (sioctl)cxlflash_afu_recover},
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2120:42: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_manage_lun *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2120 |         {sizeof(struct dk_cxlflash_manage_lun), (sioctl)cxlflash_manage_lun},
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2122:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_resize *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2122 |         {sizeof(struct dk_cxlflash_resize), (sioctl)cxlflash_vlun_resize},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2123:37: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_clone *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2123 |         {sizeof(struct dk_cxlflash_clone), (sioctl)cxlflash_disk_clone},
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/nilfs2/ioctl.c:63:19: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+   63 |         if (argv->v_size > PAGE_SIZE)
+      |             ~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:90:39: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+   90 |         WARN_ON_ONCE(method_elm->bundle_size > PAGE_SIZE);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/asm-generic/bug.h:111:25: note: expanded from macro 'WARN_ON_ONCE'
+  111 |         int __ret_warn_on = !!(condition);                      \
+      |                                ^~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:629:17: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+  629 |         if (hdr.length > PAGE_SIZE ||
+      |             ~~~~~~~~~~ ^ ~~~~~~~~~
+2 warnings generated.

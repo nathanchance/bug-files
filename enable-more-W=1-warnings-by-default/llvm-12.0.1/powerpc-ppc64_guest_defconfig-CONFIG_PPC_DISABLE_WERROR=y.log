@@ -1,0 +1,935 @@
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:793:2: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+        unsafe_put_sigset_t(&frame->uc.uc_sigmask, oldset, failed);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:475:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[3] >> 32, &__c->sig[7], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:479:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[2] >> 32, &__c->sig[5], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:116:30: note: expanded from macro '__put_user_size_goto'
+        case 1: __put_user_asm_goto(x, __pus_addr, label, "stb"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:117:30: note: expanded from macro '__put_user_size_goto'
+        case 2: __put_user_asm_goto(x, __pus_addr, label, "sth"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:118:30: note: expanded from macro '__put_user_size_goto'
+        case 4: __put_user_asm_goto(x, __pus_addr, label, "stw"); break;        \
+                                    ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:1057:3: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+                unsafe_put_sigset_t(&old_ctx->uc_sigmask, &current->blocked, failed);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/powerpc/kernel/signal_32.c:85:29: note: expanded from macro 'unsafe_put_sigset_t'
+#define unsafe_put_sigset_t     unsafe_put_compat_sigset
+                                ^
+/home/nathan/cbl/src/linux-next/include/linux/compat.h:483:19: note: expanded from macro 'unsafe_put_compat_sigset'
+                unsafe_put_user(__s->sig[1] >> 32, &__c->sig[3], label);        \
+                                ^        ~
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:441:42: note: expanded from macro 'unsafe_put_user'
+        __put_user_size_goto((__typeof__(*(p)))(x), (p), sizeof(*(p)), e)
+                                                ^
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:97:22: note: expanded from macro '__put_user_asm2_goto'
+        __put_user_asm_goto(x, ptr, label, "std")
+                            ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/asm/uaccess.h:90:10: note: expanded from macro '__put_user_asm_goto'
+                : "r" (x), "m<>" (*addr)                        \
+                       ^
+/home/nathan/cbl/src/linux-next/include/linux/compiler_types.h:356:42: note: expanded from macro 'asm_volatile_goto'
+#define asm_volatile_goto(x...) asm goto(x)
+                                         ^
+/home/nathan/cbl/src/linux-next/arch/powerpc/include/uapi/asm/signal.h:18:2: note: array 'sig' declared here
+        unsigned long sig[_NSIG_WORDS];
+        ^
+24 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/nilfs2/ioctl.c:63:19: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (argv->v_size > PAGE_SIZE)
+            ~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:90:39: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        WARN_ON_ONCE(method_elm->bundle_size > PAGE_SIZE);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/asm-generic/bug.h:111:25: note: expanded from macro 'WARN_ON_ONCE'
+        int __ret_warn_on = !!(condition);                      \
+                               ^~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:629:17: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (hdr.length > PAGE_SIZE ||
+            ~~~~~~~~~~ ^ ~~~~~~~~~
+2 warnings generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+qemu-system-ppc64: warning: TCG doesn't support requested feature, cap-cfpc=workaround
+qemu-system-ppc64: warning: TCG doesn't support requested feature, cap-sbbc=workaround
+qemu-system-ppc64: warning: TCG doesn't support requested feature, cap-ibs=workaround
+qemu-system-ppc64: warning: TCG doesn't support requested feature, cap-ccf-assist=on
+
+
+SLOF[0m[?25l **********************************************************************
+[1mQEMU Starting
+[0m Build Date = Jul 19 2022 17:47:32
+ FW Version = git-6b6c16b4b4076350
+ Press "s" to enter Open Firmware.
+
+
+
+[0m[?25hC0000
+C0100
+C0120
+C0140
+C0200
+C0240
+C0260
+C02E0
+C0300
+C0320
+C0340
+C0360
+C0370
+C0380
+C0371
+C0373
+C0374
+C03F0
+C0400
+C0480
+C04C0
+C04D0
+C0500
+Populating /vdevice methods
+Populating /vdevice/vty@71000000
+Populating /vdevice/nvram@71000001
+C05A0
+Populating /pci@800000020000000
+C0600
+C06C0
+C0700
+C0800
+C0880
+No NVRAM common partition, re-initializing...
+C0890
+C08A0
+C08A8
+C08B0
+Scanning USB 
+C08C0
+C08D0
+Using default console: /vdevice/vty@71000000
+C08E0
+C08E8
+Detected RAM kernel at 400000 (2bb33d8 bytes) 
+C08FF
+     
+  Welcome to Open Firmware
+
+  Copyright (c) 2004, 2017 IBM Corporation All rights reserved.
+  This program and the accompanying materials are made available
+  under the terms of the BSD License available at
+  http://www.opensource.org/licenses/bsd-license.php
+
+Booting from memory...
+OF stdout device is: /vdevice/vty@71000000
+Preparing to boot Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b), ClangBuiltLinux LLD 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b)) #1 SMP Sat Aug 12 14:40:26 UTC 2023
+Detected machine type: 0000000000000101
+command line:  
+Max number of cores passed to firmware: 2048 (NR_CPUS = 2048)
+Calling ibm,client-architecture-support... done
+memory layout at init:
+  memory_limit : 0000000000000000 (16 MB aligned)
+  alloc_bottom : 00000000038d0000
+  alloc_top    : 0000000030000000
+  alloc_top_hi : 0000000040000000
+  rmo_top      : 0000000030000000
+  ram_top      : 0000000040000000
+instantiating rtas at 0x000000002fff0000... done
+prom_hold_cpus: skipped
+copying OF device tree...
+Building dt strings...
+Building dt structure...
+Device tree strings 0x00000000038e0000 -> 0x00000000038e0a55
+Device tree struct  0x00000000038f0000 -> 0x0000000003900000
+Quiescing Open Firmware ...
+Booting Linux via __start() @ 0x0000000000400000 ...
+[    0.000000][    T0] random: crng init done
+[    0.000000][    T0] hash-mmu: Page sizes from device-tree:
+[    0.000000][    T0] hash-mmu: base_shift=12: shift=12, sllp=0x0000, avpnm=0x00000000, tlbiel=1, penc=0
+[    0.000000][    T0] hash-mmu: base_shift=16: shift=16, sllp=0x0110, avpnm=0x00000000, tlbiel=1, penc=1
+[    0.000000][    T0] Using 1TB segments
+[    0.000000][    T0] hash-mmu: Initializing hash mmu with SLB
+[    0.000000][    T0] Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b), ClangBuiltLinux LLD 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b)) #1 SMP Sat Aug 12 14:40:26 UTC 2023
+[    0.000000][    T0] Found initrd at 0xc000000002fd0000:0xc0000000038c2600
+[    0.000000][    T0] Hardware name: IBM pSeries (emulated by qemu) POWER8 (raw) 0x4d0200 0xf000004 of:SLOF,git-6b6c16 pSeries
+[    0.000000][    T0] printk: bootconsole [udbg0] enabled
+[    0.000000][    T0] Partition configured for 1 cpus.
+[    0.000000][    T0] CPU maps initialized for 1 thread per core
+[    0.000000][    T0] numa: Partition configured for 1 NUMA nodes.
+[    0.000000][    T0] -----------------------------------------------------
+[    0.000000][    T0] phys_mem_size     = 0x40000000
+[    0.000000][    T0] dcache_bsize      = 0x80
+[    0.000000][    T0] icache_bsize      = 0x80
+[    0.000000][    T0] cpu_features      = 0x000000eb8f4d9187
+[    0.000000][    T0]   possible        = 0x001ffbfbffffb18f
+[    0.000000][    T0]   always          = 0x0000000000000180
+[    0.000000][    T0] cpu_user_features = 0xdc0065c2 0xae000000
+[    0.000000][    T0] mmu_features      = 0x78006001
+[    0.000000][    T0] firmware_features = 0x00000a85455a445f
+[    0.000000][    T0] vmalloc start     = 0xc008000000000000
+[    0.000000][    T0] IO start          = 0xc00a000000000000
+[    0.000000][    T0] vmemmap start     = 0xc00c000000000000
+[    0.000000][    T0] hash-mmu: ppc64_pft_size    = 0x17
+[    0.000000][    T0] hash-mmu: htab_hash_mask    = 0xffff
+[    0.000000][    T0] -----------------------------------------------------
+[    0.000000][    T0] numa:   NODE_DATA [mem 0x3ff84880-0x3ff8bfff]
+[    0.000000][    T0] rfi-flush: fallback displacement flush available
+[    0.000000][    T0] rfi-flush: ori type flush available
+[    0.000000][    T0] rfi-flush: mttrig type flush available
+[    0.000000][    T0] count-cache-flush: hardware flush enabled.
+[    0.000000][    T0] link-stack-flush: software flush enabled.
+[    0.000000][    T0] stf-barrier: hwsync barrier available
+[    0.000000][    T0] PPC64 nvram contains 65536 bytes
+[    0.000000][    T0] barrier-nospec: using ORI speculation barrier
+[    0.000000][    T0] Zone ranges:
+[    0.000000][    T0]   Normal   [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000][    T0]   Device   empty
+[    0.000000][    T0] Movable zone start for each node
+[    0.000000][    T0] Early memory node ranges
+[    0.000000][    T0]   node   0: [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000][    T0] Initmem setup node 0 [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000][    T0] percpu: Embedded 10 pages/cpu s599464 r0 d55896 u1048576
+[    0.000000][    T0] Kernel command line: 
+[    0.000000][    T0] Dentry cache hash table entries: 131072 (order: 4, 1048576 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 65536 (order: 3, 524288 bytes, linear)
+[    0.000000][    T0] Fallback order for Node 0: 0 
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 16368
+[    0.000000][    T0] Policy zone: Normal
+[    0.000000][    T0] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000][    T0] Memory: 989760K/1048576K available (19264K kernel code, 3456K rwdata, 13504K rodata, 6720K init, 1804K bss, 58816K reserved, 0K cma-reserved)
+[    0.000000][    T0] SLUB: HWalign=128, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000][    T0] ftrace: allocating 44075 entries in 17 pages
+[    0.000000][    T0] ftrace: allocated 17 pages with 2 groups
+[    0.000000][    T0] trace event string verifier disabled
+[    0.000000][    T0] rcu: Hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU event tracing is enabled.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=2048 to nr_cpu_ids=1.
+[    0.000000][    T0] 	Rude variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000][    T0] NR_IRQS: 512, nr_irqs: 512, preallocated irqs: 16
+[    0.000000][    T0] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000260][    T0] clocksource: timebase: mask: 0xffffffffffffffff max_cycles: 0x761537d007, max_idle_ns: 440795202126 ns
+[    0.000841][    T0] clocksource: timebase mult[1f40000] shift[24] registered
+[    0.008885][    T0] Console: colour dummy device 80x25
+[    0.009860][    T0] printk: console [hvc0] enabled
+[    0.009860][    T0] printk: console [hvc0] enabled
+[    0.010276][    T0] printk: bootconsole [udbg0] disabled
+[    0.010276][    T0] printk: bootconsole [udbg0] disabled
+[    0.017478][    T0] pid_max: default: 32768 minimum: 301
+[    0.020559][    T0] LSM: initializing lsm=lockdown,capability,landlock,yama,selinux,bpf,integrity
+[    0.022137][    T0] landlock: Up and running.
+[    0.022187][    T0] Yama: becoming mindful.
+[    0.022543][    T0] SELinux:  Initializing.
+[    0.025490][    T0] LSM support for eBPF active
+[    0.026250][    T0] stackdepot: allocating hash table of 65536 entries via kvcalloc
+[    0.028035][    T0] Mount-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.028117][    T0] Mountpoint-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.076018][    T1] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.076339][    T1] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.077600][    T1] POWER8 performance monitor hardware support registered
+[    0.078880][    T1] rcu: Hierarchical SRCU implementation.
+[    0.078947][    T1] rcu: 	Max phase no-delay instances is 1000.
+[    0.096693][    T1] smp: Bringing up secondary CPUs ...
+[    0.099312][    T1] smp: Brought up 1 node, 1 CPU
+[    0.099609][    T1] numa: Node 0 CPUs: 0
+[    0.116275][    T1] devtmpfs: initialized
+[    0.137151][    T1] PCI host bridge /pci@800000020000000  ranges:
+[    0.141566][    T1]   IO 0x0000200000000000..0x000020000000ffff -> 0x0000000000000000
+[    0.141704][    T1]  MEM 0x0000200080000000..0x00002000ffffffff -> 0x0000000080000000 
+[    0.141774][    T1]  MEM 0x0000210000000000..0x000021ffffffffff -> 0x0000210000000000 
+[    0.142932][    T1] PCI: OF: PROBE_ONLY disabled
+[    0.143816][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.144154][    T1] futex hash table entries: 256 (order: -1, 32768 bytes, linear)
+[    0.157372][    T1] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.160754][    T1] IBM eBus Device Driver
+[    0.162638][    T1] audit: initializing netlink subsys (disabled)
+[    0.169919][   T21] audit: type=2000 audit(1691851251.150:1): state=initialized audit_enabled=0 res=1
+[    0.170376][    T1] cpuidle: using governor menu
+[    0.174666][    T1] pstore: Using crash dump compression: deflate
+[    0.174877][    T1] pstore: Registered nvram as persistent store backend
+
+Linux ppc64
+#1 SMP Sat Aug 1[    0.176723][    T1] EEH: pSeries platform initialized
+[    0.190930][    T1] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.841597][    T1] iommu: Default domain type: Translated
+[    0.841695][    T1] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.844388][    T1] SCSI subsystem initialized
+[    0.846297][    T1] usbcore: registered new interface driver usbfs
+[    0.846659][    T1] usbcore: registered new interface driver hub
+[    0.846888][    T1] usbcore: registered new device driver usb
+[    0.847371][    T1] pps_core: LinuxPPS API ver. 1 registered
+[    0.847410][    T1] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.847532][    T1] PTP clock support registered
+[    0.848146][    T1] EDAC MC: Ver: 3.0.0
+[    0.860556][    T1] PCI: Probing PCI hardware
+[    0.862932][    T1] PCI host bridge to bus 0000:00
+[    0.863354][    T1] pci_bus 0000:00: root bus resource [io  0x10000-0x1ffff] (bus address [0x0000-0xffff])
+[    0.896632][    T1] pci_bus 0000:00: root bus resource [mem 0x200080000000-0x2000ffffffff] (bus address [0x80000000-0xffffffff])
+[    0.896712][    T1] pci_bus 0000:00: root bus resource [mem 0x210000000000-0x21ffffffffff 64bit]
+[    0.896978][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.901655][    T1] IOMMU table initialized, virtual merging enabled
+[    0.903066][    T1] pci_bus 0000:00: resource 4 [io  0x10000-0x1ffff]
+[    0.903112][    T1] pci_bus 0000:00: resource 5 [mem 0x200080000000-0x2000ffffffff]
+[    0.903144][    T1] pci_bus 0000:00: resource 6 [mem 0x210000000000-0x21ffffffffff 64bit]
+[    0.903398][    T1] EEH: No capable adapters found: recovery disabled.
+[    0.908501][    T1] vgaarb: loaded
+[    0.910214][    T1] clocksource: Switched to clocksource timebase
+[    0.918545][    T1] hugetlbfs: disabling because there are no supported hugepage sizes
+[    0.955996][    T1] NET: Registered PF_INET protocol family
+[    0.958089][    T1] IP idents hash table entries: 16384 (order: 1, 131072 bytes, linear)
+[    0.975474][    T1] tcp_listen_portaddr_hash hash table entries: 4096 (order: 0, 65536 bytes, linear)
+[    0.975637][    T1] Table-perturb hash table entries: 65536 (order: 2, 262144 bytes, linear)
+[    0.976044][    T1] TCP established hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.976283][    T1] TCP bind hash table entries: 8192 (order: 2, 262144 bytes, linear)
+[    0.976658][    T1] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.977801][    T1] UDP hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.978154][    T1] UDP-Lite hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.979525][    T1] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.986240][    T1] RPC: Registered named UNIX socket transport module.
+[    0.986331][    T1] RPC: Registered udp transport module.
+[    0.986367][    T1] RPC: Registered tcp transport module.
+[    0.986392][    T1] RPC: Registered tcp-with-tls transport module.
+[    0.986418][    T1] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.986575][    T1] PCI: CLS 0 bytes, default 128
+[    0.994906][   T24] Trying to unpack rootfs image as initramfs...
+[    1.004002][    T1] vas: API is supported only with radix page tables
+[    1.008187][    T1] Initialise system trusted keyrings
+[    1.009423][    T1] Key type blacklist registered
+[    1.021037][    T1] workingset: timestamp_bits=38 max_order=14 bucket_order=0
+[    1.021381][    T1] zbud: loaded
+[    1.031751][    T1] NFS: Registering the id_resolver key type
+[    1.032045][    T1] Key type id_resolver registered
+[    1.032085][    T1] Key type id_legacy registered
+[    1.033175][    T1] SGI XFS with ACLs, security attributes, no debug enabled
+[    1.051228][    T1] 9p: Installing v9fs 9p2000 file system support
+[    1.057215][    T1] integrity: Platform Keyring initialized
+[    1.057298][    T1] Key type asymmetric registered
+[    1.057394][    T1] Asymmetric key parser 'x509' registered
+[    1.057761][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[    1.057909][    T1] io scheduler mq-deadline registered
+[    1.058009][    T1] io scheduler kyber registered
+[    1.122690][   T24] Freeing initrd memory: 9152K
+[    1.181219][    T1] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    1.187795][    T1] Non-volatile memory driver v1.3
+[    1.225814][    T1] brd: module loaded
+[    1.237638][    T1] loop: module loaded
+[    1.238849][    T1] wf_cpufreq_clamp_init: cpufreq policy not found cpu0
+[    1.239366][    T1] ipr: IBM Power RAID SCSI Device Driver version: 2.6.4 (March 14, 2017)
+[    1.243594][    T1] ibmvnic: IBM System i/p Virtual NIC Driver 1.0.1
+[    1.243668][    T1] e100: Intel(R) PRO/100 Network Driver
+[    1.243698][    T1] e100: Copyright(c) 1999-2006 Intel Corporation
+[    1.243793][    T1] e1000: Intel(R) PRO/1000 Network Driver
+[    1.243824][    T1] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    1.243924][    T1] e1000e: Intel(R) PRO/1000 Network Driver
+[    1.243955][    T1] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.245837][    T1] i2c_dev: i2c /dev entries driver
+[    1.246377][    T1] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    1.246511][    T1] device-mapper: uevent: version 1.0.3
+[    1.247556][    T1] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    1.250769][    T1] usbcore: registered new interface driver usbhid
+[    1.250819][    T1] usbhid: USB HID core driver
+[    1.251579][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    1.255081][    T1] NET: Registered PF_INET6 protocol family
+[    1.264153][    T1] Segment Routing with IPv6
+[    1.264372][    T1] In-situ OAM (IOAM) with IPv6
+[    1.264950][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.267084][    T1] NET: Registered PF_PACKET protocol family
+[    1.268653][    T1] 9pnet: Installing 9P2000 support
+[    1.268962][    T1] Key type dns_resolver registered
+[    1.269556][    T1] secvar-sysfs: Failed to retrieve secvar operations
+[    1.269644][    T1] drmem: No dynamic reconfiguration memory found
+[    1.271144][    T1] Running code patching self-tests ...
+[    1.295386][    T1] registered taskstats version 1
+[    1.296758][    T1] Loading compiled-in X.509 certificates
+[    1.307728][   T48] cryptomgr_probe (48) used greatest stack depth: 15232 bytes left
+[    1.317660][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: 208c5aa9ae9aab9e281ded1eff7a22094e65dd70'
+[    1.341057][    T1] page_owner is disabled
+[    1.342850][    T1] Secure boot mode disabled
+[    1.343449][    T1] ima: No TPM chip found, activating TPM-bypass!
+[    1.343538][    T1] Loading compiled-in module X.509 certificates
+[    1.345833][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: 208c5aa9ae9aab9e281ded1eff7a22094e65dd70'
+[    1.345953][    T1] ima: Allocated hash algorithm: sha256
+[    1.349214][    T1] Secure boot mode disabled
+[    1.349338][    T1] Trusted boot mode disabled
+[    1.349418][    T1] ima: No architecture policies found
+[    1.352250][    T1] printk: console [netcon0] enabled
+[    1.352357][    T1] netconsole: network logging started
+[    1.456526][    T1] Freeing unused kernel image (initmem) memory: 6720K
+[    1.464043][    T1] Checked W+X mappings: passed, no W+X pages found
+[    1.464658][    T1] rodata_test: all tests were successful
+[    1.464854][    T1] Run /init as init process
+[    1.708503][   T50] mount (50) used greatest stack depth: 11168 bytes left
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: [    2.894672][   T74] xargs (74) used greatest stack depth: 10768 bytes left
+OK
+Saving 256 bits of creditable seed for next boot
+Starting network: [    3.397078][   T86] ip (86) used greatest stack depth: 10512 bytes left
+OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b), ClangBuiltLinux LLD 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b)) #1 SMP Sat Aug 12 14:40:26 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+[    7.042114][  T113] reboot: Power down
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-ppc64 -display none -nodefaults -cpu power8 -machine pseries -vga none -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/powerpc/vmlinux -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/ppc64/rootfs.cpio -m 1G -serial mon:stdio

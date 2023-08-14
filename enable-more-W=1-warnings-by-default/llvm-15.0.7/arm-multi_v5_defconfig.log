@@ -1,0 +1,326 @@
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:238.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:247.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:256.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:265.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_bus_num): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #size-cells for I2C bus
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'i2c_bus_bridge'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (spi_bus_reg): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #size-cells value
+In file included from /home/nathan/cbl/src/linux-next/net/core/flow_dissector.c:21:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/if_pppox.h:17:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/if_pppox.h:71:4: warning: field sa_addr within 'struct sockaddr_pppox' is less aligned than 'union (unnamed union at /home/nathan/cbl/src/linux-next/include/uapi/linux/if_pppox.h:68:2)' and is usually due to 'struct sockaddr_pppox' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        } sa_addr;
+          ^
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/net/ipv4/ip_output.c:83:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/netfilter_bridge.h:5:
+In file included from /home/nathan/cbl/src/linux-next/include/uapi/linux/netfilter_bridge.h:12:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/if_pppox.h:17:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/if_pppox.h:71:4: warning: field sa_addr within 'struct sockaddr_pppox' is less aligned than 'union (unnamed union at /home/nathan/cbl/src/linux-next/include/uapi/linux/if_pppox.h:68:2)' and is usually due to 'struct sockaddr_pppox' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        } sa_addr;
+          ^
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-dev.c:29:
+In file included from /home/nathan/cbl/src/linux-next/include/media/v4l2-common.h:18:
+In file included from /home/nathan/cbl/src/linux-next/include/media/v4l2-dev.h:18:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-ioctl.c:19:
+In file included from /home/nathan/cbl/src/linux-next/include/uapi/linux/v4l2-subdev.h:18:
+In file included from /home/nathan/cbl/src/linux-next/include/uapi/linux/v4l2-mediabus.h:13:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+1 warning generated.
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-fh.c:15:
+In file included from /home/nathan/cbl/src/linux-next/include/media/v4l2-dev.h:18:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-subdev.c:20:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/platform/atmel/atmel-isi.c:25:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/platform/aspeed/aspeed-video.c:23:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+1 warning generated.
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-ctrls-api.c:13:
+In file included from /home/nathan/cbl/src/linux-next/include/media/v4l2-ctrls.h:13:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+In file included from /home/nathan/cbl/src/linux-next/drivers/media/v4l2-core/v4l2-ctrls-request.c:12:
+In file included from /home/nathan/cbl/src/linux-next/include/media/v4l2-ctrls.h:13:
+In file included from /home/nathan/cbl/src/linux-next/include/linux/videodev2.h:61:
+/home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2: warning: field  within 'struct v4l2_ext_control' is less aligned than 'union v4l2_ext_control::(anonymous at /home/nathan/cbl/src/linux-next/include/uapi/linux/videodev2.h:1805:2)' and is usually due to 'struct v4l2_ext_control' being packed, which can lead to unaligned accesses [-Wunaligned-access]
+        union {
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+qemu-system-arm: warning: nic ftgmac100.0 has no peer
+qemu-system-arm: warning: nic ftgmac100.1 has no peer
+Booting Linux on physical CPU 0x0
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), ClangBuiltLinux LLD 15.0.7) #1 PREEMPT Sat Aug 12 00:26:08 UTC 2023
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00093177
+CPU: VIVT data cache, VIVT instruction cache
+OF: fdt: Machine model: Palmetto BMC
+earlycon: ns16550a0 at MMIO 0x1e784000 (options '')
+printk: bootconsole [ns16550a0] enabled
+Memory policy: Data cache writethrough
+OF: reserved mem: 0x5c000000..0x5dffffff (32768 KiB) nomap non-reusable region@5c000000
+OF: reserved mem: 0x5ee00000..0x5effffff (2048 KiB) nomap non-reusable codefire_memory@5ee00000
+OF: reserved mem: 0x5f000000..0x5fffffff (16384 KiB) nomap non-reusable framebuffer@5f000000
+cma: Reserved 16 MiB at 0x5b000000 on node -1
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x000000005edfffff]
+  Normal   empty
+  HighMem  [mem 0x000000005ee00000-0x000000005fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x000000005bffffff]
+  node   0: [mem 0x000000005c000000-0x000000005dffffff]
+  node   0: [mem 0x000000005e000000-0x000000005edfffff]
+  node   0: [mem 0x000000005ee00000-0x000000005fffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x000000005fffffff]
+Kernel command line: earlycon
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130084
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 430828K/524288K available (11238K kernel code, 1950K rwdata, 2692K rodata, 408K init, 683K bss, 77076K reserved, 16384K cma-reserved, 0K highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+	Trampoline variant of Tasks RCU enabled.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+i2c controller registered, irq 16
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+clocksource: FTTMR010-TIMER2: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+Switching to timer-based delay loop, resolution 41ns
+Console: colour dummy device 80x30
+printk: console [tty0] enabled
+printk: bootconsole [ns16550a0] disabled
+Booting Linux on physical CPU 0x0
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), ClangBuiltLinux LLD 15.0.7) #1 PREEMPT Sat Aug 12 00:26:08 UTC 2023
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00093177
+CPU: VIVT data cache, VIVT instruction cache
+OF: fdt: Machine model: Palmetto BMC
+earlycon: ns16550a0 at MMIO 0x1e784000 (options '')
+printk: bootconsole [ns16550a0] enabled
+Memory policy: Data cache writethrough
+OF: reserved mem: 0x5c000000..0x5dffffff (32768 KiB) nomap non-reusable region@5c000000
+OF: reserved mem: 0x5ee00000..0x5effffff (2048 KiB) nomap non-reusable codefire_memory@5ee00000
+OF: reserved mem: 0x5f000000..0x5fffffff (16384 KiB) nomap non-reusable framebuffer@5f000000
+cma: Reserved 16 MiB at 0x5b000000 on node -1
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x000000005edfffff]
+  Normal   empty
+  HighMem  [mem 0x000000005ee00000-0x000000005fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x000000005bffffff]
+  node   0: [mem 0x000000005c000000-0x000000005dffffff]
+  node   0: [mem 0x000000005e000000-0x000000005edfffff]
+  node   0: [mem 0x000000005ee00000-0x000000005fffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x000000005fffffff]
+Kernel command line: earlycon
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 130084
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 430828K/524288K available (11238K kernel code, 1950K rwdata, 2692K rodata, 408K init, 683K bss, 77076K reserved, 16384K cma-reserved, 0K highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+	Trampoline variant of Tasks RCU enabled.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+i2c controller registered, irq 16
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+clocksource: FTTMR010-TIMER2: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+Switching to timer-based delay loop, resolution 41ns
+Console: colour dummy device 80x30
+printk: console [tty0] enabled
+printk: bootconsole [ns16550a0] disabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+CPU: Testing write buffer coherency: ok
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+RCU Tasks: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+Setting up static identity map for 0x40008400 - 0x4000847c
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+ASPEED AST2400 rev A1 (02010303)
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+thermal_sys: Registered thermal governor 'step_wise'
+cpuidle: using governor menu
+Serial: AMBA PL011 UART driver
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/ddcdat_default
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/ddcclk_default
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/vgavs_default
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/vgahs_default
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/flwp_default
+platform 1e6e2080.pinctrl: Fixed dependency cycle(s) with /ahb/apb/syscon@1e6e2000/pinctrl@80/flbusy_default
+kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+mc: Linux media interface: v0.10
+videodev: Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+Advanced Linux Sound Architecture Driver Initialized.
+vgaarb: loaded
+clocksource: Switched to clocksource FTTMR010-TIMER2
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 32
+Initialise system trusted keyrings
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+Unpacking initramfs...
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Key type asymmetric registered
+Asymmetric key parser 'x509' registered
+bounce: pool size: 64 pages
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+1e783000.serial: ttyS0 at MMIO 0x1e783000 (irq = 18, base_baud = 1500000) is a 16550A
+1e784000.serial: ttyS4 at MMIO 0x1e784000 (irq = 19, base_baud = 1500000) is a 16550A
+printk: console [ttyS4] enabled
+Freeing initrd memory: 3824K
+loop: module loaded
+spi-nor spi0.0: n25q256a (32768 Kbytes)
+spi-aspeed-smc 1e620000.spi: Calibration area too uniform, using low speed
+spi-aspeed-smc 1e620000.spi: CE0 read buswidth:2 [0x203b0041]
+5 fixed-partitions partitions found on MTD device bmc
+Creating 5 MTD partitions on "bmc":
+0x000000000000-0x000000060000 : "u-boot"
+0x000000060000-0x000000080000 : "u-boot-env"
+0x000000080000-0x0000004c0000 : "kernel"
+0x0000004c0000-0x000001c00000 : "rofs"
+0x000001c00000-0x000002000000 : "rwfs"
+vmap allocation for size 268439552 failed: use vmalloc=<size> to increase size
+spi-aspeed-smc 1e630000.spi: ioremap failed for resource [mem 0x30000000-0x3fffffff]
+spi-aspeed-smc 1e630000.spi: missing AHB mapping window
+spi-aspeed-smc: probe of 1e630000.spi failed with error -12
+libertas_sdio: Libertas SDIO driver
+libertas_sdio: Copyright Pierre Ossman
+usbcore: registered new interface driver usb-storage
+usbcore: registered new interface driver ums-datafab
+usbcore: registered new interface driver ums-freecom
+usbcore: registered new interface driver ums-jumpshot
+usbcore: registered new interface driver ums-sddr09
+usbcore: registered new interface driver ums-sddr55
+i2c_dev: i2c /dev entries driver
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+lib80211: common routines for IEEE802.11 drivers
+Loading compiled-in X.509 certificates
+cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+cfg80211: failed to load regulatory.db
+clk: Disabling unused clocks
+ALSA device list:
+  No soundcards found.
+Freeing unused kernel image (initmem) memory: 408K
+Kernel memory protection not selected by kernel config.
+Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of non-creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), ClangBuiltLinux LLD 15.0.7) #1 PREEMPT Sat Aug 12 00:26:08 UTC 2023
+Stopping network: OK
+Seeding 256 bits without crediting
+Saving 256 bits of non-creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system reboot
+reboot: Restarting system
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-arm -display none -nodefaults -no-reboot -machine palmetto-bmc -append earlycon -dtb /home/nathan/tmp/build/cbl_lkt/linux-next/arm/arch/arm/boot/dts/aspeed/aspeed-bmc-opp-palmetto.dtb -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/arm/arch/arm/boot/zImage -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/arm/rootfs.cpio -m 512m -serial mon:stdio

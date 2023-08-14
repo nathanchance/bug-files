@@ -1,0 +1,14 @@
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/omap_hwmod.c:1723:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+                udelay(oh->class->sysc->srst_udelay);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+          ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/wd_timer.c:89:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+                udelay(oh->class->sysc->srst_udelay);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+          ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

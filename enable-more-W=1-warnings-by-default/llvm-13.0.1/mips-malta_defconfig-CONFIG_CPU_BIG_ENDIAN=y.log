@@ -1,0 +1,255 @@
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 13.0.1 (https://github.com/llvm/llvm-project 75e33f71c2dae584b13a7d1186ae0a038ba98838), ClangBuiltLinux LLD 13.0.1 (https://github.com/llvm/llvm-project 75e33f71c2dae584b13a7d1186ae0a038ba98838)) #1 SMP Sat Aug 12 10:35:45 UTC 2023
+earlycon: uart8250 at I/O port 0x3f8 (options '38400n8')
+printk: bootconsole [uart8250] enabled
+Config serial console: console=ttyS0,38400n8r
+CPU0 revision is: 00019300 (MIPS 24Kc)
+FPU revision is: 00739300
+MIPS: machine is mti,malta
+Software DMA cache coherency enabled
+Initial ramdisk at: 0x8fb50000 (4823552 bytes)
+Primary instruction cache 2kB, VIPT, 2-way, linesize 16 bytes.
+Primary data cache 2kB, 2-way, VIPT, no aliases, linesize 16 bytes
+Zone ranges:
+  DMA      [mem 0x0000000000000000-0x0000000000ffffff]
+  Normal   [mem 0x0000000001000000-0x000000001fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000000000-0x000000000fffffff]
+  node   0: [mem 0x0000000090000000-0x000000009fffbfff]
+Initmem setup node 0 [mem 0x0000000000000000-0x000000009fffbfff]
+random: crng init done
+percpu: Embedded 3 pages/cpu s15380 r8192 d25580 u49152
+Kernel command line: rd_start=0xffffffff8fb50000 rd_size=4823552  console=ttyS0,38400n8r
+Dentry cache hash table entries: 32768 (order: 3, 131072 bytes, linear)
+Inode-cache hash table entries: 16384 (order: 2, 65536 bytes, linear)
+Writing ErrCtl register=00000000
+Readback ErrCtl register=00000000
+Built 1 zonelists, mobility grouping on.  Total pages: 16320
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Memory: 244576K/262144K available (8199K kernel code, 347K rwdata, 1396K rodata, 352K init, 208K bss, 17568K reserved, 0K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+NR_IRQS: 256
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+CPU frequency 333.33 MHz
+clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 11467568437 ns
+sched_clock: 32 bits at 167MHz, resolution 6ns, wraps every 12884908028ns
+Console: colour dummy device 80x25
+Calibrating delay loop... 2138.11 BogoMIPS (lpj=10690560)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 4096 (order: 0, 16384 bytes, linear)
+Mountpoint-cache hash table entries: 4096 (order: 0, 16384 bytes, linear)
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 256 (order: 0, 16384 bytes, linear)
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+SCSI subsystem initialized
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x17ffffff]
+pci_bus 0000:00: root bus resource [io  0x1000-0x1fffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: [2046:ab11] type 00 class 0x100000
+pci 0000:00:00.0: [Firmware Bug]: reg 0x10: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x14: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x18: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x1c: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x20: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x24: invalid BAR (can't size)
+pci 0000:00:0a.0: [8086:7110] type 00 class 0x060100
+pci 0000:00:0a.1: [8086:7111] type 00 class 0x010180
+pci 0000:00:0a.1: reg 0x20: [io  0x0000-0x000f]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+pci 0000:00:0a.2: [8086:7112] type 00 class 0x0c0300
+pci 0000:00:0a.2: reg 0x20: [io  0x0000-0x001f]
+pci 0000:00:0a.3: [8086:7113] type 00 class 0x068000
+pci 0000:00:0a.3: quirk: [io  0x1000-0x103f] claimed by PIIX4 ACPI
+pci 0000:00:0a.3: quirk: [io  0x1100-0x110f] claimed by PIIX4 SMB
+pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
+pci 0000:00:0a.2: BAR 4: assigned [io  0x1040-0x105f]
+pci 0000:00:0a.1: BAR 4: assigned [io  0x1060-0x106f]
+vgaarb: loaded
+clocksource: Switched to clocksource MIPS
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 4096 (order 0, 16384 bytes)
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 4096 (order: 1, 32768 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 2048 (order: 0, 16384 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 4, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 0, 16384 bytes, linear)
+TCP bind hash table entries: 4096 (order: 2, 65536 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 512 (order: 0, 16384 bytes, linear)
+UDP-Lite hash table entries: 512 (order: 0, 16384 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+pci 0000:00:0a.2: enabling device (0000 -> 0001)
+PCI: CLS 0 bytes, default 16
+Initialise system trusted keyrings
+Trying to unpack rootfs image as initramfs...
+workingset: timestamp_bits=30 max_order=14 bucket_order=0
+Key type asymmetric registered
+Asymmetric key parser 'x509' registered
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+Freeing initrd memory: 4704K
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+printk: console [ttyS0] disabled
+serial8250.0: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+serial8250.0: ttyS0 extra baud rates supported: 230400, 460800
+serial8250.0: ttyS0 extra baud rates supported: 230400, 460800
+printk: console [ttyS0] enabled
+printk: console [ttyS0] enabled
+printk: bootconsole [uart8250] disabled
+printk: bootconsole [uart8250] disabled
+sysfs: cannot create duplicate filename '/devices/platform/serial8250.0/serial8250.0:0/serial8250.0:0.0'
+CPU: 0 PID: 1 Comm: swapper/0 Not tainted 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd #1
+Stack : 809f9536 809e9693 82047524 007fffff 00000000 00000000 00000000 00000000
+        00000000 00000000 00000000 00000000 00000000 87fc4608 820474c0 81001a44
+        82047558 00000000 00000000 00000000 00000038 808edf64 00000000 67383135
+        7263352d 00000000 00000000 6e657874 80a0e9de 00000000 820474a0 00000000
+        8092d108 80a831a0 00000000 00000000 00000000 8057bbbc 00000000 80b20000
+        ...
+Call Trace:
+[<801090fc>] show_stack+0x90/0x164
+[<808f64f8>] dump_stack_lvl+0x7c/0xa8
+[<808f6538>] dump_stack+0x14/0x20
+[<8032f4cc>] sysfs_create_dir_ns+0xf0/0x164
+[<808c67bc>] kobject_add_internal+0x2c0/0x524
+[<808c5798>] kobject_add+0x70/0xec
+[<8058abac>] device_add+0x1d0/0x61c
+[<805767d8>] serial_base_port_add+0xd0/0x118
+[<80571310>] serial_core_register_port+0xe8/0x770
+[<80576a20>] serial_ctrl_register_port+0x10/0x1c
+[<80576ab0>] uart_add_one_port+0x10/0x1c
+[<805771fc>] serial8250_register_8250_port+0x4fc/0x5ec
+[<805781cc>] serial8250_probe+0x180/0x214
+[<805972d4>] platform_probe+0x5c/0xbc
+[<805934b8>] really_probe+0x10c/0x3ac
+[<805925d0>] __driver_probe_device+0x70/0x1c8
+[<80592880>] __driver_attach+0x12c/0x2f8
+[<8058f210>] bus_for_each_dev+0x118/0x174
+[<80592748>] driver_attach+0x20/0x2c
+[<8058fc14>] bus_add_driver+0x224/0x280
+[<80594154>] driver_register+0x90/0x14c
+[<80596c08>] __platform_driver_register+0x20/0x2c
+[<80adbc30>] serial8250_init+0x10c/0x128
+[<801004f0>] do_one_initcall+0xe0/0x354
+[<80ab93c0>] do_initcall_level+0xa4/0xc8
+[<80ab92d4>] do_initcalls+0x60/0xa8
+[<80ab9268>] do_basic_setup+0x20/0x2c
+[<80ab91e8>] kernel_init_freeable+0xe4/0x144
+[<808f6fd4>] kernel_init+0x20/0x1c4
+[<80102c18>] ret_from_kernel_thread+0x14/0x1c
+
+kobject: kobject_add_internal failed for serial8250.0:0.0 with -EEXIST, don't try to register things with the same name in the same directory.
+serial8250 serial8250.0: unable to register port at index 1 (IO2f8 MEM0 IRQ3): -17
+sysfs: cannot create duplicate filename '/devices/platform/serial8250.0/serial8250.0:0/serial8250.0:0.0'
+CPU: 0 PID: 1 Comm: swapper/0 Not tainted 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd #1
+Stack : 809f9536 809e9693 82047524 007fffff 00000000 00000000 00000000 00000000
+        00000000 00000000 00000000 00000000 00000000 87fc4608 820474c0 81001a44
+        82047558 00000000 00000000 00000000 00000038 808edf64 00000000 67383135
+        7263352d 00000000 00000000 6e657874 80a0e9de 00000000 820474a0 00000000
+        8092d108 80a83200 00000000 00000000 00000000 8057bbbc 00000000 80b20000
+        ...
+Call Trace:
+[<801090fc>] show_stack+0x90/0x164
+[<808f64f8>] dump_stack_lvl+0x7c/0xa8
+[<808f6538>] dump_stack+0x14/0x20
+[<8032f4cc>] sysfs_create_dir_ns+0xf0/0x164
+[<808c67bc>] kobject_add_internal+0x2c0/0x524
+[<808c5798>] kobject_add+0x70/0xec
+[<8058abac>] device_add+0x1d0/0x61c
+[<805767d8>] serial_base_port_add+0xd0/0x118
+[<80571310>] serial_core_register_port+0xe8/0x770
+[<80576a20>] serial_ctrl_register_port+0x10/0x1c
+[<80576ab0>] uart_add_one_port+0x10/0x1c
+[<805771fc>] serial8250_register_8250_port+0x4fc/0x5ec
+[<805781cc>] serial8250_probe+0x180/0x214
+[<805972d4>] platform_probe+0x5c/0xbc
+[<805934b8>] really_probe+0x10c/0x3ac
+[<805925d0>] __driver_probe_device+0x70/0x1c8
+[<80592880>] __driver_attach+0x12c/0x2f8
+[<8058f210>] bus_for_each_dev+0x118/0x174
+[<80592748>] driver_attach+0x20/0x2c
+[<8058fc14>] bus_add_driver+0x224/0x280
+[<80594154>] driver_register+0x90/0x14c
+[<80596c08>] __platform_driver_register+0x20/0x2c
+[<80adbc30>] serial8250_init+0x10c/0x128
+[<801004f0>] do_one_initcall+0xe0/0x354
+[<80ab93c0>] do_initcall_level+0xa4/0xc8
+[<80ab92d4>] do_initcalls+0x60/0xa8
+[<80ab9268>] do_basic_setup+0x20/0x2c
+[<80ab91e8>] kernel_init_freeable+0xe4/0x144
+[<808f6fd4>] kernel_init+0x20/0x1c4
+[<80102c18>] ret_from_kernel_thread+0x14/0x1c
+
+kobject: kobject_add_internal failed for serial8250.0:0.0 with -EEXIST, don't try to register things with the same name in the same directory.
+serial8250 serial8250.0: unable to register port at index 2 (IO0 MEM1f000900 IRQ20): -17
+brd: module loaded
+ata_piix 0000:00:0a.1: enabling device (0000 -> 0001)
+scsi host0: ata_piix
+scsi host1: ata_piix
+ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x1060 irq 14
+ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x1068 irq 15
+mousedev: PS/2 mouse device common for all mice
+rtc_cmos 70.rtc: registered as rtc0
+rtc_cmos 70.rtc: setting system clock to 2023-08-12T10:35:51 UTC (1691836551)
+rtc_cmos 70.rtc: alarms up to one day, 242 bytes nvram
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+NET: Registered PF_KEY protocol family
+Loading compiled-in X.509 certificates
+clk: Disabling unused clocks
+Freeing unused kernel image (initmem) memory: 352K
+This architecture does not have kernel memory protection.
+Run /init as init process
+process '/bin/busybox' started with executable stack
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 13.0.1 (https://github.com/llvm/llvm-project 75e33f71c2dae584b13a7d1186ae0a038ba98838), ClangBuiltLinux LLD 13.0.1 (https://github.com/llvm/llvm-project 75e33f71c2dae584b13a7d1186ae0a038ba98838)) #1 SMP Sat Aug 12 10:35:45 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+reboot: Power down
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-mips -display none -nodefaults -cpu 24Kf -machine malta -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/mips/vmlinux -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/mips/rootfs.cpio -m 512m -serial mon:stdio

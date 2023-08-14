@@ -1,0 +1,51 @@
+/home/nathan/cbl/src/linux-next/drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+                             u32 event_quota)
+                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ipv4/tcp_output.c:186:3: warning: result of comparison of constant -1 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+                NET_ADD_STATS(sock_net(sk), LINUX_MIB_TCPACKCOMPRESSED,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/net/ip.h:301:41: note: expanded from macro 'NET_ADD_STATS'
+#define NET_ADD_STATS(net, field, adnd) SNMP_ADD_STATS((net)->mib.net_statistics, field, adnd)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/net/snmp.h:143:4: note: expanded from macro 'SNMP_ADD_STATS'
+                        this_cpu_add(mib->mibs[field], addend)
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/percpu-defs.h:491:33: note: expanded from macro 'this_cpu_add'
+#define this_cpu_add(pcp, val)          __pcpu_size_call(this_cpu_add_, pcp, val)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+<scratch space>:136:1: note: expanded from here
+this_cpu_add_4
+^
+/home/nathan/cbl/src/linux-next/arch/x86/include/asm/percpu.h:329:34: note: expanded from macro 'this_cpu_add_4'
+#define this_cpu_add_4(pcp, val)        percpu_add_op(4, volatile, (pcp), val)
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/x86/include/asm/percpu.h:127:31: note: expanded from macro 'percpu_add_op'
+                              ((val) == 1 || (val) == -1)) ?            \
+                                             ~~~~~ ^  ~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                   unsigned int changed_flags,
+                                                ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath5k/mac80211-ops.c:367:62: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ath5k_configure_filter(struct ieee80211_hw *hw, unsigned int changed_flags,
+                                                             ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                       unsigned int changed_flags,
+                                                    ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 17179869180 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+static int qed_send_msg2pf(struct qed_hwfn *p_hwfn, u8 *done, u32 resp_size)
+                                                                  ^
+1 warning generated.

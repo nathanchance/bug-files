@@ -1,0 +1,21 @@
+Using .config as base
+Merging /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config
+Value of CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=y
+New value: # CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is not set
+
+Value of CONFIG_CC_OPTIMIZE_FOR_SIZE is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: # CONFIG_CC_OPTIMIZE_FOR_SIZE is not set
+New value: CONFIG_CC_OPTIMIZE_FOR_SIZE=y
+
+Value of CONFIG_SLUB_TINY is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: # CONFIG_SLUB_TINY is not set
+New value: CONFIG_SLUB_TINY=y
+
+#
+# merged configuration written to .config (needs make)
+#
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.

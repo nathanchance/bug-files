@@ -1,0 +1,689 @@
+/home/nathan/cbl/src/linux-next/drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+  803 |                              u32 event_quota)
+      |                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:115:25: warning: cast from 'int (*)(struct hw *, struct src_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+  115 |         [SRC]           = { .create     = (create_t)src_mgr_create,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:116:20: warning: cast from 'int (*)(struct src_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  116 |                             .destroy    = (destroy_t)src_mgr_destroy    },
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:117:27: warning: cast from 'int (*)(struct hw *, struct srcimp_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+  117 |         [SRCIMP]        = { .create     = (create_t)srcimp_mgr_create,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:118:20: warning: cast from 'int (*)(struct srcimp_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  118 |                             .destroy    = (destroy_t)srcimp_mgr_destroy },
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:119:25: warning: cast from 'int (*)(struct hw *, struct amixer_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+  119 |         [AMIXER]        = { .create     = (create_t)amixer_mgr_create,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:120:19: warning: cast from 'int (*)(struct amixer_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  120 |                             .destroy    = (destroy_t)amixer_mgr_destroy },
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:121:23: warning: cast from 'int (*)(struct hw *, struct sum_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+  121 |         [SUM]           = { .create     = (create_t)sum_mgr_create,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:122:19: warning: cast from 'int (*)(struct sum_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  122 |                             .destroy    = (destroy_t)sum_mgr_destroy    },
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:123:24: warning: cast from 'int (*)(struct hw *, struct daio_mgr **)' to 'create_t' (aka 'int (*)(struct hw *, void **)') converts to incompatible function type [-Wcast-function-type-strict]
+  123 |         [DAIO]          = { .create     = (create_t)daio_mgr_create,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/pci/ctxfi/ctatc.c:124:19: warning: cast from 'int (*)(struct daio_mgr *)' to 'destroy_t' (aka 'int (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  124 |                             .destroy    = (destroy_t)daio_mgr_destroy   }
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+10 warnings generated.
+/home/nathan/cbl/src/linux-next/sound/core/seq/seq_midi.c:135:30: warning: cast from 'int (*)(struct snd_rawmidi_substream *, const char *, int)' to 'snd_seq_dump_func_t' (aka 'int (*)(void *, void *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+  135 |                 snd_seq_dump_var_event(ev, (snd_seq_dump_func_t)dump_midi, substream);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/floppy.c:2001:11: warning: cast from 'void (*)(void)' to 'done_f' (aka 'void (*)(int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2001 |         .done           = (done_f)empty
+      |                           ^~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/floppy.c:2008:11: warning: cast from 'void (*)(void)' to 'done_f' (aka 'void (*)(int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2008 |         .done           = (done_f)empty
+      |                           ^~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/sound/core/seq/seq_virmidi.c:83:31: warning: cast from 'int (*)(struct snd_rawmidi_substream *, const unsigned char *, int)' to 'snd_seq_dump_func_t' (aka 'int (*)(void *, void *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+   83 |                         snd_seq_dump_var_event(ev, (snd_seq_dump_func_t)snd_rawmidi_receive, vmidi->substream);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 6149 |         if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+      |             ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6150 |                                  / sizeof (u64)) {
+      |                                  ~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:815:38: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  815 |         if (kunit_add_action_or_reset(test, (kunit_action_t *)kfree, data) != 0)
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/lib/kunit/test.c:827:29: warning: cast from 'void (*)(const void *)' to 'kunit_action_t *' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  827 |         kunit_release_action(test, (kunit_action_t *)kfree, (void *)ptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1632:3: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_resource_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1632 |                 REMEMBER_STATE_CHANGE(notify_resource_state_change,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1633 |                                       resource_state_change, NOTIFY_CHANGE);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+ 1619 |            last_func = (typeof(last_func))func; \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1641:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_connection_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1641 |                         REMEMBER_STATE_CHANGE(notify_connection_state_change,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1642 |                                               connection_state_change, NOTIFY_CHANGE);
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+ 1619 |            last_func = (typeof(last_func))func; \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1650:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_device_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1650 |                         REMEMBER_STATE_CHANGE(notify_device_state_change,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1651 |                                               device_state_change, NOTIFY_CHANGE);
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+ 1619 |            last_func = (typeof(last_func))func; \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1664:4: warning: cast from 'int (*)(struct sk_buff *, unsigned int, struct drbd_peer_device_state_change *, enum drbd_notification_type)' to 'typeof (last_func)' (aka 'int (*)(struct sk_buff *, unsigned int, void *, enum drbd_notification_type)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1664 |                         REMEMBER_STATE_CHANGE(notify_peer_device_state_change,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |                                               p, NOTIFY_CHANGE);
+      |                                               ~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/block/drbd/drbd_state.c:1619:17: note: expanded from macro 'REMEMBER_STATE_CHANGE'
+ 1619 |            last_func = (typeof(last_func))func; \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ 1566 |                                    unsigned int changed_flags,
+      |                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/broadcom/brcm80211/brcmsmac/phy_shim.c:64:34: warning: cast from 'void (*)(struct brcms_phy *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+   64 |                         brcms_init_timer(physhim->wl, (void (*)(void *))fn,
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath5k/mac80211-ops.c:367:62: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+  367 | ath5k_configure_filter(struct ieee80211_hw *hw, unsigned int changed_flags,
+      |                                                              ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/brocade/bna/bnad.c:1995:4: warning: cast from 'void (*)(struct delayed_work *)' to 'work_func_t' (aka 'void (*)(struct work_struct *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1995 |                         (work_func_t)bnad_tx_cleanup);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:320:29: note: expanded from macro 'INIT_DELAYED_WORK'
+  320 |         __INIT_DELAYED_WORK(_work, _func, 0)
+      |                                    ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:305:30: note: expanded from macro '__INIT_DELAYED_WORK'
+  305 |                 INIT_WORK(&(_work)->work, (_func));                     \
+      |                                            ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:298:24: note: expanded from macro 'INIT_WORK'
+  298 |         __INIT_WORK((_work), (_func), 0)
+      |                               ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:293:20: note: expanded from macro '__INIT_WORK'
+  293 |                 (_work)->func = (_func);                                \
+      |                                  ^~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/brocade/bna/bnad.c:2252:4: warning: cast from 'void (*)(void *)' to 'work_func_t' (aka 'void (*)(struct work_struct *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2252 |                         (work_func_t)(bnad_rx_cleanup));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:298:24: note: expanded from macro 'INIT_WORK'
+  298 |         __INIT_WORK((_work), (_func), 0)
+      |                               ^~~~~
+/home/nathan/cbl/src/linux-next/include/linux/workqueue.h:293:20: note: expanded from macro '__INIT_WORK'
+  293 |                 (_work)->func = (_func);                                \
+      |                                  ^~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ 1258 |                                        unsigned int changed_flags,
+      |                                                     ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 42949672950 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+ 4159 |                         if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+      |                             ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 1441 |         if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 1624 |         if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-v4l2.c:1070:30: warning: cast from 'void (*)(struct pvr2_v4l2_fh *)' to 'pvr2_stream_callback' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1070 |         pvr2_stream_set_callback(sp,(pvr2_stream_callback)pvr2_v4l2_notify,fh);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-context.c:110:6: warning: cast from 'void (*)(struct pvr2_context *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  110 |                                         (void (*)(void *))pvr2_context_notify,
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2138:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2138 |         bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+  453 |         (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+      |                                ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2162:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2162 |         bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp, &fcomp, NULL);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+  453 |         (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+      |                                ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2446:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2446 |         bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+  453 |         (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+      |                                ^~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfad_bsg.c:2477:29: warning: cast from 'void (*)(void *, enum bfa_status)' to 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2477 |         bfa_pending_q_init(&cb_qe, (bfa_cb_cbfn_t)bfad_hcb_comp,
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa.h:453:25: note: expanded from macro 'bfa_pending_q_init'
+  453 |         (__qe)->hcb_qe.cbfn = (__cbfn);                         \
+      |                                ^~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:170:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  170 |                                     (ubifs_lpt_scan_callback)scan_for_dirty_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:449:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  449 |                                     (ubifs_lpt_scan_callback)scan_for_free_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:629:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  629 |                                     (ubifs_lpt_scan_callback)scan_for_idx_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:757:7: warning: cast from 'int (*)(const struct ubifs_lprops **, const struct ubifs_lprops **)' to 'int (*)(const void *, const void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  757 |              (int (*)(const void *, const void *))cmp_dirty_idx, NULL);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ubifs/find.c:846:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct scan_data *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  846 |                                     (ubifs_lpt_scan_callback)scan_dirty_idx_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+5 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/ubifs/lprops.c:1272:9: warning: cast from 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, struct ubifs_lp_stats *)' to 'ubifs_lpt_scan_callback' (aka 'int (*)(struct ubifs_info *, const struct ubifs_lprops *, int, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1272 |                                     (ubifs_lpt_scan_callback)scan_check_cb,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/media/usb/pvrusb2/pvrusb2-dvb.c:152:6: warning: cast from 'void (*)(struct pvr2_dvb_adapter *)' to 'pvr2_stream_callback' (aka 'void (*)(void *)') converts to incompatible function type [-Wcast-function-type-strict]
+  152 |                                  (pvr2_stream_callback) pvr2_dvb_notify, adap);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/bfa/bfa_core.c:1917:11: warning: cast from 'bfa_cb_cbfn_t' (aka 'void (*)(void *, enum bfa_boolean)') to 'bfa_cb_cbfn_status_t' (aka 'void (*)(void *, enum bfa_status)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1917 |                         cbfn = (bfa_cb_cbfn_status_t)(hcb_qe->cbfn);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1098:33: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1098 |         return (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_ready));
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1369:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1369 |         if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_uninit)) {
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1373:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1373 |         if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_ready)) {
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/csiostor/csio_lnode.c:1377:29: warning: cast from 'void (*)(struct csio_lnode *, enum csio_ln_ev)' to 'csio_sm_state_t' (aka 'void (*)(void *, unsigned int)') converts to incompatible function type [-Wcast-function-type-strict]
+ 1377 |         if (csio_get_state(ln) == ((csio_sm_state_t)csio_lns_offline)) {
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/main.c:3493:3: warning: cast from 'int (*)(struct cxlflash_cfg *, struct ht_cxlflash_lun_provision *)' to 'hioctl' (aka 'int (*)(struct cxlflash_cfg *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 3493 |                 (hioctl)cxlflash_lun_provision },
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/main.c:3495:3: warning: cast from 'int (*)(struct cxlflash_cfg *, struct ht_cxlflash_afu_debug *)' to 'hioctl' (aka 'int (*)(struct cxlflash_cfg *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 3495 |                 (hioctl)cxlflash_afu_debug },
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2114:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_attach *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2114 |         {sizeof(struct dk_cxlflash_attach), (sioctl)cxlflash_disk_attach},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2116:39: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_release *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2116 |         {sizeof(struct dk_cxlflash_release), (sioctl)cxlflash_disk_release},
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2117:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_detach *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2117 |         {sizeof(struct dk_cxlflash_detach), (sioctl)cxlflash_disk_detach},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2118:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_verify *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2118 |         {sizeof(struct dk_cxlflash_verify), (sioctl)cxlflash_disk_verify},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2119:43: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_recover_afu *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2119 |         {sizeof(struct dk_cxlflash_recover_afu), (sioctl)cxlflash_afu_recover},
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2120:42: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_manage_lun *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2120 |         {sizeof(struct dk_cxlflash_manage_lun), (sioctl)cxlflash_manage_lun},
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2122:38: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_resize *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2122 |         {sizeof(struct dk_cxlflash_resize), (sioctl)cxlflash_vlun_resize},
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/scsi/cxlflash/superpipe.c:2123:37: warning: cast from 'int (*)(struct scsi_device *, struct dk_cxlflash_clone *)' to 'sioctl' (aka 'int (*)(struct scsi_device *, void *)') converts to incompatible function type [-Wcast-function-type-strict]
+ 2123 |         {sizeof(struct dk_cxlflash_clone), (sioctl)cxlflash_disk_clone},
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/ibmvscsi_tgt/ibmvscsi_tgt.c:1630:32: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+ 1630 |         if ((olen < min_len) || (olen > PAGE_SIZE)) {
+      |                                  ~~~~ ^ ~~~~~~~~~
+2 warnings generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/nilfs2/ioctl.c:63:19: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+   63 |         if (argv->v_size > PAGE_SIZE)
+      |             ~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/ulp/srpt/ib_srpt.c:1811:5: warning: cast from 'void (*)(struct ib_event *, struct srpt_rdma_ch *)' to 'void (*)(struct ib_event *, void *)' converts to incompatible function type [-Wcast-function-type-strict]
+ 1811 |                 = (void(*)(struct ib_event *, void*))srpt_qp_event;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+  372 |         if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:90:39: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+   90 |         WARN_ON_ONCE(method_elm->bundle_size > PAGE_SIZE);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/asm-generic/bug.h:111:25: note: expanded from macro 'WARN_ON_ONCE'
+  111 |         int __ret_warn_on = !!(condition);                      \
+      |                                ^~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:629:17: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+  629 |         if (hdr.length > PAGE_SIZE ||
+      |             ~~~~~~~~~~ ^ ~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/gpu/drm/nouveau/nvkm/subdev/bios/shadow.c:161:10: warning: cast from 'void (*)(const struct firmware *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+  161 |         .fini = (void(*)(void *))release_firmware,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/gpu/drm/nouveau/nvkm/subdev/bios/shadowof.c:73:10: warning: cast from 'void (*)(const void *)' to 'void (*)(void *)' converts to incompatible function type [-Wcast-function-type-strict]
+   73 |         .fini = (void(*)(void *))kfree,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+   63 | static int qed_send_msg2pf(struct qed_hwfn *p_hwfn, u8 *done, u32 resp_size)
+      |                                                                   ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:32:22: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+   32 |         if (xsk->chunk_size > PAGE_SIZE || xsk->chunk_size < MLX5E_MIN_XSK_CHUNK_SIZE) {
+      |             ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+[    0.014633335,5] OPAL v7.0 starting...
+[    0.015195644,7] initial console log level: memory 7, driver 5
+[    0.015242592,6] CPU: P9 generation processor (max 4 threads/core)
+[    0.015269467,7] CPU: Boot CPU PIR is 0x0000 PVR is 0x004e1200
+[    0.015387800,7] OPAL table: 0x3018a660 .. 0x3018ac20, branch table: 0x30120000
+[    0.015555004,7] Assigning physical memory map table for nimbus
+[    0.015912898,7] FDT: Parsing fdt @0x1000000
+[    0.018219951,5] CHIP: Detected QEMU simulator
+[    0.018406367,6] CHIP: Initialised chip 0 from xscom@603fc00000000
+[    0.018743751,6] P9 DD2.00 detected
+[    0.018760474,5] CHIP: Chip ID 0000 type: P9N DD2.00
+[    0.018769646,7] XSCOM: Base address: 0x603fc00000000
+[    0.018795105,7] XSTOP: ibm,sw-checkstop-fir prop not found
+[    0.018891611,6] MFSI 0:0: Initialized
+[    0.018904749,6] MFSI 0:2: Initialized
+[    0.018914377,6] MFSI 0:1: Initialized
+[    0.019490957,6] LPC: LPC[000]: Initialized
+[    0.019499714,7] LPC: access via MMIO @0x6030000000000
+[    0.019525691,7] LPC: Default bus on chip 0x0
+[    0.019605941,7] CPU: New max PIR set to 0x3
+[    0.020097669,7] MEM: parsing reserved memory from reserved-names/-ranges properties
+[    0.020186260,7] HOMER: Init chip 0
+[    0.020218829,7]   PBA BAR0 : 0x0000203ffd800000
+[    0.020226785,7]   PBA MASK0: 0x0000000000300000
+[    0.020256415,7]   HOMER Image at 0x203ffd800000 size 4MB
+[    0.020299741,4] HOMER image is not reserved! Reserving
+[    0.020356461,7]   PBA BAR2 : 0x0000203fff800000
+[    0.020362555,7]   PBA MASK2: 0x0000000000700000
+[    0.020384649,7]   OCC Common Area at 0x203fff800000 size 8MB
+[    0.020421090,4] OCC common area is not reserved! Reserving
+[    0.020485208,7] CPU: decrementer bits 56
+[    0.020564339,6] CPU: CPU from DT PIR=0x0000 Server#=0x0 State=4
+[    0.020659866,6] CPU:  1 secondary threads
+[    0.021946707,5] PLAT: Using SuperIO UART
+[    0.022217282,7] UART: Using LPC IRQ 4
+[    0.024766547,5] PLAT: Detected QEMU POWER9 platform
+[    0.024848356,5] PLAT: Detected BMC platform ast2500:openbmc
+[    0.040080925,5] CPU: All 1 processors called in...
+[    0.041155292,7] LPC: Routing irq 10, policy: 0 (r=1)
+[    0.041227699,7] LPC: SerIRQ 10 using route 0 targetted at OPAL
+[    0.062998753,5] HIOMAP: Negotiated hiomap protocol v2
+[    0.063159858,5] HIOMAP: Block size is 4KiB
+[    0.063267326,5] HIOMAP: BMC suggested flash timeout of 0s
+[    0.063339707,5] HIOMAP: Flash size is 128MiB
+[    0.063398310,5] HIOMAP: Erase granule size is 4KiB
+[    0.079651265,3] FFS: Reading the flash has returned all 0xFF.
+[    0.079723410,3]      Are you reading erased flash?
+[    0.079784341,3]      Is something else using the flash controller?
+[    0.079869121,4] FLASH: No ffs info; using raw device only
+[    0.085189483,3] FFS: Reading the flash has returned all 0xFF.
+[    0.085257011,3]      Are you reading erased flash?
+[    0.085310848,3]      Is something else using the flash controller?
+[    0.085384886,3] FLASH: Can't open ffs handle
+[    0.090605346,3] FFS: Reading the flash has returned all 0xFF.
+[    0.090687643,3]      Are you reading erased flash?
+[    0.090788073,3]      Is something else using the flash controller?
+[    0.090915189,3] FLASH: Can't open ffs handle
+[    0.096186772,3] FFS: Reading the flash has returned all 0xFF.
+[    0.096252772,3]      Are you reading erased flash?
+[    0.096306188,3]      Is something else using the flash controller?
+[    0.096375609,3] FLASH: Can't open ffs handle
+[    0.101591042,3] FFS: Reading the flash has returned all 0xFF.
+[    0.101712689,3]      Are you reading erased flash?
+[    0.101820332,3]      Is something else using the flash controller?
+[    0.101947453,3] FLASH: Can't open ffs handle
+[    0.107181830,3] FFS: Reading the flash has returned all 0xFF.
+[    0.107248492,3]      Are you reading erased flash?
+[    0.107302918,3]      Is something else using the flash controller?
+[    0.107371344,3] FLASH: Can't open ffs handle
+[    0.112582258,3] FFS: Reading the flash has returned all 0xFF.
+[    0.112647821,3]      Are you reading erased flash?
+[    0.112701627,3]      Is something else using the flash controller?
+[    0.112770489,3] FLASH: Can't open ffs handle
+[    0.123847890,2] NVRAM: Failed to load
+[    0.123908985,2] NVRAM: Failed to load
+[    0.123974031,5] STB: secure boot not supported
+[    0.124049608,5] STB: trusted boot not supported
+[    0.124315555,4] FLASH: Can't load resource id:4. No system flash found
+[    0.124560244,4] FLASH: Can't load resource id:3. No system flash found
+[    0.124693531,2] NVRAM: Failed to load
+[    0.124851292,7] LPC: Routing irq 4, policy: 0 (r=1)
+[    0.124866850,7] LPC: SerIRQ 4 using route 1 targetted at OPAL
+[    0.125231930,3] SLW: Failed to set HRMOR for CPU 0,RC=0x1
+[    0.125440004,5] Unable to log error
+[    0.125507942,3] Disabling deep stop states
+[    0.125717483,2] NVRAM: Failed to load
+[    0.126033825,3] OCC: Chip: 0: OCC not active
+[    0.126093945,3] OCC: Initialization on all chips did not complete(timed out)
+[    0.126184670,5] Unable to log error
+[    0.126257026,2] NVRAM: Failed to load
+[    0.126319470,2] NVRAM: Failed to load
+[    0.126374615,2] NVRAM: Failed to load
+[    0.126623080,4] FLASH: Can't load resource id:2. No system flash found
+[    0.126867211,4] FLASH: Can't load resource id:0. No system flash found
+[    0.126960644,4] FLASH: Can't load resource id:1. No system flash found
+[    0.127147367,3] IMC: IMC Catalog load failed
+[    0.127441324,2] NVRAM: Failed to load
+[    0.127495704,2] NVRAM: Failed to load
+[    0.127545960,2] NVRAM: Failed to load
+[    0.127868648,5] PCI: Resetting PHBs and training links...
+[    0.127990741,5] PCI: Probing slots...
+[    0.128057259,5] PCI Summary:
+[    0.128174392,4] FLASH: Failed to load VERSION data
+[    0.345158648,2] NVRAM: Failed to load
+[    0.345699514,5] INIT: Waiting for kernel...
+[    0.345760138,5] INIT: platform wait for kernel load failed
+[    0.345843640,5] INIT: Assuming kernel at 0x20000000
+[    0.345948446,5] INIT: 64-bit LE kernel discovered
+[    0.346206632,3] OCC: Chip 0 sensor data invalid
+[    0.346462987,2] NVRAM: Failed to load
+[    0.352981641,5] INIT: Starting kernel at 0x20010000, fdt at 0x30758170 15742 bytes
+
+
+zImage starting: loaded at 0x0000000020010000 (sp: 0x0000000020dfada0)
+
+Allocating 0x2cab848 bytes for kernel...
+
+Decompressing (0x0000000000000000 <- 0x0000000020023000:0x0000000020df94dd)...
+
+Done! Decompressed 0x2ad0000 bytes
+
+
+Linux/PowerPC load: 
+
+Finalizing device tree... flat tree at 0x20dfbca0
+
+[    0.000000] OF: reserved mem: 0x0000000030000000..0x00000000305fffff (6144 KiB) map non-reusable ibm,firmware-code@30000000
+[    0.000000] OF: reserved mem: 0x0000000030600000..0x0000000030ffffff (10240 KiB) map non-reusable ibm,firmware-heap@30600000
+[    0.000000] OF: reserved mem: 0x0000000031000000..0x0000000031c0ffff (12352 KiB) map non-reusable ibm,firmware-data@31000000
+[    0.000000] OF: reserved mem: 0x0000000031c10000..0x0000000031c2ffff (128 KiB) map non-reusable ibm,firmware-stacks@31c10000
+[    0.000000] OF: reserved mem: 0x0000000031c30000..0x000000003290ffff (13184 KiB) map non-reusable ibm,firmware-allocs-memory@31c30000
+[    0.000000] OF: reserved mem: 0x0000203ffd800000..0x0000203ffdbfffff (4096 KiB) map non-reusable ibm,homer-image@203ffd800000
+[    0.000000] OF: reserved mem: 0x0000203fff800000..0x0000203fffffffff (8192 KiB) map non-reusable ibm,occ-common-area@203fff800000
+[    0.000000] dt-cpu-ftrs: setup for ISA 3000
+[    0.000000] dt-cpu-ftrs: final cpu/mmu features = 0x0003c06b8f5fb187 0x3c007041
+[    0.000000] Activating Kernel Userspace Access Prevention
+[    0.000000] Activating Kernel Userspace Execution Prevention
+[    0.000000] radix-mmu: Mapped 0x0000000000000000-0x00000000027a0000 with 64.0 KiB pages (exec)
+[    0.000000] radix-mmu: Mapped 0x00000000027a0000-0x0000000080000000 with 64.0 KiB pages
+[    0.000000] radix-mmu: Initializing Radix MMU
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 18:47:07 UTC 2023
+[    0.000000] Found initrd at 0xc000000028000000:0xc000000028878600
+[    0.000000] Hardware name: IBM PowerNV (emulated by qemu) POWER9 0x4e1200 opal:v7.0 PowerNV
+[    0.000000] printk: bootconsole [udbg0] enabled
+[    0.000000] CPU maps initialized for 1 thread per core
+[    0.000000] -----------------------------------------------------
+[    0.000000] phys_mem_size     = 0x80000000
+[    0.000000] dcache_bsize      = 0x80
+[    0.000000] icache_bsize      = 0x80
+[    0.000000] cpu_features      = 0x0003c06b8f4fb187
+[    0.000000]   possible        = 0x001ffbfbcf5fb187
+[    0.000000]   always          = 0x0000000380008181
+[    0.000000] cpu_user_features = 0xdc0065c2 0xaef00000
+[    0.000000] mmu_features      = 0x3c007641
+[    0.000000] firmware_features = 0x0000000110000000
+[    0.000000] vmalloc start     = 0xc008000000000000
+[    0.000000] IO start          = 0xc00a000000000000
+[    0.000000] vmemmap start     = 0xc00c000000000000
+[    0.000000] -----------------------------------------------------
+[    0.000000] numa:   NODE_DATA [mem 0x7bf84280-0x7bf8bfff]
+[    0.000000] kvm_cma_reserve: reserving 102 MiB for global area
+[    0.000000] cma: Reserved 112 MiB at 0x0000000073000000 on node -1
+[    0.000000] rfi-flush: fallback displacement flush available
+[    0.000000] count-cache-flush: flush disabled.
+[    0.000000] link-stack-flush: flush disabled.
+[    0.000000] stf-barrier: eieio barrier available
+[    0.000000] barrier-nospec: using ORI speculation barrier
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] percpu: Embedded 10 pages/cpu s603176 r0 d52184 u655360
+[    0.000000] Kernel command line: 
+[    0.000000] random: crng init done
+[    0.000000] Dentry cache hash table entries: 262144 (order: 5, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 4, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32736
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 1763776K/2097152K available (20288K kernel code, 3264K rwdata, 12480K rodata, 7808K init, 1902K bss, 218688K reserved, 114688K cma-reserved)
+[    0.000000] SLUB: HWalign=128, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 46088 entries in 17 pages
+[    0.000000] ftrace: allocated 17 pages with 2 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2048 to nr_cpu_ids=1.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 512, nr_irqs: 512, preallocated irqs: 16
+[    0.000000] xive: Interrupt handling initialized with native backend
+[    0.000000] xive: Using priority 7 for all interrupts
+[    0.000000] xive: Using 64kB queues
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000073] time_init: 56 bit decrementer (max: 7fffffffffffff)
+[    0.001182] clocksource: timebase: mask: 0xffffffffffffffff max_cycles: 0x761537d007, max_idle_ns: 440795202126 ns
+[    0.002379] clocksource: timebase mult[1f40000] shift[24] registered
+[    0.011698] kfence: initialized - using 33554432 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.022746] Console: colour dummy device 80x25
+[    0.024113] printk: console [hvc0] enabled
+[    0.024113] printk: console [hvc0] enabled
+[    0.024985] printk: bootconsole [udbg0] disabled
+[    0.024985] printk: bootconsole [udbg0] disabled
+[    0.028229] pid_max: default: 32768 minimum: 301
+[    0.031712] LSM: initializing lsm=lockdown,capability,yama,selinux,bpf,landlock,integrity
+[    0.033476] Yama: becoming mindful.
+[    0.033962] SELinux:  Initializing.
+[    0.037160] LSM support for eBPF active
+[    0.037385] landlock: Up and running.
+[    0.039606] Mount-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.039863] Mountpoint-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.091268] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.091804] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.093058] POWER9 performance monitor hardware support registered
+[    0.094597] rcu: Hierarchical SRCU implementation.
+[    0.094776] rcu: 	Max phase no-delay instances is 1000.
+[    0.113988] smp: Bringing up secondary CPUs ...
+[    0.115052] smp: Brought up 1 node, 1 CPU
+[    0.115343] numa: Node 0 CPUs: 0
+[    0.132140] devtmpfs: initialized
+[    0.147517] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.147929] futex hash table entries: 256 (order: -1, 32768 bytes, linear)
+[    0.170406] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.175841] audit: initializing netlink subsys (disabled)
+[    0.183867] audit: type=2000 audit(1691779678.160:1): state=initialized audit_enabled=0 res=1
+[    0.184608] thermal_sys: Registered thermal governor 'fair_share'
+[    0.184654] thermal_sys: Registered thermal governor 'step_wise'
+[    0.185288] cpuidle: using governor menu
+[    0.186737] Failed to initialize. Disabling HugeTLB
+[    0.187276] nvram: No room to create lnx,oops-log partition, deleting any obsolete OS partitions...
+[    0.187735] nvram: Failed to find or create lnx,oops-log partition, err -28
+[    0.187960] nvram: Failed to initialize oops partition!
+[    0.196097] EEH: PowerNV platform initialized
+[    0.217771] cpuidle-powernv: Default stop: psscr = 0x0000000000000330,mask=0x00000000003003ff
+[    0.218185] cpuidle-powernv: Deepest stop: psscr = 0x0000000000300331,mask=0x00000000003003ff
+[    0.218473] cpuidle-powernv: First stop level that may lose SPRs = 0x10
+[    0.218664] cpuidle-powernv: First stop level that may lose timebase = 0x10
+[    0.221746] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.284935] raid6: skipped pq benchmark and selected vpermxor8
+[    0.285193] raid6: using intx1 recovery algorithm
+[    0.287920] iommu: Default domain type: Translated
+[    0.288143] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.290924] SCSI subsystem initialized
+[    0.320153] usbcore: registered new interface driver usbfs
+[    0.320655] usbcore: registered new interface driver hub
+[    0.320973] usbcore: registered new device driver usb
+[    0.321980] pps_core: LinuxPPS API ver. 1 registered
+[    0.322148] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.322495] PTP clock support registered
+[    0.323770] EDAC MC: Ver: 3.0.0
+[    0.337591] NetLabel: Initializing
+[    0.337725] NetLabel:  domain hash size = 128
+[    0.337861] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.338976] NetLabel:  unlabeled traffic allowed by default
+[    0.339208] mctp: management component transport protocol core
+[    0.339385] NET: Registered PF_MCTP protocol family
+[    0.340237] PCI: Probing PCI hardware
+[    0.345730] vgaarb: loaded
+[    0.350500] clocksource: Switched to clocksource timebase
+[    0.387710] VFS: Disk quotas dquot_6.6.0
+[    0.388100] VFS: Dquot-cache hash table entries: 8192 (order 0, 65536 bytes)
+[    0.389876] hugetlbfs: disabling because there are no supported hugepage sizes
+[    0.418894] NET: Registered PF_INET protocol family
+[    0.420519] IP idents hash table entries: 32768 (order: 2, 262144 bytes, linear)
+[    0.429746] tcp_listen_portaddr_hash hash table entries: 4096 (order: 0, 65536 bytes, linear)
+[    0.430225] Table-perturb hash table entries: 65536 (order: 2, 262144 bytes, linear)
+[    0.430842] TCP established hash table entries: 16384 (order: 1, 131072 bytes, linear)
+[    0.431350] TCP bind hash table entries: 16384 (order: 3, 524288 bytes, linear)
+[    0.432021] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.433859] MPTCP token hash table entries: 4096 (order: 0, 98304 bytes, linear)
+[    0.434429] UDP hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.434987] UDP-Lite hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.436987] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.437679] NET: Registered PF_XDP protocol family
+[    0.438052] PCI: CLS 0 bytes, default 128
+[    0.440053] rtas_flash: no firmware flash support
+[    0.444836] Trying to unpack rootfs image as initramfs...
+[    0.469337] Initialise system trusted keyrings
+[    0.483107] Key type blacklist registered
+[    0.484592] workingset: timestamp_bits=38 max_order=15 bucket_order=0
+[    0.485067] zbud: loaded
+[    0.523075] integrity: Platform Keyring initialized
+[    0.570671] Freeing initrd memory: 8640K
+[    0.575687] NET: Registered PF_ALG protocol family
+[    0.576091] xor: measuring software checksum speed
+[    0.580336]    8regs           :  2616 MB/sec
+[    0.584928]    8regs_prefetch  :  2363 MB/sec
+[    0.588964]    32regs          :  2625 MB/sec
+[    0.593695]    32regs_prefetch :  2245 MB/sec
+[    0.633329]    altivec         :   252 MB/sec
+[    0.633509] xor: using function: 32regs (2625 MB/sec)
+[    0.634005] Key type asymmetric registered
+[    0.634208] Asymmetric key parser 'x509' registered
+[    0.660861] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.661876] io scheduler mq-deadline registered
+[    0.662102] io scheduler kyber registered
+[    0.662464] io scheduler bfq registered
+[    0.681665] atomic64_test: passed
+[    0.684476] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.687004] hvc0: raw protocol on /ibm,opal/consoles/serial@0 (boot console)
+[    0.687395] hvc0: No interrupts property, using OPAL event
+[    0.690040] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.722047] usbcore: registered new interface driver usbserial_generic
+[    0.722627] usbserial: USB Serial support registered for generic
+[    0.723621] mousedev: PS/2 mouse device common for all mice
+[    0.726201] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.726658] device-mapper: uevent: version 1.0.3
+[    0.727658] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    0.729499] powernv-cpufreq: ibm,pstate-min node not found
+[    0.729677] powernv-cpufreq: Platform driver disabled. System does not support PState control
+[    0.731967] hid: raw HID events driver (C) Jiri Kosina
+[    0.732672] usbcore: registered new interface driver usbhid
+[    0.732852] usbhid: USB HID core driver
+[    0.733631] drop_monitor: Initializing network drop monitor service
+[    0.798251] Initializing XFRM netlink socket
+[    0.799128] NET: Registered PF_INET6 protocol family
+[    0.812689] Segment Routing with IPv6
+[    0.812925] RPL Segment Routing with IPv6
+[    0.813308] In-situ OAM (IOAM) with IPv6
+[    0.814024] mip6: Mobile IPv6
+[    0.814488] NET: Registered PF_PACKET protocol family
+[    0.815363] secvar-sysfs: Failed to retrieve secvar operations
+[    0.815614] drmem: No dynamic reconfiguration memory found
+[    0.836332] registered taskstats version 1
+[    0.839365] Loading compiled-in X.509 certificates
+[    0.888347] Loaded X.509 cert 'Build time autogenerated kernel key: d839064a68f1a53cb296bbd9511f9305483b01da'
+[    0.909341] page_owner is disabled
+[    0.910098] Key type .fscrypt registered
+[    0.910433] Key type fscrypt-provisioning registered
+[    0.918770] Btrfs loaded, zoned=yes, fsverity=yes
+[    0.920066] Key type big_key registered
+[    0.931389] Key type encrypted registered
+[    0.932088] Secure boot mode disabled
+[    0.932685] ima: No TPM chip found, activating TPM-bypass!
+[    0.932950] Loading compiled-in module X.509 certificates
+[    0.935409] Loaded X.509 cert 'Build time autogenerated kernel key: d839064a68f1a53cb296bbd9511f9305483b01da'
+[    0.935817] ima: Allocated hash algorithm: sha256
+[    0.938224] Secure boot mode disabled
+[    0.938512] Trusted boot mode disabled
+[    0.938703] ima: No architecture policies found
+[    0.939530] evm: Initialising EVM extended attributes:
+[    0.939702] evm: security.selinux
+[    0.939837] evm: security.SMACK64 (disabled)
+[    0.939963] evm: security.SMACK64EXEC (disabled)
+[    0.940100] evm: security.SMACK64TRANSMUTE (disabled)
+[    0.940413] evm: security.SMACK64MMAP (disabled)
+[    0.940545] evm: security.apparmor (disabled)
+[    0.940691] evm: security.ima
+[    0.940803] evm: security.capability
+[    0.940933] evm: HMAC attrs: 0x1
+[    1.057437] alg: No test for 842 (842-scomp)
+[    1.057829] alg: No test for 842 (842-generic)
+[    1.569160] clk: Disabling unused clocks
+[    1.676233] Freeing unused kernel image (initmem) memory: 7808K
+[    1.685506] Checked W+X mappings: passed, no W+X pages found
+[    1.686150] Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP Fri Aug 11 18:47:07 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+[    7.085752] reboot: Power down
+[   10.117011652,5] OPAL: Shutdown request type 0x0...
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-ppc64 -display none -nodefaults -device ipmi-bmc-sim,id=bmc0 -device isa-ipmi-bt,bmc=bmc0,irq=10 -machine powernv -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/powerpc/arch/powerpc/boot/zImage.epapr -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/ppc64le/rootfs.cpio -m 2G -serial mon:stdio

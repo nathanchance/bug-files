@@ -1,0 +1,305 @@
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 42949672950 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+KASLR disabled: CPU has no PRNG
+KASLR disabled: CPU has no PRNG
+[    0.460568] Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), GNU ld (GNU Binutils) 2.41) #1 SMP Sat Aug 12 03:30:16 UTC 2023
+
+[    0.462128] setup: Linux is running under KVM in 64-bit mode
+
+[    0.475760] setup: The maximum memory size is 512MB
+
+[    0.476239] setup: Relocating AMODE31 section of size 0x00003000
+
+[    0.479051] cpu: 1 configured CPUs, 0 standby CPUs
+
+[    0.981599] Write protected kernel read-only data: 21296k
+
+[    0.995344] Zone ranges:
+
+[    0.995359]   DMA      [mem 0x0000000000000000-0x000000007fffffff]
+
+[    0.996067]   Normal   empty
+
+[    0.996103] Movable zone start for each node
+
+[    0.996128] Early memory node ranges
+
+[    0.996152]   node   0: [mem 0x0000000000000000-0x000000001fffffff]
+
+[    0.996537] Initmem setup node 0 [mem 0x0000000000000000-0x000000001fffffff]
+
+[    1.014073] percpu: Embedded 30 pages/cpu s82816 r8192 d31872 u122880
+
+[    1.016217] Kernel command line: 
+
+[    1.017411] random: crng init done
+
+[    1.017837] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+
+[    1.018018] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+
+[    1.019153] Fallback order for Node 0: 0 
+
+[    1.019548] Built 1 zonelists, mobility grouping on.  Total pages: 129024
+
+[    1.019583] Policy zone: DMA
+
+[    1.019836] mem auto-init: stack:off, heap alloc:off, heap free:off
+
+[    1.025080] Memory: 230468K/524288K available (16932K kernel code, 2748K rwdata, 4364K rodata, 6364K init, 920K bss, 48964K reserved, 0K cma-reserved)
+
+[    1.029411] SLUB: HWalign=256, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+
+[    1.030199] ftrace: allocating 44896 entries in 176 pages
+
+[    1.144550] ftrace: allocated 176 pages with 3 groups
+
+[    1.155169] rcu: Hierarchical RCU implementation.
+
+[    1.155189] rcu: 	RCU event tracing is enabled.
+
+[    1.155213] rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+
+[    1.155344] 	Rude variant of Tasks RCU enabled.
+
+[    1.155354] 	Tracing variant of Tasks RCU enabled.
+
+[    1.155442] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+
+[    1.155473] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+
+[    1.193637] NR_IRQS: 3, nr_irqs: 3, preallocated irqs: 3
+
+[    1.196118] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+
+[    1.197368] clocksource: tod: mask: 0xffffffffffffffff max_cycles: 0x3b0a9be803b0a9, max_idle_ns: 1805497147909793 ns
+
+[    1.201885] Console: colour dummy device 80x25
+
+[    1.206910] printk: console [ttysclp0] enabled
+
+[    1.213930] pid_max: default: 32768 minimum: 301
+
+[    1.215406] LSM: initializing lsm=lockdown,capability,selinux,integrity
+
+[    1.215903] SELinux:  Initializing.
+
+[    1.217423] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+
+[    1.217471] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+
+[    1.254456] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+
+[    1.254903] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+
+[    1.256960] rcu: Hierarchical SRCU implementation.
+
+[    1.257005] rcu: 	Max phase no-delay instances is 1000.
+
+[    1.261687] smp: Bringing up secondary CPUs ...
+
+[    1.262447] smp: Brought up 1 node, 1 CPU
+
+[    1.276993] node 0 deferred pages initialised in 10ms
+
+[    1.289908] devtmpfs: initialized
+
+[    1.297604] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+
+[    1.297779] futex hash table entries: 256 (order: 4, 65536 bytes, linear)
+
+[    1.303491] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+
+[    1.306144] audit: initializing netlink subsys (disabled)
+
+[    1.313668] audit: type=2000 audit(1691811032.058:1): state=initialized audit_enabled=0 res=1
+
+[    1.710261] raid6: vx128x8  gen()   853 MB/s
+
+[    1.710328] raid6: using algorithm vx128x8 gen() 853 MB/s
+
+[    1.880247] raid6: .... xor() 429 MB/s, rmw enabled
+
+[    1.880298] raid6: using s390xc recovery algorithm
+
+[    1.881991] iommu: Default domain type: Translated
+
+[    1.882040] iommu: DMA domain TLB invalidation policy: strict mode
+
+[    1.883673] SCSI subsystem initialized
+
+[    1.903930] VFS: Disk quotas dquot_6.6.0
+
+[    1.904064] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+
+[    1.905501] hugetlbfs: disabling because there are no supported hugepage sizes
+
+[    1.953402] NET: Registered PF_INET protocol family
+
+[    1.954821] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+
+[    1.961933] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+
+[    1.962008] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+
+[    1.962076] TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+
+[    1.962274] TCP bind hash table entries: 4096 (order: 5, 131072 bytes, linear)
+
+[    1.962461] TCP: Hash tables configured (established 4096 bind 4096)
+
+[    1.963895] MPTCP token hash table entries: 512 (order: 1, 12288 bytes, linear)
+
+[    1.964179] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+
+[    1.964409] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+
+[    1.965709] NET: Registered PF_UNIX/PF_LOCAL protocol family
+
+[    1.973128] Trying to unpack rootfs image as initramfs...
+
+[    1.991617] hypfs: The hardware system does not support hypfs
+
+[    1.995499] Initialise system trusted keyrings
+
+[    1.996367] Key type blacklist registered
+
+[    2.001097] workingset: timestamp_bits=45 max_order=17 bucket_order=0
+
+[    2.001308] zbud: loaded
+
+[    2.003753] fuse: init (API version 7.38)
+
+[    2.012171] SGI XFS with ACLs, security attributes, realtime, quota, no debug enabled
+
+[    2.024344] integrity: Platform Keyring initialized
+
+[    2.094499] xor: automatically using best checksumming function   xc        
+
+[    2.094554] Key type asymmetric registered
+
+[    2.094615] Asymmetric key parser 'x509' registered
+
+[    2.094879] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+
+[    2.105377] Freeing initrd memory: 7004K
+
+[    2.106210] io scheduler mq-deadline registered
+
+[    2.106310] io scheduler kyber registered
+
+[    2.106534] io scheduler bfq registered
+
+[    2.125669] atomic64_test: passed
+
+[    2.129392] hvc_iucv: The z/VM IUCV HVC device driver cannot be used without z/VM
+
+[    2.156063] brd: module loaded
+
+[    2.157277] zram: Added device: zram0
+
+[    2.158167] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+
+[    2.158253] device-mapper: uevent: version 1.0.3
+
+[    2.159020] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+
+[    2.159519] cio: Channel measurement facility initialized using format extended (mode autodetected)
+
+[    2.161707] Discipline DIAG cannot be used without z/VM
+
+[    2.164039] sclp_sd: Store Data request failed (eq=2, di=3, response=0x40f0, flags=0x00, status=0, rc=-5)
+
+[    2.165076] ap: The hardware system does not support AP instructions
+
+[    2.165127] qeth: loading core functions
+
+[    2.165575] qeth: register layer 2 discipline
+
+[    2.165605] qeth: register layer 3 discipline
+
+[    2.166953] NET: Registered PF_INET6 protocol family
+
+[    2.173934] Segment Routing with IPv6
+
+[    2.173989] RPL Segment Routing with IPv6
+
+[    2.174137] In-situ OAM (IOAM) with IPv6
+
+[    2.174653] NET: Registered PF_PACKET protocol family
+
+[    2.175018] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+
+[    2.175901] Key type dns_resolver registered
+
+[    2.184920] registered taskstats version 1
+
+[    2.185882] Loading compiled-in X.509 certificates
+
+[    2.332821] Loaded X.509 cert 'Build time autogenerated kernel key: 1af9d9ddc16c39b54fd275661607a117270dfe92'
+
+[    2.344516] Key type .fscrypt registered
+
+[    2.344552] Key type fscrypt-provisioning registered
+
+[    2.349132] Btrfs loaded, zoned=no, fsverity=yes
+
+[    2.350691] ima: No TPM chip found, activating TPM-bypass!
+
+[    2.350817] ima: Allocated hash algorithm: sha256
+
+[    2.352366] ima: No architecture policies found
+
+[    2.353629] alg: No test for crc32be (crc32be-vx)
+
+[    2.714457] Freeing unused kernel image (initmem) memory: 6364K
+
+[    2.722336] Write protected read-only-after-init data: 172k
+
+[    2.738359] Checked W+X mappings: passed, no unexpected W+X pages found
+
+[    2.738503] Run /init as init process
+
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl-00030-g8150cbc757fd (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), GNU ld (GNU Binutils) 2.41) #1 SMP Sat Aug 12 03:30:16 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-s390x -display none -nodefaults -M s390-ccw-virtio -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/s390/arch/s390/boot/bzImage -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/s390/rootfs.cpio -m 512m -serial mon:stdio

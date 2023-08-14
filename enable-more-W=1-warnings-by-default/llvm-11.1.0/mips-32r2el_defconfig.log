@@ -1,0 +1,17 @@
+Using /home/nathan/cbl/src/linux-next/arch/mips/configs/generic_defconfig as base
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/32r2.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/el.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-boston.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-marduk.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ni169445.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ocelot.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-ranchu.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-sead-3.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-virt.config
+Merging /home/nathan/cbl/src/linux-next/arch/mips/configs/generic/board-xilfpga.config
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:14:1: warning: DWARF2 only supports one section per compilation unit
+.pushsection .note.Linux, "a",@note ; .balign 4 ; .long 2f - 1f ; .long 4484f - 3f ; .long 0 ; 1:.asciz "Linux" ; 2:.balign 4 ; 3:
+^
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:34:2: warning: DWARF2 only supports one section per compilation unit
+ .section .mips_abiflags, "a"
+ ^

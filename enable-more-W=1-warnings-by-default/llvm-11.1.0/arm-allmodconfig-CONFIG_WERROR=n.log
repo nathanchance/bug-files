@@ -1,0 +1,59 @@
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/arm/integratorap.dts:161.22-206.4: Warning (pci_bridge): /pciv3@62000000: node name is not "pci" or "pcie"
+arch/arm/boot/dts/arm/integratorap.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/arm/boot/dts/arm/integratorap.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/arm/boot/dts/arm/integratorap.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/arm/integratorap-im-pd1.dts:252.3-14: Warning (dma_ranges_format): /bus@c0000000/bus@c0000000/display@1000000:dma-ranges: empty "dma-ranges" property but its #address-cells (2) differs from /bus@c0000000/bus@c0000000 (1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/arm/integratorap.dts:161.22-206.4: Warning (pci_bridge): /pciv3@62000000: node name is not "pci" or "pcie"
+arch/arm/boot/dts/arm/integratorap-im-pd1.dtb: Warning (unit_address_format): Failed prerequisite 'pci_bridge'
+arch/arm/boot/dts/arm/integratorap-im-pd1.dtb: Warning (pci_device_reg): Failed prerequisite 'pci_bridge'
+arch/arm/boot/dts/arm/integratorap-im-pd1.dtb: Warning (pci_device_bus_num): Failed prerequisite 'pci_bridge'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:238.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:247.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:256.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:265.6-19: Warning (reg_format): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (pci_device_bus_num): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:233.27-240.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:242.27-249.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:251.27-258.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c: incorrect #size-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #address-cells for I2C bus
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:260.27-267.6: Warning (i2c_bus_bridge): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d: incorrect #size-cells for I2C bus
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'reg_format'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (i2c_bus_reg): Failed prerequisite 'i2c_bus_bridge'
+arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dtb: Warning (spi_bus_reg): Failed prerequisite 'reg_format'
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:236.15-239.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@a/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:245.15-248.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@b/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:254.15-257.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@c/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #address-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/boot/dts/aspeed/aspeed-bmc-ibm-bonnell.dts:263.15-266.7: Warning (avoid_default_addr_size): /ahb/apb/fsi@1e79b000/cfam@0,0/i2c@1800/i2c-bus@d/eeprom@50: Relying on default #size-cells value
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/omap_hwmod.c:1723:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+                udelay(oh->class->sysc->srst_udelay);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+          ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/mach-omap2/wd_timer.c:89:3: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+                udelay(oh->class->sysc->srst_udelay);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+          ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/clk/actions/owl-pll.c:182:2: warning: result of comparison of constant 2000 with expression of type 'u8' (aka 'unsigned char') is always false [-Wtautological-constant-out-of-range-compare]
+        udelay(pll_hw->delay);
+        ^~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/arch/arm/include/asm/delay.h:84:9: note: expanded from macro 'udelay'
+          ((n) > (MAX_UDELAY_MS * 1000) ? __bad_udelay() :              \
+           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 42949672950 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

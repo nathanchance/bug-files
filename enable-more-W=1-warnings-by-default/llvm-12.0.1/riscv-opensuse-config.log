@@ -1,0 +1,271 @@
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 14316557650 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+
+OpenSBI v1.2
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name             : riscv-virtio,qemu
+Platform Features         : medeleg
+Platform HART Count       : 1
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer @ 10000000Hz
+Platform Console Device   : uart8250
+Platform HSM Device       : ---
+Platform PMU Device       : ---
+Platform Reboot Device    : sifive_test
+Platform Shutdown Device  : sifive_test
+Firmware Base             : 0x80000000
+Firmware Size             : 212 KB
+Runtime SBI Version       : 1.0
+
+Domain0 Name              : root
+Domain0 Boot HART         : 0
+Domain0 HARTs             : 0*
+Domain0 Region00          : 0x0000000002000000-0x000000000200ffff (I)
+Domain0 Region01          : 0x0000000080000000-0x000000008003ffff ()
+Domain0 Region02          : 0x0000000000000000-0xffffffffffffffff (R,W,X)
+Domain0 Next Address      : 0x0000000080200000
+Domain0 Next Arg1         : 0x000000009fe00000
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+
+Boot HART ID              : 0
+Boot HART Domain          : root
+Boot HART Priv Version    : v1.12
+Boot HART Base ISA        : rv64imafdch
+Boot HART ISA Extensions  : time,sstc
+Boot HART PMP Count       : 16
+Boot HART PMP Granularity : 4
+Boot HART PMP Address Bits: 54
+Boot HART MHPM Count      : 16
+Boot HART MIDELEG         : 0x0000000000001666
+Boot HART MEDELEG         : 0x0000000000f0b509
+[    0.000000][    T0] Linux version 6.5.0-rc5-next-20230809-default-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b), GNU ld (GNU Binutils) 2.39) #1 SMP Sat Aug 12 15:27:54 UTC 2023
+[    0.000000][    T0] random: crng init done
+[    0.000000][    T0] Machine model: riscv-virtio,qemu
+[    0.000000][    T0] SBI specification v1.0 detected
+[    0.000000][    T0] SBI implementation ID=0x1 Version=0x10002
+[    0.000000][    T0] SBI TIME extension detected
+[    0.000000][    T0] SBI IPI extension detected
+[    0.000000][    T0] SBI RFENCE extension detected
+[    0.000000][    T0] SBI SRST extension detected
+[    0.000000][    T0] efi: UEFI not found.
+[    0.000000][    T0] OF: reserved mem: 0x0000000080000000..0x000000008003ffff (256 KiB) map non-reusable mmode_resv0@80000000
+[    0.000000][    T0] cma: Reserved 16 MiB at 0x000000009ee00000 on node -1
+[    0.000000][    T0] NUMA: No NUMA configuration found
+[    0.000000][    T0] NUMA: Faking a node at [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000][    T0] NUMA: NODE_DATA [mem 0x9fff11c0-0x9fff2fff]
+[    0.000000][    T0] Zone ranges:
+[    0.000000][    T0]   DMA32    [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000][    T0]   Normal   empty
+[    0.000000][    T0] Movable zone start for each node
+[    0.000000][    T0] Early memory node ranges
+[    0.000000][    T0]   node   0: [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000][    T0] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000][    T0] SBI HSM extension detected
+[    0.000000][    T0] riscv: base ISA extensions acdfhim
+[    0.000000][    T0] riscv: ELF capabilities acdfim
+[    0.000000][    T0] percpu: cpu 0 has no node -1 or node-local memory
+[    0.000000][    T0] percpu: Embedded 30 pages/cpu s84520 r8192 d30168 u122880
+[    0.000000][    T0] Kernel command line: earlycon
+[    0.000000][    T0] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.000000][    T0] Fallback order for Node 0: 0 
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 129024
+[    0.000000][    T0] Policy zone: DMA32
+[    0.000000][    T0] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000][    T0] Memory: 98048K/524288K available (11496K kernel code, 6548K rwdata, 6144K rodata, 6584K init, 753K bss, 81712K reserved, 16384K cma-reserved)
+[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000][    T0] trace event string verifier disabled
+[    0.000000][    T0] rcu: Hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=1.
+[    0.000000][    T0] 	Rude variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000][    T0] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000][    T0] riscv-intc: 64 local interrupts mapped
+[    0.000000][    T0] plic: plic@c000000: mapped 95 interrupts with 1 handlers for 2 contexts.
+[    0.000000][    T0] riscv: providing IPIs using SBI IPI extension
+[    0.000000][    T0] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000][    T0] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000066][    T0] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.000192][    T0] riscv-timer: Timer interrupt in S-mode is available via sstc extension
+[    0.010129][    T0] Console: colour dummy device 80x25
+[    0.010476][    T0] printk: console [tty0] enabled
+[    0.015388][    T0] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.83 BogoMIPS (lpj=33333)
+[    0.015650][    T0] pid_max: default: 32768 minimum: 301
+[    0.017812][    T0] LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,tomoyo,bpf,integrity
+[    0.018364][    T0] landlock: Up and running.
+[    0.018421][    T0] Yama: becoming mindful.
+[    0.021387][    T0] AppArmor: AppArmor initialized
+[    0.021493][    T0] TOMOYO Linux initialized
+[    0.022190][    T0] LSM support for eBPF active
+[    0.025190][    T0] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.025271][    T0] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.064045][    T1] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.064400][    T1] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.065032][    T1] riscv: ELF compat mode supported
+[    0.065395][    T1] ASID allocator using 16 bits (65536 entries)
+[    0.066595][    T1] rcu: Hierarchical SRCU implementation.
+[    0.066664][    T1] rcu: 	Max phase no-delay instances is 1000.
+[    0.072188][    T1] EFI services will not be available.
+[    0.076123][    T1] smp: Bringing up secondary CPUs ...
+[    0.077187][    T1] smp: Brought up 1 node, 1 CPU
+[    0.102755][   T20] node 0 deferred pages initialised in 20ms
+[    0.117970][    T1] devtmpfs: initialized
+[    0.130831][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.131040][    T1] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.135547][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.155777][    T1] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.166561][    T1] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.167009][    T1] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.167518][    T1] audit: initializing netlink subsys (disabled)
+[    0.170687][   T24] audit: type=2000 audit(0.156:1): state=initialized audit_enabled=0 res=1
+[    0.175267][    T1] thermal_sys: Registered thermal governor 'fair_share'
+[    0.175322][    T1] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.175378][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.175420][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.175784][    T1] cpuidle: using governor ladder
+[    0.175982][    T1] cpuidle: using governor menu
+[    0.217646][    T1] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.217716][    T1] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.217776][    T1] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.217814][    T1] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.228542][    T1] ACPI: Interpreter disabled.
+[    0.230926][    T1] iommu: Default domain type: Passthrough
+[    0.233267][    T1] SCSI subsystem initialized
+[    0.235208][    T1] EDAC MC: Ver: 3.0.0
+[    0.246525][    T1] NetLabel: Initializing
+[    0.246576][    T1] NetLabel:  domain hash size = 128
+[    0.246613][    T1] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.247794][    T1] NetLabel:  unlabeled traffic allowed by default
+[    0.247916][    T1] mctp: management component transport protocol core
+[    0.247959][    T1] NET: Registered PF_MCTP protocol family
+[    0.252484][    T1] vgaarb: loaded
+[    0.255291][    T1] clocksource: Switched to clocksource riscv_clocksource
+[    0.293611][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.293877][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.301026][    T1] AppArmor: AppArmor Filesystem Enabled
+[    0.301464][    T1] pnp: PnP ACPI: disabled
+[    0.326989][    T1] NET: Registered PF_INET protocol family
+[    0.328248][    T1] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.335680][    T1] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.335831][    T1] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.335934][    T1] TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.336179][    T1] TCP bind hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.336455][    T1] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.338419][    T1] MPTCP token hash table entries: 512 (order: 1, 12288 bytes, linear)
+[    0.338780][    T1] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.339113][    T1] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.340866][    T1] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.341450][    T1] NET: Registered PF_XDP protocol family
+[    0.341802][    T1] PCI: CLS 0 bytes, default 64
+[    0.350455][   T11] Trying to unpack rootfs image as initramfs...
+[    0.353357][    T1] Initialise system trusted keyrings
+[    0.358734][    T1] Key type blacklist registered
+[    0.360028][    T1] workingset: timestamp_bits=44 max_order=17 bucket_order=0
+[    0.360287][    T1] zbud: loaded
+[    0.367981][    T1] integrity: Platform Keyring initialized
+[    0.368174][    T1] integrity: Machine keyring initialized
+[    0.485167][    T1] Key type asymmetric registered
+[    0.485331][    T1] Asymmetric key parser 'x509' registered
+[    0.503055][   T11] Freeing initrd memory: 4684K
+[    0.526525][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.527360][    T1] io scheduler mq-deadline registered
+[    0.527470][    T1] io scheduler kyber registered
+[    0.527714][    T1] io scheduler bfq registered
+[    0.546741][    T1] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.551554][    T1] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.589846][    T1] 10000000.serial: ttyS0 at MMIO 0x10000000 (irq = 12, base_baud = 230400) is a 16550A
+[    0.591805][    T1] printk: console [ttyS0] enabled
+[    0.617858][    T1] mousedev: PS/2 mouse device common for all mice
+[    0.622425][    T1] syscon-poweroff poweroff: pm_power_off already claimed for sbi_srst_power_off
+[    0.623027][    T1] syscon-poweroff: probe of poweroff failed with error -16
+[    0.624706][    T1] EDAC DEVICE0: Giving out device to module Sifive ECC Manager controller sifive_edac.0: DEV sifive_edac.0 (INTERRUPT)
+[    0.626757][    T1] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.627400][    T1] hid: raw HID events driver (C) Jiri Kosina
+[    0.628249][    T1] riscv-pmu-sbi: SBI PMU extension is available
+[    0.628949][    T1] riscv-pmu-sbi: 16 firmware and 18 hardware counters
+[    0.629162][    T1] riscv-pmu-sbi: Perf sampling/filtering is not supported as sscof extension is not available
+[    0.631414][    T1] NET: Registered PF_INET6 protocol family
+[    0.645254][    T1] Segment Routing with IPv6
+[    0.645472][    T1] RPL Segment Routing with IPv6
+[    0.645810][    T1] In-situ OAM (IOAM) with IPv6
+[    0.671518][    T1] registered taskstats version 1
+[    0.673791][    T1] Loading compiled-in X.509 certificates
+[    0.778367][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: 0f703dc9aef13d1b8ac49e50541df1f0557aa60e'
+[    0.802932][    T1] Key type .fscrypt registered
+[    0.803096][    T1] Key type fscrypt-provisioning registered
+[    0.815504][    T1] Key type encrypted registered
+[    0.815746][    T1] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.816463][    T1] ima: No TPM chip found, activating TPM-bypass!
+[    0.816709][    T1] Loading compiled-in module X.509 certificates
+[    0.819812][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: 0f703dc9aef13d1b8ac49e50541df1f0557aa60e'
+[    0.820187][    T1] ima: Allocated hash algorithm: sha256
+[    0.822251][    T1] ima: No architecture policies found
+[    0.823045][    T1] evm: Initialising EVM extended attributes:
+[    0.823228][    T1] evm: security.selinux
+[    0.823370][    T1] evm: security.SMACK64 (disabled)
+[    0.823517][    T1] evm: security.SMACK64EXEC (disabled)
+[    0.823657][    T1] evm: security.SMACK64TRANSMUTE (disabled)
+[    0.823806][    T1] evm: security.SMACK64MMAP (disabled)
+[    0.823945][    T1] evm: security.apparmor
+[    0.824060][    T1] evm: security.ima
+[    0.824164][    T1] evm: security.capability
+[    0.824295][    T1] evm: HMAC attrs: 0x1
+[    1.522735][    T1] clk: Disabling unused clocks
+[    1.580829][    T1] Freeing unused kernel image (initmem) memory: 6584K
+[    1.582541][    T1] Run /init as init process
+[    1.692150][    T1] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-default-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 12.0.1 (https://github.com/llvm/llvm-project fed41342a82f5a3a9201819a82bf7a48313e296b), GNU ld (GNU Binutils) 2.39) #1 SMP Sat Aug 12 15:27:54 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+[    5.751556][  T185] reboot: Power down
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-riscv64 -display none -nodefaults -bios default -M virt -append earlycon -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/riscv/arch/riscv/boot/Image -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/riscv/rootfs.cpio -m 512m -serial mon:stdio

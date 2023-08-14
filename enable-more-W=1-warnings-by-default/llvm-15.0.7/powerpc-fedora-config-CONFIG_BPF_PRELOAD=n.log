@@ -1,0 +1,454 @@
+/home/nathan/cbl/src/linux-next/drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+                             u32 event_quota)
+                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                   unsigned int changed_flags,
+                                                ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath5k/mac80211-ops.c:367:62: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ath5k_configure_filter(struct ieee80211_hw *hw, unsigned int changed_flags,
+                                                             ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+                                       unsigned int changed_flags,
+                                                    ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 42949672950 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/scsi/ibmvscsi_tgt/ibmvscsi_tgt.c:1630:32: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if ((olen < min_len) || (olen > PAGE_SIZE)) {
+                                 ~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+static int qed_send_msg2pf(struct qed_hwfn *p_hwfn, u8 *done, u32 resp_size)
+                                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/mellanox/mlx5/core/en/xsk/setup.c:32:22: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (xsk->chunk_size > PAGE_SIZE || xsk->chunk_size < MLX5E_MIN_XSK_CHUNK_SIZE) {
+            ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/nilfs2/ioctl.c:63:19: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (argv->v_size > PAGE_SIZE)
+            ~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:90:39: warning: result of comparison of constant 65536 with expression of type 'u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        WARN_ON_ONCE(method_elm->bundle_size > PAGE_SIZE);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/include/asm-generic/bug.h:111:25: note: expanded from macro 'WARN_ON_ONCE'
+        int __ret_warn_on = !!(condition);                      \
+                               ^~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/infiniband/core/uverbs_ioctl.c:629:17: warning: result of comparison of constant 65536 with expression of type '__u16' (aka 'unsigned short') is always false [-Wtautological-constant-out-of-range-compare]
+        if (hdr.length > PAGE_SIZE ||
+            ~~~~~~~~~~ ^ ~~~~~~~~~
+2 warnings generated.
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+[    0.014545425,5] OPAL v7.0 starting...
+[    0.015092027,7] initial console log level: memory 7, driver 5
+[    0.015139595,6] CPU: P9 generation processor (max 4 threads/core)
+[    0.015164460,7] CPU: Boot CPU PIR is 0x0000 PVR is 0x004e1200
+[    0.015283280,7] OPAL table: 0x3018a660 .. 0x3018ac20, branch table: 0x30120000
+[    0.015450402,7] Assigning physical memory map table for nimbus
+[    0.015791890,7] FDT: Parsing fdt @0x1000000
+[    0.018062251,5] CHIP: Detected QEMU simulator
+[    0.018251359,6] CHIP: Initialised chip 0 from xscom@603fc00000000
+[    0.018595433,6] P9 DD2.00 detected
+[    0.018612402,5] CHIP: Chip ID 0000 type: P9N DD2.00
+[    0.018621056,7] XSCOM: Base address: 0x603fc00000000
+[    0.018641965,7] XSTOP: ibm,sw-checkstop-fir prop not found
+[    0.018718434,6] MFSI 0:0: Initialized
+[    0.018729135,6] MFSI 0:2: Initialized
+[    0.018738394,6] MFSI 0:1: Initialized
+[    0.019302668,6] LPC: LPC[000]: Initialized
+[    0.019311542,7] LPC: access via MMIO @0x6030000000000
+[    0.019337715,7] LPC: Default bus on chip 0x0
+[    0.019418631,7] CPU: New max PIR set to 0x3
+[    0.019917552,7] MEM: parsing reserved memory from reserved-names/-ranges properties
+[    0.020007836,7] HOMER: Init chip 0
+[    0.020041128,7]   PBA BAR0 : 0x0000203ffd800000
+[    0.020049223,7]   PBA MASK0: 0x0000000000300000
+[    0.020079063,7]   HOMER Image at 0x203ffd800000 size 4MB
+[    0.020125261,4] HOMER image is not reserved! Reserving
+[    0.020176759,7]   PBA BAR2 : 0x0000203fff800000
+[    0.020181740,7]   PBA MASK2: 0x0000000000700000
+[    0.020196652,7]   OCC Common Area at 0x203fff800000 size 8MB
+[    0.020226738,4] OCC common area is not reserved! Reserving
+[    0.020287049,7] CPU: decrementer bits 56
+[    0.020367309,6] CPU: CPU from DT PIR=0x0000 Server#=0x0 State=4
+[    0.020464626,6] CPU:  1 secondary threads
+[    0.021734908,5] PLAT: Using SuperIO UART
+[    0.022008832,7] UART: Using LPC IRQ 4
+[    0.024588358,5] PLAT: Detected QEMU POWER9 platform
+[    0.024670926,5] PLAT: Detected BMC platform ast2500:openbmc
+[    0.039765935,5] CPU: All 1 processors called in...
+[    0.040806609,7] LPC: Routing irq 10, policy: 0 (r=1)
+[    0.040879954,7] LPC: SerIRQ 10 using route 0 targetted at OPAL
+[    0.062652161,5] HIOMAP: Negotiated hiomap protocol v2
+[    0.062794953,5] HIOMAP: Block size is 4KiB
+[    0.062899057,5] HIOMAP: BMC suggested flash timeout of 0s
+[    0.063028824,5] HIOMAP: Flash size is 128MiB
+[    0.063137667,5] HIOMAP: Erase granule size is 4KiB
+[    0.079663750,3] FFS: Reading the flash has returned all 0xFF.
+[    0.079736454,3]      Are you reading erased flash?
+[    0.079793620,3]      Is something else using the flash controller?
+[    0.079877815,4] FLASH: No ffs info; using raw device only
+[    0.085178781,3] FFS: Reading the flash has returned all 0xFF.
+[    0.085246941,3]      Are you reading erased flash?
+[    0.085301680,3]      Is something else using the flash controller?
+[    0.085376564,3] FLASH: Can't open ffs handle
+[    0.090593869,3] FFS: Reading the flash has returned all 0xFF.
+[    0.090660685,3]      Are you reading erased flash?
+[    0.090715332,3]      Is something else using the flash controller?
+[    0.090786502,3] FLASH: Can't open ffs handle
+[    0.095993676,3] FFS: Reading the flash has returned all 0xFF.
+[    0.096060009,3]      Are you reading erased flash?
+[    0.096113923,3]      Is something else using the flash controller?
+[    0.096183241,3] FLASH: Can't open ffs handle
+[    0.101390692,3] FFS: Reading the flash has returned all 0xFF.
+[    0.101458287,3]      Are you reading erased flash?
+[    0.101515653,3]      Is something else using the flash controller?
+[    0.101585023,3] FLASH: Can't open ffs handle
+[    0.106800122,3] FFS: Reading the flash has returned all 0xFF.
+[    0.106870508,3]      Are you reading erased flash?
+[    0.106924678,3]      Is something else using the flash controller?
+[    0.106993257,3] FLASH: Can't open ffs handle
+[    0.112202350,3] FFS: Reading the flash has returned all 0xFF.
+[    0.112273238,3]      Are you reading erased flash?
+[    0.112327665,3]      Is something else using the flash controller?
+[    0.112396994,3] FLASH: Can't open ffs handle
+[    0.123610286,2] NVRAM: Failed to load
+[    0.123670494,2] NVRAM: Failed to load
+[    0.123734539,5] STB: secure boot not supported
+[    0.123810613,5] STB: trusted boot not supported
+[    0.124084917,4] FLASH: Can't load resource id:4. No system flash found
+[    0.124330797,4] FLASH: Can't load resource id:3. No system flash found
+[    0.124465278,2] NVRAM: Failed to load
+[    0.124621490,7] LPC: Routing irq 4, policy: 0 (r=1)
+[    0.124637531,7] LPC: SerIRQ 4 using route 1 targetted at OPAL
+[    0.125011506,3] SLW: Failed to set HRMOR for CPU 0,RC=0x1
+[    0.125223647,5] Unable to log error
+[    0.125292345,3] Disabling deep stop states
+[    0.125478673,2] NVRAM: Failed to load
+[    0.125797390,3] OCC: Chip: 0: OCC not active
+[    0.125855141,3] OCC: Initialization on all chips did not complete(timed out)
+[    0.125945143,5] Unable to log error
+[    0.126016374,2] NVRAM: Failed to load
+[    0.126078742,2] NVRAM: Failed to load
+[    0.126133000,2] NVRAM: Failed to load
+[    0.126384676,4] FLASH: Can't load resource id:2. No system flash found
+[    0.126633587,4] FLASH: Can't load resource id:0. No system flash found
+[    0.126727667,4] FLASH: Can't load resource id:1. No system flash found
+[    0.126896318,3] IMC: IMC Catalog load failed
+[    0.127182225,2] NVRAM: Failed to load
+[    0.127235970,2] NVRAM: Failed to load
+[    0.127286550,2] NVRAM: Failed to load
+[    0.127640329,5] PCI: Resetting PHBs and training links...
+[    0.127757764,5] PCI: Probing slots...
+[    0.127819070,5] PCI Summary:
+[    0.127943333,4] FLASH: Failed to load VERSION data
+[    0.345020145,2] NVRAM: Failed to load
+[    0.345553081,5] INIT: Waiting for kernel...
+[    0.345612745,5] INIT: platform wait for kernel load failed
+[    0.345693452,5] INIT: Assuming kernel at 0x20000000
+[    0.345799155,5] INIT: 64-bit LE kernel discovered
+[    0.346058547,3] OCC: Chip 0 sensor data invalid
+[    0.346317092,2] NVRAM: Failed to load
+[    0.352778185,5] INIT: Starting kernel at 0x20010000, fdt at 0x30758170 15742 bytes
+
+
+zImage starting: loaded at 0x0000000020010000 (sp: 0x0000000020dffda0)
+
+Allocating 0x2cab848 bytes for kernel...
+
+Decompressing (0x0000000000000000 <- 0x0000000020023000:0x0000000020dfe97c)...
+
+Done! Decompressed 0x2ad0000 bytes
+
+
+Linux/PowerPC load: 
+
+Finalizing device tree... flat tree at 0x20e00ca0
+
+[    0.000000] OF: reserved mem: 0x0000000030000000..0x00000000305fffff (6144 KiB) map non-reusable ibm,firmware-code@30000000
+[    0.000000] OF: reserved mem: 0x0000000030600000..0x0000000030ffffff (10240 KiB) map non-reusable ibm,firmware-heap@30600000
+[    0.000000] OF: reserved mem: 0x0000000031000000..0x0000000031c0ffff (12352 KiB) map non-reusable ibm,firmware-data@31000000
+[    0.000000] OF: reserved mem: 0x0000000031c10000..0x0000000031c2ffff (128 KiB) map non-reusable ibm,firmware-stacks@31c10000
+[    0.000000] OF: reserved mem: 0x0000000031c30000..0x000000003290ffff (13184 KiB) map non-reusable ibm,firmware-allocs-memory@31c30000
+[    0.000000] OF: reserved mem: 0x0000203ffd800000..0x0000203ffdbfffff (4096 KiB) map non-reusable ibm,homer-image@203ffd800000
+[    0.000000] OF: reserved mem: 0x0000203fff800000..0x0000203fffffffff (8192 KiB) map non-reusable ibm,occ-common-area@203fff800000
+[    0.000000] dt-cpu-ftrs: setup for ISA 3000
+[    0.000000] dt-cpu-ftrs: final cpu/mmu features = 0x0003c06b8f5fb187 0x3c007041
+[    0.000000] Activating Kernel Userspace Access Prevention
+[    0.000000] Activating Kernel Userspace Execution Prevention
+[    0.000000] radix-mmu: Mapped 0x0000000000000000-0x00000000027a0000 with 64.0 KiB pages (exec)
+[    0.000000] radix-mmu: Mapped 0x00000000027a0000-0x0000000080000000 with 64.0 KiB pages
+[    0.000000] radix-mmu: Initializing Radix MMU
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), ClangBuiltLinux LLD 15.0.7) #1 SMP Sat Aug 12 03:01:44 UTC 2023
+[    0.000000] Found initrd at 0xc000000028000000:0xc000000028878600
+[    0.000000] Hardware name: IBM PowerNV (emulated by qemu) POWER9 0x4e1200 opal:v7.0 PowerNV
+[    0.000000] printk: bootconsole [udbg0] enabled
+[    0.000000] CPU maps initialized for 1 thread per core
+[    0.000000] -----------------------------------------------------
+[    0.000000] phys_mem_size     = 0x80000000
+[    0.000000] dcache_bsize      = 0x80
+[    0.000000] icache_bsize      = 0x80
+[    0.000000] cpu_features      = 0x0003c06b8f4fb187
+[    0.000000]   possible        = 0x001ffbfbcf5fb187
+[    0.000000]   always          = 0x0000000380008181
+[    0.000000] cpu_user_features = 0xdc0065c2 0xaef00000
+[    0.000000] mmu_features      = 0x3c007641
+[    0.000000] firmware_features = 0x0000000110000000
+[    0.000000] vmalloc start     = 0xc008000000000000
+[    0.000000] IO start          = 0xc00a000000000000
+[    0.000000] vmemmap start     = 0xc00c000000000000
+[    0.000000] -----------------------------------------------------
+[    0.000000] numa:   NODE_DATA [mem 0x7bf84280-0x7bf8bfff]
+[    0.000000] kvm_cma_reserve: reserving 102 MiB for global area
+[    0.000000] cma: Reserved 112 MiB at 0x0000000073000000 on node -1
+[    0.000000] rfi-flush: fallback displacement flush available
+[    0.000000] count-cache-flush: flush disabled.
+[    0.000000] link-stack-flush: flush disabled.
+[    0.000000] stf-barrier: eieio barrier available
+[    0.000000] barrier-nospec: using ORI speculation barrier
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] percpu: Embedded 10 pages/cpu s603176 r0 d52184 u655360
+[    0.000000] Kernel command line: 
+[    0.000000] random: crng init done
+[    0.000000] Dentry cache hash table entries: 262144 (order: 5, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 4, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32736
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 1763776K/2097152K available (20352K kernel code, 3264K rwdata, 12416K rodata, 7808K init, 1902K bss, 218688K reserved, 114688K cma-reserved)
+[    0.000000] SLUB: HWalign=128, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 46094 entries in 17 pages
+[    0.000000] ftrace: allocated 17 pages with 2 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2048 to nr_cpu_ids=1.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 512, nr_irqs: 512, preallocated irqs: 16
+[    0.000000] xive: Interrupt handling initialized with native backend
+[    0.000000] xive: Using priority 7 for all interrupts
+[    0.000000] xive: Using 64kB queues
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000070] time_init: 56 bit decrementer (max: 7fffffffffffff)
+[    0.001188] clocksource: timebase: mask: 0xffffffffffffffff max_cycles: 0x761537d007, max_idle_ns: 440795202126 ns
+[    0.002449] clocksource: timebase mult[1f40000] shift[24] registered
+[    0.011230] kfence: initialized - using 33554432 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.022702] Console: colour dummy device 80x25
+[    0.024132] printk: console [hvc0] enabled
+[    0.024132] printk: console [hvc0] enabled
+[    0.025020] printk: bootconsole [udbg0] disabled
+[    0.025020] printk: bootconsole [udbg0] disabled
+[    0.028147] pid_max: default: 32768 minimum: 301
+[    0.035182] LSM: initializing lsm=lockdown,capability,yama,selinux,bpf,landlock,integrity
+[    0.036843] Yama: becoming mindful.
+[    0.038822] SELinux:  Initializing.
+[    0.041762] LSM support for eBPF active
+[    0.041985] landlock: Up and running.
+[    0.044309] Mount-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.044614] Mountpoint-cache hash table entries: 8192 (order: 0, 65536 bytes, linear)
+[    0.094560] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.095118] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.096371] POWER9 performance monitor hardware support registered
+[    0.097733] rcu: Hierarchical SRCU implementation.
+[    0.097930] rcu: 	Max phase no-delay instances is 1000.
+[    0.117120] smp: Bringing up secondary CPUs ...
+[    0.118236] smp: Brought up 1 node, 1 CPU
+[    0.118522] numa: Node 0 CPUs: 0
+[    0.134389] devtmpfs: initialized
+[    0.149984] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.150386] futex hash table entries: 256 (order: -1, 32768 bytes, linear)
+[    0.172906] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.177932] audit: initializing netlink subsys (disabled)
+[    0.185741] audit: type=2000 audit(1691809359.160:1): state=initialized audit_enabled=0 res=1
+[    0.186191] thermal_sys: Registered thermal governor 'fair_share'
+[    0.186237] thermal_sys: Registered thermal governor 'step_wise'
+[    0.186835] cpuidle: using governor menu
+[    0.188304] Failed to initialize. Disabling HugeTLB
+[    0.188831] nvram: No room to create lnx,oops-log partition, deleting any obsolete OS partitions...
+[    0.189255] nvram: Failed to find or create lnx,oops-log partition, err -28
+[    0.189461] nvram: Failed to initialize oops partition!
+[    0.197618] EEH: PowerNV platform initialized
+[    0.220429] cpuidle-powernv: Default stop: psscr = 0x0000000000000330,mask=0x00000000003003ff
+[    0.220843] cpuidle-powernv: Deepest stop: psscr = 0x0000000000300331,mask=0x00000000003003ff
+[    0.221101] cpuidle-powernv: First stop level that may lose SPRs = 0x10
+[    0.221273] cpuidle-powernv: First stop level that may lose timebase = 0x10
+[    0.224461] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.284572] raid6: skipped pq benchmark and selected vpermxor8
+[    0.284794] raid6: using intx1 recovery algorithm
+[    0.287125] iommu: Default domain type: Translated
+[    0.287310] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.289684] SCSI subsystem initialized
+[    0.292967] usbcore: registered new interface driver usbfs
+[    0.293563] usbcore: registered new interface driver hub
+[    0.293911] usbcore: registered new device driver usb
+[    0.295083] pps_core: LinuxPPS API ver. 1 registered
+[    0.295243] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.295595] PTP clock support registered
+[    0.323981] EDAC MC: Ver: 3.0.0
+[    0.338341] NetLabel: Initializing
+[    0.338502] NetLabel:  domain hash size = 128
+[    0.338639] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.339947] NetLabel:  unlabeled traffic allowed by default
+[    0.340212] mctp: management component transport protocol core
+[    0.340388] NET: Registered PF_MCTP protocol family
+[    0.341463] PCI: Probing PCI hardware
+[    0.346881] vgaarb: loaded
+[    0.351214] clocksource: Switched to clocksource timebase
+[    0.388356] VFS: Disk quotas dquot_6.6.0
+[    0.388734] VFS: Dquot-cache hash table entries: 8192 (order 0, 65536 bytes)
+[    0.390471] hugetlbfs: disabling because there are no supported hugepage sizes
+[    0.414594] NET: Registered PF_INET protocol family
+[    0.416016] IP idents hash table entries: 32768 (order: 2, 262144 bytes, linear)
+[    0.425704] tcp_listen_portaddr_hash hash table entries: 4096 (order: 0, 65536 bytes, linear)
+[    0.426061] Table-perturb hash table entries: 65536 (order: 2, 262144 bytes, linear)
+[    0.426608] TCP established hash table entries: 16384 (order: 1, 131072 bytes, linear)
+[    0.427111] TCP bind hash table entries: 16384 (order: 3, 524288 bytes, linear)
+[    0.427767] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.429565] MPTCP token hash table entries: 4096 (order: 0, 98304 bytes, linear)
+[    0.430085] UDP hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.430577] UDP-Lite hash table entries: 2048 (order: 0, 65536 bytes, linear)
+[    0.432605] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.433349] NET: Registered PF_XDP protocol family
+[    0.433722] PCI: CLS 0 bytes, default 128
+[    0.435670] rtas_flash: no firmware flash support
+[    0.444489] Trying to unpack rootfs image as initramfs...
+[    0.455504] Initialise system trusted keyrings
+[    0.457921] Key type blacklist registered
+[    0.462226] workingset: timestamp_bits=38 max_order=15 bucket_order=0
+[    0.462711] zbud: loaded
+[    0.486995] integrity: Platform Keyring initialized
+[    0.575351] Freeing initrd memory: 8640K
+[    0.575914] NET: Registered PF_ALG protocol family
+[    0.576327] xor: measuring software checksum speed
+[    0.580548]    8regs           :  2514 MB/sec
+[    0.586568]    8regs_prefetch  :  2315 MB/sec
+[    0.593302]    32regs          :  1544 MB/sec
+[    0.598036]    32regs_prefetch :  2288 MB/sec
+[    0.629352]    altivec         :   323 MB/sec
+[    0.629531] xor: using function: 8regs (2514 MB/sec)
+[    0.630049] Key type asymmetric registered
+[    0.630255] Asymmetric key parser 'x509' registered
+[    0.655219] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.656230] io scheduler mq-deadline registered
+[    0.656449] io scheduler kyber registered
+[    0.656812] io scheduler bfq registered
+[    0.675864] atomic64_test: passed
+[    0.678893] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.681589] hvc0: raw protocol on /ibm,opal/consoles/serial@0 (boot console)
+[    0.681986] hvc0: No interrupts property, using OPAL event
+[    0.684563] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.717803] usbcore: registered new interface driver usbserial_generic
+[    0.718317] usbserial: USB Serial support registered for generic
+[    0.719250] mousedev: PS/2 mouse device common for all mice
+[    0.721996] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.722421] device-mapper: uevent: version 1.0.3
+[    0.723410] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    0.725333] powernv-cpufreq: ibm,pstate-min node not found
+[    0.725514] powernv-cpufreq: Platform driver disabled. System does not support PState control
+[    0.727697] hid: raw HID events driver (C) Jiri Kosina
+[    0.728360] usbcore: registered new interface driver usbhid
+[    0.728538] usbhid: USB HID core driver
+[    0.729316] drop_monitor: Initializing network drop monitor service
+[    0.795029] Initializing XFRM netlink socket
+[    0.795933] NET: Registered PF_INET6 protocol family
+[    0.808991] Segment Routing with IPv6
+[    0.809218] RPL Segment Routing with IPv6
+[    0.809586] In-situ OAM (IOAM) with IPv6
+[    0.810462] mip6: Mobile IPv6
+[    0.811110] NET: Registered PF_PACKET protocol family
+[    0.811977] secvar-sysfs: Failed to retrieve secvar operations
+[    0.812233] drmem: No dynamic reconfiguration memory found
+[    0.832688] registered taskstats version 1
+[    0.835721] Loading compiled-in X.509 certificates
+[    0.884217] Loaded X.509 cert 'Build time autogenerated kernel key: 95a8419b248526e87d0b868e89319549a9ed6ada'
+[    0.906943] page_owner is disabled
+[    0.907742] Key type .fscrypt registered
+[    0.907894] Key type fscrypt-provisioning registered
+[    0.916294] Btrfs loaded, zoned=yes, fsverity=yes
+[    0.917571] Key type big_key registered
+[    0.927671] Key type encrypted registered
+[    0.928312] Secure boot mode disabled
+[    0.928906] ima: No TPM chip found, activating TPM-bypass!
+[    0.929147] Loading compiled-in module X.509 certificates
+[    0.931710] Loaded X.509 cert 'Build time autogenerated kernel key: 95a8419b248526e87d0b868e89319549a9ed6ada'
+[    0.932084] ima: Allocated hash algorithm: sha256
+[    0.934471] Secure boot mode disabled
+[    0.934761] Trusted boot mode disabled
+[    0.934930] ima: No architecture policies found
+[    0.935756] evm: Initialising EVM extended attributes:
+[    0.935935] evm: security.selinux
+[    0.936073] evm: security.SMACK64 (disabled)
+[    0.936199] evm: security.SMACK64EXEC (disabled)
+[    0.936332] evm: security.SMACK64TRANSMUTE (disabled)
+[    0.936468] evm: security.SMACK64MMAP (disabled)
+[    0.936597] evm: security.apparmor (disabled)
+[    0.936720] evm: security.ima
+[    0.936814] evm: security.capability
+[    0.936930] evm: HMAC attrs: 0x1
+[    1.058972] alg: No test for 842 (842-scomp)
+[    1.059338] alg: No test for 842 (842-generic)
+[    1.571860] clk: Disabling unused clocks
+[    1.676460] Freeing unused kernel image (initmem) memory: 7808K
+[    1.685745] Checked W+X mappings: passed, no W+X pages found
+[    1.686444] Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), ClangBuiltLinux LLD 15.0.7) #1 SMP Sat Aug 12 03:01:44 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+[    6.718520] reboot: Power down
+[    9.357757575,5] OPAL: Shutdown request type 0x0...
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-ppc64 -display none -nodefaults -device ipmi-bmc-sim,id=bmc0 -device isa-ipmi-bt,bmc=bmc0,irq=10 -machine powernv -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/powerpc/arch/powerpc/boot/zImage.epapr -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/ppc64le/rootfs.cpio -m 2G -serial mon:stdio

@@ -1,0 +1,34 @@
+Using .config as base
+Merging /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config
+Value of CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=y
+New value: # CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is not set
+
+Value of CONFIG_CC_OPTIMIZE_FOR_SIZE is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: # CONFIG_CC_OPTIMIZE_FOR_SIZE is not set
+New value: CONFIG_CC_OPTIMIZE_FOR_SIZE=y
+
+Value of CONFIG_KERNEL_GZIP is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: CONFIG_KERNEL_GZIP=y
+New value: # CONFIG_KERNEL_GZIP is not set
+
+Value of CONFIG_KERNEL_XZ is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: # CONFIG_KERNEL_XZ is not set
+New value: CONFIG_KERNEL_XZ=y
+
+Value of CONFIG_SLUB_TINY is redefined by fragment /home/nathan/cbl/src/linux-next/kernel/configs/tiny.config:
+Previous value: # CONFIG_SLUB_TINY is not set
+New value: CONFIG_SLUB_TINY=y
+
+#
+# merged configuration written to .config (needs make)
+#
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:14:1: warning: DWARF2 only supports one section per compilation unit
+.pushsection .note.Linux, "a",@note ; .balign 4 ; .long 2f - 1f ; .long 4484f - 3f ; .long 0 ; 1:.asciz "Linux" ; 2:.balign 4 ; 3:
+^
+/home/nathan/cbl/src/linux-next/arch/mips/vdso/elf.S:34:2: warning: DWARF2 only supports one section per compilation unit
+ .section .mips_abiflags, "a"
+ ^
+/home/nathan/cbl/src/linux-next/arch/mips/kernel/genex.S:520:2: warning: macro defined with named parameters which are not used in macro body, possible positional parameter found in body which will have no effect
+ .macro __BUILD_verbose nexception
+ ^

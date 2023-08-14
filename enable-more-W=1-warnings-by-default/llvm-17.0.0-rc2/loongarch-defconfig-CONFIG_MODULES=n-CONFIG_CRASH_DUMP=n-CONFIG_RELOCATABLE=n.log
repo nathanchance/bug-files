@@ -1,0 +1,667 @@
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+ 1136 | void __rcu **radix_tree_iter_resume(void __rcu **slot,
+      |                                                  ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/sound/core/seq/seq_midi.c:135:30: warning: cast from 'int (*)(struct snd_rawmidi_substream *, const char *, int)' to 'snd_seq_dump_func_t' (aka 'int (*)(void *, void *, int)') converts to incompatible function type [-Wcast-function-type-strict]
+  135 |                 snd_seq_dump_var_event(ev, (snd_seq_dump_func_t)dump_midi, substream);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 1441 |         if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 1624 |         if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+ 6149 |         if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+      |             ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6150 |                                  / sizeof (u64)) {
+      |                                  ~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/firmware/dmi-id.c:174:17: warning: cast from 'void (*)(const void *)' to 'void (*)(struct device *)' converts to incompatible function type [-Wcast-function-type-strict]
+  174 |         .dev_release = (void(*)(struct device *)) kfree,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/main.c:1566:21: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ 1566 |                                    unsigned int changed_flags,
+      |                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/wireless/ath/ath9k/htc_drv_main.c:1258:25: warning: parameter 'changed_flags' set but not used [-Wunused-but-set-parameter]
+ 1258 |                                        unsigned int changed_flags,
+      |                                                     ^
+1 warning generated.
+
+[01;32mDownloading LoongArch firmware from https://github.com/loongson/Firmware/raw/main/LoongArchVirtMachine/edk2-loongarch64-code.fd...[0m
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03041001 I0
+PROGRESS CODE: V03051005 I0
+PROGRESS CODE: V02010000 I0
+PROGRESS CODE: V02011000 I0
+PROGRESS CODE: V02011001 I0
+PROGRESS CODE: V02010004 I0
+[2J[04D[=3h[2J[09DPROGRESS CODE: V01040001 I0
+PROGRESS CODE: V02010000 I0
+PROGRESS CODE: V03051001 I0
+EFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Exiting boot services
+PROGRESS CODE: V03101019 I0
+[    0.000000] Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP PREEMPT Fri Aug 11 17:50:40 UTC 2023
+[    0.000000] 64-bit Loongson Processor probed (LA464 Core)
+[    0.000000] CPU0 revision is: 0014c010 (Loongson-64bit)
+[    0.000000] FPU0 revision is: 00000001
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS=0xde00000 SMBIOS 3.0=0xdde0000 MEMATTR=0xe638018 ACPI=0xe200000 ACPI 2.0=0xe200014 INITRD=0xdfa7f18 MEMRESERVE=0xdfa7f98 MEMMAP=0xc320018 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000000E200014 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000000E1F00E8 000044 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000000C2E0000 00010C (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000000C2F0000 000BFD (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000000C2D0000 00007B (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SRAT 0x000000000C2C0000 0000A0 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000000C2B0000 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] OF: fdt: No valid device tree found, continuing without
+[    0.000000] SRAT: PXM 0 -> CPU 0x00 -> Node 0
+[    0.000000] SRAT: PXM 0 -> CPU 0x01 -> Node 0
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x0fffffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x90000000-0xffffffff]
+[    0.000000] Node0: mem_type:4, mem_start:0x0, mem_size:0x1000 Bytes
+[    0.000000]        start_pfn:0x0, end_pfn:0x0, num_physpages:0x0
+[    0.000000] Node0: mem_type:7, mem_start:0x1000, mem_size:0xf000 Bytes
+[    0.000000]        start_pfn:0x0, end_pfn:0x4, num_physpages:0x3
+[    0.000000] Node0: mem_type:4, mem_start:0x10000, mem_size:0x30000 Bytes
+[    0.000000]        start_pfn:0x4, end_pfn:0x10, num_physpages:0xf
+[    0.000000] Node0: mem_type:7, mem_start:0x40000, mem_size:0x1c0000 Bytes
+[    0.000000]        start_pfn:0x10, end_pfn:0x80, num_physpages:0x7f
+[    0.000000] Node0: mem_type:2, mem_start:0x200000, mem_size:0x3440000 Bytes
+[    0.000000]        start_pfn:0x80, end_pfn:0xd90, num_physpages:0xd8f
+[    0.000000] Node0: mem_type:7, mem_start:0x3640000, mem_size:0x6200000 Bytes
+[    0.000000]        start_pfn:0xd90, end_pfn:0x2610, num_physpages:0x260f
+[    0.000000] Node0: mem_type:1, mem_start:0x9840000, mem_size:0x1558000 Bytes
+[    0.000000]        start_pfn:0x2610, end_pfn:0x2b66, num_physpages:0x2b65
+[    0.000000] Node0: mem_type:7, mem_start:0xad98000, mem_size:0x1178000 Bytes
+[    0.000000]        start_pfn:0x2b66, end_pfn:0x2fc4, num_physpages:0x2fc3
+[    0.000000] Node0: mem_type:2, mem_start:0xbf10000, mem_size:0x3a0000 Bytes
+[    0.000000]        start_pfn:0x2fc4, end_pfn:0x30ac, num_physpages:0x30ab
+[    0.000000] Node0: mem_type:9, mem_start:0xc2b0000, mem_size:0x50000 Bytes
+[    0.000000]        start_pfn:0x30ac, end_pfn:0x30c0, num_physpages:0x30bf
+[    0.000000] Resvd: mem_type:9, mem_start:0xc2b0000, mem_size:0x50000 Bytes
+[    0.000000] Node0: mem_type:7, mem_start:0xc310000, mem_size:0x10000 Bytes
+[    0.000000]        start_pfn:0x30c4, end_pfn:0x30c8, num_physpages:0x30c3
+[    0.000000] Node0: mem_type:9, mem_start:0xc320000, mem_size:0x10000 Bytes
+[    0.000000]        start_pfn:0x30c8, end_pfn:0x30cc, num_physpages:0x30c7
+[    0.000000] Resvd: mem_type:9, mem_start:0xc320000, mem_size:0x10000 Bytes
+[    0.000000] Node0: mem_type:3, mem_start:0xc330000, mem_size:0xc8000 Bytes
+[    0.000000]        start_pfn:0x30cc, end_pfn:0x30fe, num_physpages:0x30f9
+[    0.000000] Node0: mem_type:4, mem_start:0xc3f8000, mem_size:0x1518000 Bytes
+[    0.000000]        start_pfn:0x30fe, end_pfn:0x3644, num_physpages:0x363f
+[    0.000000] Node0: mem_type:3, mem_start:0xd910000, mem_size:0x2e0000 Bytes
+[    0.000000]        start_pfn:0x3644, end_pfn:0x36fc, num_physpages:0x36f7
+[    0.000000] Resvd: mem_type:6, mem_start:0xdbf0000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xdc40000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xdc90000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xdce0000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xdd30000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xdd80000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xddd0000, mem_size:0x40000 Bytes
+[    0.000000] Node0: mem_type:7, mem_start:0xde10000, mem_size:0x8000 Bytes
+[    0.000000]        start_pfn:0x3784, end_pfn:0x3786, num_physpages:0x36f9
+[    0.000000] Node0: mem_type:3, mem_start:0xde18000, mem_size:0x68000 Bytes
+[    0.000000]        start_pfn:0x3786, end_pfn:0x37a0, num_physpages:0x3713
+[    0.000000] Resvd: mem_type:6, mem_start:0xde80000, mem_size:0xc0000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xdf40000, mem_size:0x60000 Bytes
+[    0.000000] Node0: mem_type:7, mem_start:0xdfa0000, mem_size:0x6000 Bytes
+[    0.000000]        start_pfn:0x37e8, end_pfn:0x37e9, num_physpages:0x3714
+[    0.000000] Node0: mem_type:2, mem_start:0xdfa6000, mem_size:0x2000 Bytes
+[    0.000000]        start_pfn:0x37e9, end_pfn:0x37ea, num_physpages:0x3714
+[    0.000000] Node0: mem_type:3, mem_start:0xdfa8000, mem_size:0xd8000 Bytes
+[    0.000000]        start_pfn:0x37ea, end_pfn:0x3820, num_physpages:0x374a
+[    0.000000] Resvd: mem_type:6, mem_start:0xe080000, mem_size:0x80000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xe100000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xe150000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xe1a0000, mem_size:0x50000 Bytes
+[    0.000000] Node0: mem_type:9, mem_start:0xe1f0000, mem_size:0x20000 Bytes
+[    0.000000]        start_pfn:0x387c, end_pfn:0x3884, num_physpages:0x3752
+[    0.000000] Resvd: mem_type:9, mem_start:0xe1f0000, mem_size:0x20000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xe210000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xe260000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xe2b0000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xe300000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xe350000, mem_size:0x50000 Bytes
+[    0.000000] Resvd: mem_type:5, mem_start:0xe3a0000, mem_size:0x50000 Bytes
+[    0.000000] Node0: mem_type:7, mem_start:0xe3f0000, mem_size:0x248000 Bytes
+[    0.000000]        start_pfn:0x38fc, end_pfn:0x398e, num_physpages:0x37e4
+[    0.000000] Node0: mem_type:4, mem_start:0xe638000, mem_size:0x1000 Bytes
+[    0.000000]        start_pfn:0x398e, end_pfn:0x398e, num_physpages:0x37e4
+[    0.000000] Node0: mem_type:7, mem_start:0xe639000, mem_size:0x1000 Bytes
+[    0.000000]        start_pfn:0x398e, end_pfn:0x398e, num_physpages:0x37e4
+[    0.000000] Node0: mem_type:4, mem_start:0xe63a000, mem_size:0xcb6000 Bytes
+[    0.000000]        start_pfn:0x398e, end_pfn:0x3cbc, num_physpages:0x3b11
+[    0.000000] Node0: mem_type:7, mem_start:0xf2f0000, mem_size:0x14000 Bytes
+[    0.000000]        start_pfn:0x3cbc, end_pfn:0x3cc1, num_physpages:0x3b16
+[    0.000000] Node0: mem_type:3, mem_start:0xf304000, mem_size:0x16c000 Bytes
+[    0.000000]        start_pfn:0x3cc1, end_pfn:0x3d1c, num_physpages:0x3b71
+[    0.000000] Resvd: mem_type:5, mem_start:0xf470000, mem_size:0x30000 Bytes
+[    0.000000] Resvd: mem_type:6, mem_start:0xf4a0000, mem_size:0x20000 Bytes
+[    0.000000] Node0: mem_type:7, mem_start:0xf4c0000, mem_size:0x1c000 Bytes
+[    0.000000]        start_pfn:0x3d30, end_pfn:0x3d37, num_physpages:0x3b78
+[    0.000000] Node0: mem_type:4, mem_start:0xf4dc000, mem_size:0x21000 Bytes
+[    0.000000]        start_pfn:0x3d37, end_pfn:0x3d3f, num_physpages:0x3b80
+[    0.000000] Node0: mem_type:3, mem_start:0xf4fd000, mem_size:0x44000 Bytes
+[    0.000000]        start_pfn:0x3d3f, end_pfn:0x3d50, num_physpages:0x3b91
+[    0.000000] Node0: mem_type:4, mem_start:0xf541000, mem_size:0x985000 Bytes
+[    0.000000]        start_pfn:0x3d50, end_pfn:0x3fb1, num_physpages:0x3df2
+[    0.000000] Node0: mem_type:3, mem_start:0xfec6000, mem_size:0x2d000 Bytes
+[    0.000000]        start_pfn:0x3fb1, end_pfn:0x3fbc, num_physpages:0x3dfd
+[    0.000000] Node0: mem_type:4, mem_start:0xfef3000, mem_size:0x10d000 Bytes
+[    0.000000]        start_pfn:0x3fbc, end_pfn:0x4000, num_physpages:0x3e40
+[    0.000000] Node0: mem_type:7, mem_start:0x90000000, mem_size:0x70000000 Bytes
+[    0.000000]        start_pfn:0x24000, end_pfn:0x40000, num_physpages:0x1fe40
+[    0.000000] Resvd: mem_type:11, mem_start:0x100d0000, mem_size:0x1000 Bytes
+[    0.000000] Resvd: mem_type:11, mem_start:0x100e0000, mem_size:0x1000 Bytes
+[    0.000000] Resvd: mem_type:11, mem_start:0x1d000000, mem_size:0x1000000 Bytes
+[    0.000000] Node0's addrspace_offset is 0x0
+[    0.000000] Node0: start_pfn=0x0, end_pfn=0x40000
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: QEMU QEMU Virtual Machine, BIOS unknown 2/2/2022
+[    0.000000] CpuClock = 2000000000
+[    0.000000] The BIOS Version: unknown
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x0000000003640000-0x0000000007640000] (64MB)
+[    0.000000] PM: hibernation: Registered nosave memory: [mem 0x03240000-0x03243fff]
+[    0.000000] Detected 2 available CPU(s)
+[    0.000000] SMP: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000000000000-0x00000000ffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000000c2fffff]
+[    0.000000]   node   0: [mem 0x000000000c310000-0x000000000dbeffff]
+[    0.000000]   node   0: [mem 0x000000000de10000-0x000000000de7ffff]
+[    0.000000]   node   0: [mem 0x000000000dfa0000-0x000000000e07ffff]
+[    0.000000]   node   0: [mem 0x000000000e1f0000-0x000000000e20ffff]
+[    0.000000]   node   0: [mem 0x000000000e3f0000-0x000000000f46ffff]
+[    0.000000]   node   0: [mem 0x000000000f4c0000-0x000000000fffffff]
+[    0.000000]   node   0: [mem 0x0000000090000000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x00000000ffffffff]
+[    0.000000] On node 0, zone DMA32: 4 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 136 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 72 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 92 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 120 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 20 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA32: 32768 pages in unavailable ranges
+[    0.000000] percpu: Embedded 5 pages/cpu s37712 r0 d44208 u16777216
+[    0.000000] Kernel command line: console=ttyS0,115200 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 262144 (order: 7, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 6, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130117
+[    0.000000] Policy zone: DMA32
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 1927712K/2090048K available (36992K kernel code, 2607K rwdata, 11428K rodata, 768K init, 1467K bss, 162336K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 576, nr_irqs: 576, preallocated irqs: 16
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] Constant clock event device register
+[    0.000000] clocksource: Constant: mask: 0xffffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[    0.000056] sched_clock: 64 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns
+[    0.000107] Constant clock source device register
+[    0.007136] Console: colour dummy device 80x25
+[    0.008820] ACPI: Core revision 20230628
+[    0.011976] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)
+[    0.012361] pid_max: default: 32768 minimum: 301
+[    0.013317] LSM: initializing lsm=capability,yama,integrity
+[    0.013596] Yama: becoming mindful.
+[    0.015218] Mount-cache hash table entries: 4096 (order: 1, 32768 bytes, linear)
+[    0.015249] Mountpoint-cache hash table entries: 4096 (order: 1, 32768 bytes, linear)
+[    0.032835] ACPI PPTT: No PPTT table found, CPU and cache topology may be inaccurate
+[    0.032885] Invalid BIOS PPTT
+[    0.040210] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.040639] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.041542] rcu: Hierarchical SRCU implementation.
+[    0.041568] rcu: 	Max phase no-delay instances is 1000.
+[    0.044952] smp: Bringing up secondary CPUs ...
+[    0.046737] Booting CPU#1...
+[    0.047096] 64-bit Loongson Processor probed (LA464 Core)
+[    0.047143] CPU1 revision is: 0014c010 (Loongson-64bit)
+[    0.047164] FPU1 revision is: 00000001
+[    0.047600] CPU#1 finished
+[    0.050846] smp: Brought up 1 node, 2 CPUs
+[    0.063969] devtmpfs: initialized
+[    0.071871] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.071951] futex hash table entries: 512 (order: 1, 32768 bytes, linear)
+[    0.079011] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.081655] audit: initializing netlink subsys (disabled)
+[    0.082984] audit: type=2000 audit(0.080:1): state=initialized audit_enabled=0 res=1
+[    0.085577] thermal_sys: Registered thermal governor 'step_wise'
+[    0.086739] hw-breakpoint: Found 0 breakpoint and 0 watchpoint registers.
+[    0.092368] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.092388] HugeTLB: 112 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.097275] cryptd: max_cpu_qlen set to 1000
+[    0.167857] raid6: int64x8  gen()  1527 MB/s
+[    0.235931] raid6: int64x4  gen()  2000 MB/s
+[    0.304026] raid6: int64x2  gen()  1753 MB/s
+[    0.372220] raid6: int64x1  gen()  1417 MB/s
+[    0.372250] raid6: using algorithm int64x4 gen() 2000 MB/s
+[    0.440432] raid6: .... xor() 911 MB/s, rmw enabled
+[    0.440456] raid6: using intx1 recovery algorithm
+[    0.442018] ACPI: Added _OSI(Module Device)
+[    0.442038] ACPI: Added _OSI(Processor Device)
+[    0.442044] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.442049] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.452741] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.458139] ACPI: Interpreter enabled
+[    0.458992] ACPI: PM: (supports S0 S5)
+[    0.459032] ACPI: Using LPIC for interrupt routing
+[    0.459353] ACPI: MCFG table detected, 1 entries
+[    0.472505] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-7f])
+[    0.473796] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig Segments MSI HPX-Type3]
+[    0.473949] acpi PNP0A08:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.478041] acpi PNP0A08:00: ECAM at [mem 0x20000000-0x27ffffff] for [bus 00-7f]
+[    0.478743] ACPI: Remapped I/O 0x0000000018004000 to [io  0x0000-0xbfff window]
+[    0.480495] PCI host bridge to bus 0000:00
+[    0.480652] pci_bus 0000:00: root bus resource [io  0x0000-0xbfff window]
+[    0.480671] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff window]
+[    0.480747] pci_bus 0000:00: root bus resource [bus 00-7f]
+[    0.482135] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.486226] ACPI: PCI: Interrupt link GSI0 configured for IRQ 80
+[    0.486311] ACPI: PCI: Interrupt link GSI1 configured for IRQ 81
+[    0.486356] ACPI: PCI: Interrupt link GSI2 configured for IRQ 82
+[    0.486399] ACPI: PCI: Interrupt link GSI3 configured for IRQ 83
+[    0.487502] iommu: Default domain type: Translated
+[    0.487525] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.488625] SCSI subsystem initialized
+[    0.489810] ACPI: bus type USB registered
+[    0.490069] usbcore: registered new interface driver usbfs
+[    0.490289] usbcore: registered new interface driver hub
+[    0.490400] usbcore: registered new device driver usb
+[    0.490978] mc: Linux media interface: v0.10
+[    0.491063] videodev: Linux video capture interface: v2.00
+[    0.491448] pps_core: LinuxPPS API ver. 1 registered
+[    0.491459] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.491519] PTP clock support registered
+[    0.493795] efivars: Registered efivars operations
+[    0.494916] Advanced Linux Sound Architecture Driver Initialized.
+[    0.502679] Bluetooth: Core ver 2.22
+[    0.502763] NET: Registered PF_BLUETOOTH protocol family
+[    0.502776] Bluetooth: HCI device and connection manager initialized
+[    0.502872] Bluetooth: HCI socket layer initialized
+[    0.502926] Bluetooth: L2CAP socket layer initialized
+[    0.503049] Bluetooth: SCO socket layer initialized
+[    0.507494] vgaarb: loaded
+[    0.508948] clocksource: Switched to clocksource Constant
+[    0.509952] VFS: Disk quotas dquot_6.6.0
+[    0.510066] VFS: Dquot-cache hash table entries: 2048 (order 0, 16384 bytes)
+[    0.510991] FS-Cache: Loaded
+[    0.511692] pnp: PnP ACPI init
+[    0.515159] system 00:01: [mem 0x20000000-0x27ffffff window] could not be reserved
+[    0.516097] pnp: PnP ACPI: found 2 devices
+[    0.537974] NET: Registered PF_INET protocol family
+[    0.539056] IP idents hash table entries: 32768 (order: 4, 262144 bytes, linear)
+[    0.555927] tcp_listen_portaddr_hash hash table entries: 1024 (order: 0, 16384 bytes, linear)
+[    0.556002] Table-perturb hash table entries: 65536 (order: 4, 262144 bytes, linear)
+[    0.556053] TCP established hash table entries: 16384 (order: 3, 131072 bytes, linear)
+[    0.556276] TCP bind hash table entries: 16384 (order: 5, 524288 bytes, linear)
+[    0.556890] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.557841] UDP hash table entries: 1024 (order: 1, 32768 bytes, linear)
+[    0.558072] UDP-Lite hash table entries: 1024 (order: 1, 32768 bytes, linear)
+[    0.559224] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.561198] RPC: Registered named UNIX socket transport module.
+[    0.561233] RPC: Registered udp transport module.
+[    0.561242] RPC: Registered tcp transport module.
+[    0.561249] RPC: Registered tcp-with-tls transport module.
+[    0.561256] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.563446] NET: Registered PF_XDP protocol family
+[    0.563692] PCI: CLS 0 bytes, default 64
+[    0.567847] Trying to unpack rootfs image as initramfs...
+[    0.570218] Initialise system trusted keyrings
+[    0.571332] workingset: timestamp_bits=40 max_order=17 bucket_order=0
+[    0.571551] zbud: loaded
+[    0.573683] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.577180] NFS: Registering the id_resolver key type
+[    0.577446] Key type id_resolver registered
+[    0.577479] Key type id_legacy registered
+[    0.577696] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.577964] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.591778] Key type cifs.idmap registered
+[    0.592156] fuse: init (API version 7.38)
+[    0.593054] SGI XFS with ACLs, security attributes, quota, no debug enabled
+[    0.594700] 9p: Installing v9fs 9p2000 file system support
+[    0.641233] NET: Registered PF_ALG protocol family
+[    0.641380] xor: measuring software checksum speed
+[    0.645342]    8regs           :  2610 MB/sec
+[    0.649247]    8regs_prefetch  :  2678 MB/sec
+[    0.653232]    32regs          :  2519 MB/sec
+[    0.657241]    32regs_prefetch :  2477 MB/sec
+[    0.657277] xor: using function: 8regs_prefetch (2678 MB/sec)
+[    0.657309] async_tx: api initialized (async)
+[    0.657345] Key type asymmetric registered
+[    0.657393] Asymmetric key parser 'x509' registered
+[    0.665077] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.665573] io scheduler mq-deadline registered
+[    0.665636] io scheduler kyber registered
+[    0.665808] io scheduler bfq registered
+[    0.712107] Freeing initrd memory: 3664K
+[    0.737574] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.738225] IPMI message handler: version 39.2
+[    0.738320] ipmi device interface
+[    0.738871] ipmi_si: IPMI System Interface driver
+[    0.739929] ipmi_si: Unable to find any System Interface(s)
+[    0.744127] input: Power Button as /devices/LNXSYSTM:00/PNP0C0C:00/input/input0
+[    0.745015] ACPI: button: Power Button [PWRB]
+[    0.752831] Serial: 8250/16550 driver, 16 ports, IRQ sharing enabled
+[    0.777276] 00:00: ttyS0 at MMIO 0x1fe001e0 (irq = 20, base_baud = 115200) is a 16550A
+[    0.778390] printk: console [ttyS0] enabled
+[    0.828077] lp: driver loaded but no devices found
+[    0.828519] ACPI: bus type drm_connector registered
+[    0.828859] [drm] radeon kernel modesetting enabled.
+[    0.829138] [drm] amdgpu kernel modesetting enabled.
+[    0.854462] brd: module loaded
+[    0.866113] loop: module loaded
+[    0.893836] rbd: loaded (major 252)
+[    0.895034] zram: Added device: zram0
+[    0.895572] Loading iSCSI transport class v2.0-870.
+[    0.898898] iscsi: registered transport (tcp)
+[    0.899236] qla2xxx [0000:00:00.0]-0001: : Unable to create qla2xxx trace instance, instance logging will be disabled.
+[    0.899718] qla2xxx [0000:00:00.0]-0005: : QLogic Fibre Channel HBA Driver: 10.02.08.500-k.
+[    0.900896] iscsi: registered transport (qla4xxx)
+[    0.901106] QLogic iSCSI HBA Driver
+[    0.901370] megaraid cmm: 2.20.2.7 (Release Date: Sun Jul 16 00:01:03 EST 2006)
+[    0.901797] megaraid: 2.20.5.1 (Release Date: Thu Nov 16 15:32:35 EST 2006)
+[    0.902078] megasas: 07.725.01.00-rc1
+[    0.902451] mpt3sas version 43.100.00.00 loaded
+[    0.904762] SCSI Media Changer driver v0.25 
+[    0.912484] Rounding down aligned max_sectors from 4294967295 to 4294967264
+[    0.913463] db_root: cannot open: /etc/target
+[    0.923899] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.924100] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.927277] tun: Universal TUN/TAP device driver, 1.6
+[    0.928384] e1000: Intel(R) PRO/1000 Network Driver
+[    0.928515] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.928822] e1000e: Intel(R) PRO/1000 Network Driver
+[    0.928948] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.929193] igb: Intel(R) Gigabit Ethernet Network Driver
+[    0.929328] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    0.929531] ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver
+[    0.929678] ixgbe: Copyright (c) 1999-2016 Intel Corporation.
+[    0.930562] PPP generic driver version 2.4.2
+[    0.931139] PPP BSD Compression module registered
+[    0.931309] PPP Deflate Compression module registered
+[    0.933256] PPP MPPE Compression module registered
+[    0.933417] NET: Registered PF_PPPOX protocol family
+[    0.933708] PPTP driver version 0.8.5
+[    0.934231] usbcore: registered new interface driver ath9k_htc
+[    0.934397] Intel(R) Wireless WiFi driver for Linux
+[    0.934870] usbcore: registered new interface driver mt7601u
+[    0.935091] usbcore: registered new interface driver rt2800usb
+[    0.935392] usbcore: registered new interface driver rtl8192cu
+[    0.935993] usbcore: registered new interface driver rtl8xxxu
+[    0.936846] usbcore: registered new interface driver zd1211rw
+[    0.937087] usbcore: registered new interface driver rndis_wlan
+[    0.937295] usbcore: registered new interface driver rtl8150
+[    0.937475] usbcore: registered new device driver r8152-cfgselector
+[    0.937693] usbcore: registered new interface driver r8152
+[    0.937878] usbcore: registered new interface driver cdc_ether
+[    0.938088] usbcore: registered new interface driver cdc_eem
+[    0.938291] usbcore: registered new interface driver rndis_host
+[    0.938510] usbcore: registered new interface driver cdc_ncm
+[    0.938692] usbcore: registered new interface driver huawei_cdc_ncm
+[    0.938890] usbcore: registered new interface driver cdc_mbim
+[    0.939089] usbcore: registered new interface driver r8153_ecm
+[    0.940232] VFIO - User Level meta-driver version: 0.3
+[    0.942784] usbcore: registered new interface driver cdc_acm
+[    0.942938] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.943222] usbcore: registered new interface driver usblp
+[    0.943416] usbcore: registered new interface driver cdc_wdm
+[    0.943843] usbcore: registered new interface driver uas
+[    0.944095] usbcore: registered new interface driver usb-storage
+[    0.944293] usbcore: registered new interface driver ums-realtek
+[    0.944789] usbcore: registered new interface driver ch341
+[    0.945106] usbserial: USB Serial support registered for ch341-uart
+[    0.945361] usbcore: registered new interface driver cp210x
+[    0.945557] usbserial: USB Serial support registered for cp210x
+[    0.945760] usbcore: registered new interface driver ftdi_sio
+[    0.945953] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    0.946188] usbcore: registered new interface driver option
+[    0.946377] usbserial: USB Serial support registered for GSM modem (1-port)
+[    0.946594] usbcore: registered new interface driver pl2303
+[    0.946762] usbserial: USB Serial support registered for pl2303
+[    0.947269] i8042: PNP: No PS/2 controller found.
+[    0.948335] mousedev: PS/2 mouse device common for all mice
+[    0.952473] rtc-efi rtc-efi.0: registered as rtc0
+[    0.953297] rtc-efi rtc-efi.0: setting system clock to 2023-08-11T17:50:51 UTC (1691776251)
+[    0.953859] i2c_dev: i2c /dev entries driver
+[    0.956285] ir_imon_decoder: IR iMON protocol handler initialized
+[    0.956444] IR JVC protocol handler initialized
+[    0.956565] IR MCE Keyboard/mouse protocol handler initialized
+[    0.956766] IR NEC protocol handler initialized
+[    0.956895] IR RC5(x/sz) protocol handler initialized
+[    0.957029] IR RC6 protocol handler initialized
+[    0.957148] IR SANYO protocol handler initialized
+[    0.957269] IR Sharp protocol handler initialized
+[    0.957393] IR Sony protocol handler initialized
+[    0.957514] IR XMP protocol handler initialized
+[    0.957628] bttv: driver version 0.9.19 loaded
+[    0.957756] bttv: using 8 buffers with 2080k (130 pages) each for capture
+[    0.958201] bt878: AUDIO driver version 0.0.0 loaded
+[    0.958587] usbcore: registered new interface driver uvcvideo
+[    0.961543] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    0.962781] device-mapper: multipath round-robin: version 1.2.0 loaded
+[    0.962988] device-mapper: multipath queue-length: version 0.2.0 loaded
+[    0.963163] device-mapper: multipath service-time: version 0.3.0 loaded
+[    0.964115] Bluetooth: HCI UART driver ver 2.3
+[    0.964302] Bluetooth: HCI UART protocol H4 registered
+[    0.964443] Bluetooth: HCI UART protocol BCSP registered
+[    0.964654] Bluetooth: HCI UART protocol ATH3K registered
+[    0.964913] Bluetooth: HCI UART protocol Intel registered
+[    0.965057] Bluetooth: HCI UART protocol AG6XX registered
+[    0.965292] usbcore: registered new interface driver bcm203x
+[    0.965484] usbcore: registered new interface driver bpa10x
+[    0.965674] usbcore: registered new interface driver bfusb
+[    0.966033] usbcore: registered new interface driver btusb
+[    0.966235] usbcore: registered new interface driver ath3k
+[    0.967780] hid: raw HID events driver (C) Jiri Kosina
+[    0.969021] usbcore: registered new interface driver usbhid
+[    0.969170] usbhid: USB HID core driver
+[    0.970031] comedi: version 0.7.76 - http://www.comedi.org
+[    0.979308] usbcore: registered new interface driver snd-usb-audio
+[    0.979972] NET: Registered PF_LLC protocol family
+[    0.980398] GACT probability NOT on
+[    0.980685] Mirror/redirect action on
+[    0.981166] netem: version 1.3
+[    0.981266] u32 classifier
+[    0.981339]     input device check on
+[    0.981429]     Actions configured
+[    0.986824] xt_time: kernel timezone is -0000
+[    0.987230] IPVS: Registered protocols (TCP, UDP)
+[    0.987456] IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+[    0.988773] IPVS: ipvs loaded.
+[    0.988928] IPVS: [rr] scheduler registered.
+[    0.989380] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.991092] gre: GRE over IPv4 demultiplexor driver
+[    0.993383] Initializing XFRM netlink socket
+[    0.993824] NET: Registered PF_INET6 protocol family
+[    1.000137] Segment Routing with IPv6
+[    1.000386] In-situ OAM (IOAM) with IPv6
+[    1.001502] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.003497] NET: Registered PF_PACKET protocol family
+[    1.003716] NET: Registered PF_KEY protocol family
+[    1.004265] Bridge firewalling registered
+[    1.004970] Bluetooth: RFCOMM TTY layer initialized
+[    1.005495] Bluetooth: RFCOMM socket layer initialized
+[    1.005709] Bluetooth: RFCOMM ver 1.11
+[    1.005890] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.006058] Bluetooth: BNEP filters: protocol multicast
+[    1.006220] Bluetooth: BNEP socket layer initialized
+[    1.006361] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.006543] Bluetooth: HIDP socket layer initialized
+[    1.007358] RPC: Registered rdma transport module.
+[    1.007482] RPC: Registered rdma backchannel transport module.
+[    1.008014] l2tp_core: L2TP core driver, V2.0
+[    1.008295] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.008434] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    1.008690] l2tp_netlink: L2TP netlink interface
+[    1.008894] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    1.009053] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    1.009242] 8021q: 802.1Q VLAN Support v1.8
+[    1.009864] sctp: Hash tables configured (bind 1024/1024)
+[    1.011911] NET: Registered PF_RDS protocol family
+[    1.012088] lib80211: common routines for IEEE802.11 drivers
+[    1.012845] 9pnet: Installing 9P2000 support
+[    1.013164] Key type dns_resolver registered
+[    1.013387] Key type ceph registered
+[    1.013853] libceph: loaded (mon/osd proto 15/24)
+[    1.013999] openvswitch: Open vSwitch switching datapath
+[    1.016033] NET: Registered PF_VSOCK protocol family
+[    1.016417] mpls_gso: MPLS GSO support
+[    1.104832] registered taskstats version 1
+[    1.105656] Loading compiled-in X.509 certificates
+[    1.126092] Btrfs loaded, zoned=no, fsverity=no
+[    1.246191] alg: No test for 842 (842-scomp)
+[    1.246566] alg: No test for 842 (842-generic)
+[    1.715100] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.741151] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.741559] clk: Disabling unused clocks
+[    1.741750] ALSA device list:
+[    1.741862]   No soundcards found.
+[    1.746046] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.746481] cfg80211: failed to load regulatory.db
+[    1.908015] Freeing unused kernel image (initmem) memory: 768K
+[    1.908237] This architecture does not have kernel memory protection.
+[    1.908542] Run /init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of non-creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 17.0.0 (https://github.com/llvm/llvm-project edc0ee3ccad416ab186202bf928ea64e3a7987b7), ClangBuiltLinux LLD 17.0.0) #1 SMP PREEMPT Fri Aug 11 17:50:40 UTC 2023
+Stopping network: OK
+Seeding 256 bits without crediting
+Saving 256 bits of non-creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system reboot
+[    5.634783] ACPI: PM: Preparing to enter system sleep state S5
+[    5.635788] reboot: Restarting system
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-loongarch64 -display none -nodefaults -M virt -cpu la464 -bios /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/loongarch/edk2-loongarch64-code.fd -no-reboot -append console=ttyS0,115200 -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/loongarch/arch/loongarch/boot/vmlinuz.efi -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/loongarch/rootfs.cpio -m 2G -smp 2 -serial mon:stdio

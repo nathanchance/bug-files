@@ -1,0 +1,331 @@
+/home/nathan/cbl/src/linux-next/drivers/bus/mhi/host/main.c:803:13: warning: parameter 'event_quota' set but not used [-Wunused-but-set-parameter]
+                             u32 event_quota)
+                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/lib/radix-tree.c:1136:50: warning: parameter 'slot' set but not used [-Wunused-but-set-parameter]
+void __rcu **radix_tree_iter_resume(void __rcu **slot,
+                                                 ^
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/block/rbd.c:6149:17: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (snap_count > (SIZE_MAX - sizeof (struct ceph_snap_context))
+            ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1441:10: warning: result of comparison of constant 4611686018427387891 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / sizeof(u32))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/net/ceph/osdmap.c:1624:10: warning: result of comparison of constant 2305843009213693945 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (len > (SIZE_MAX - sizeof(*pg)) / (2 * sizeof(u32)))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/alteon/acenic.c:1010:17: warning: result of comparison of constant 256 with expression of type 'unsigned char' is always true [-Wtautological-constant-out-of-range-compare]
+        if (cache_size != SMP_CACHE_BYTES) {
+            ~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/alteon/acenic.c:1013:18: warning: result of comparison of constant 256 with expression of type 'unsigned char' is always false [-Wtautological-constant-out-of-range-compare]
+                if (cache_size > SMP_CACHE_BYTES)
+                    ~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~
+2 warnings generated.
+/home/nathan/cbl/src/linux-next/fs/ceph/snap.c:372:10: warning: result of comparison of constant 2305843009213693948 with expression of type 'u32' (aka 'unsigned int') is always false [-Wtautological-constant-out-of-range-compare]
+        if (num > (SIZE_MAX - sizeof(*snapc)) / sizeof(u64))
+            ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/md/dm-integrity.c:4159:12: warning: result of comparison of constant 17179869180 with expression of type 'unsigned int' is always false [-Wtautological-constant-out-of-range-compare]
+                        if (val >= (uint64_t)UINT_MAX * 1000 / HZ) {
+                            ~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/home/nathan/cbl/src/linux-next/drivers/net/ethernet/qlogic/qed/qed_vf.c:63:67: warning: parameter 'resp_size' set but not used [-Wunused-but-set-parameter]
+static int qed_send_msg2pf(struct qed_hwfn *p_hwfn, u8 *done, u32 resp_size)
+                                                                  ^
+1 warning generated.
+WARN: resolve_btfids: unresolved symbol bpf_cpumask
+
+[01;32mQEMU location: [0m/usr/sbin[0m
+
+[01;32mQEMU version: [0mQEMU emulator version 8.0.3[0m
+KASLR disabled: CPU has no PRNG
+KASLR disabled: CPU has no PRNG
+[    2.813532] Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), GNU ld (GNU Binutils) 2.41) #1 SMP Sat Aug 12 03:40:20 UTC 2023
+
+[    2.814950] setup: Linux is running under KVM in 64-bit mode
+
+[    2.823905] setup: The maximum memory size is 512MB
+
+[    2.824400] setup: Relocating AMODE31 section of size 0x00003000
+
+[    2.826732] cpu: 1 configured CPUs, 0 standby CPUs
+
+[    3.363450] Write protected kernel read-only data: 18652k
+
+[    3.374732] Zone ranges:
+
+[    3.374749]   DMA      [mem 0x0000000000000000-0x000000007fffffff]
+
+[    3.375488]   Normal   empty
+
+[    3.375517] Movable zone start for each node
+
+[    3.375527] Early memory node ranges
+
+[    3.375556]   node   0: [mem 0x0000000000000000-0x000000001fffffff]
+
+[    3.375916] Initmem setup node 0 [mem 0x0000000000000000-0x000000001fffffff]
+
+[    3.392605] percpu: Embedded 29 pages/cpu s78720 r8192 d31872 u118784
+
+[    3.394854] Kernel command line: 
+
+[    3.396066] random: crng init done
+
+[    3.396504] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+
+[    3.396679] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+
+[    3.397703] Built 1 zonelists, mobility grouping on.  Total pages: 129024
+
+[    3.398125] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+
+[    3.403235] Memory: 236268K/524288K available (13244K kernel code, 2160K rwdata, 5408K rodata, 4032K init, 680K bss, 43152K reserved, 0K cma-reserved)
+
+[    3.410415] SLUB: HWalign=256, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+
+[    3.411382] ftrace: allocating 27789 entries in 109 pages
+
+[    3.475485] ftrace: allocated 109 pages with 5 groups
+
+[    3.485250] rcu: Hierarchical RCU implementation.
+
+[    3.485301] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+
+[    3.485419] 	Rude variant of Tasks RCU enabled.
+
+[    3.485430] 	Tracing variant of Tasks RCU enabled.
+
+[    3.485510] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+
+[    3.485536] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+
+[    3.527323] NR_IRQS: 3, nr_irqs: 3, preallocated irqs: 3
+
+[    3.529514] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+
+[    3.530754] clocksource: tod: mask: 0xffffffffffffffff max_cycles: 0x3b0a9be803b0a9, max_idle_ns: 1805497147909793 ns
+
+[    3.535306] Console: colour dummy device 80x25
+
+[    3.543945] printk: console [ttysclp0] enabled
+
+[    3.546543] pid_max: default: 32768 minimum: 301
+
+[    3.548429] LSM: initializing lsm=capability,landlock,yama,apparmor,tomoyo,integrity
+
+[    3.549124] landlock: Up and running.
+
+[    3.549158] Yama: becoming mindful.
+
+[    3.551198] AppArmor: AppArmor initialized
+
+[    3.551265] TOMOYO Linux initialized
+
+[    3.553159] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+
+[    3.553210] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+
+[    3.589797] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+
+[    3.590683] RCU Tasks Trace: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+
+[    3.592859] rcu: Hierarchical SRCU implementation.
+
+[    3.592906] rcu: 	Max phase no-delay instances is 1000.
+
+[    3.597805] smp: Bringing up secondary CPUs ...
+
+[    3.598593] smp: Brought up 1 node, 1 CPU
+
+[    3.616398] node 0 deferred pages initialised in 16ms
+
+[    3.629222] devtmpfs: initialized
+
+[    3.635880] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+
+[    3.636040] futex hash table entries: 256 (order: 4, 65536 bytes, linear)
+
+[    3.644900] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+
+[    3.647771] audit: initializing netlink subsys (disabled)
+
+[    3.652083] thermal_sys: Registered thermal governor 'fair_share'
+
+[    3.652175] thermal_sys: Registered thermal governor 'bang_bang'
+
+[    3.652650] audit: type=2000 audit(1691811658.431:1): state=initialized audit_enabled=0 res=1
+
+[    3.653053] thermal_sys: Registered thermal governor 'step_wise'
+
+[    3.653072] thermal_sys: Registered thermal governor 'user_space'
+
+[    3.696339] iommu: Default domain type: Translated
+
+[    3.696400] iommu: DMA domain TLB invalidation policy: strict mode
+
+[    3.697496] pps_core: LinuxPPS API ver. 1 registered
+
+[    3.697518] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+
+[    3.697590] PTP clock support registered
+
+[    3.711530] NetLabel: Initializing
+
+[    3.711563] NetLabel:  domain hash size = 128
+
+[    3.711578] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+
+[    3.712343] NetLabel:  unlabeled traffic allowed by default
+
+[    3.738678] VFS: Disk quotas dquot_6.6.0
+
+[    3.738840] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+
+[    3.740129] hugetlbfs: disabling because there are no supported hugepage sizes
+
+[    3.745238] AppArmor: AppArmor Filesystem Enabled
+
+[    3.770094] NET: Registered PF_INET protocol family
+
+[    3.771584] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+
+[    3.779155] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+
+[    3.779317] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+
+[    3.779401] TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+
+[    3.779635] TCP bind hash table entries: 4096 (order: 5, 131072 bytes, linear)
+
+[    3.779824] TCP: Hash tables configured (established 4096 bind 4096)
+
+[    3.781494] MPTCP token hash table entries: 512 (order: 1, 12288 bytes, linear)
+
+[    3.781759] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+
+[    3.782002] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+
+[    3.783304] NET: Registered PF_UNIX/PF_LOCAL protocol family
+
+[    3.783709] NET: Registered PF_XDP protocol family
+
+[    3.788453] Trying to unpack rootfs image as initramfs...
+
+[    3.792068] hypfs: The hardware system does not support hypfs
+
+[    3.798504] Initialise system trusted keyrings
+
+[    3.800042] Key type blacklist registered
+
+[    3.806597] workingset: timestamp_bits=46 max_order=17 bucket_order=0
+
+[    3.806775] zbud: loaded
+
+[    3.813966] integrity: Platform Keyring initialized
+
+[    3.814011] Key type asymmetric registered
+
+[    3.814074] Asymmetric key parser 'x509' registered
+
+[    3.859543] Freeing initrd memory: 7004K
+
+[    4.058235] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+
+[    4.058979] io scheduler mq-deadline registered
+
+[    4.071399] hvc_iucv: The z/VM IUCV HVC device driver cannot be used without z/VM
+
+[    4.074129] mousedev: PS/2 mouse device common for all mice
+
+[    4.075371] ledtrig-cpu: registered to indicate activity on CPUs
+
+[    4.075968] cio: Channel measurement facility initialized using format extended (mode autodetected)
+
+[    4.078309] sclp_sd: Store Data request failed (eq=2, di=3, response=0x40f0, flags=0x00, status=0, rc=-5)
+
+[    4.079559] ap: The hardware system does not support AP instructions
+
+[    4.120920] NET: Registered PF_INET6 protocol family
+
+[    4.268994] Segment Routing with IPv6
+
+[    4.269249] In-situ OAM (IOAM) with IPv6
+
+[    4.269758] mip6: Mobile IPv6
+
+[    4.269990] NET: Registered PF_PACKET protocol family
+
+[    4.270587] mpls_gso: MPLS GSO support
+
+[    4.281316] registered taskstats version 1
+
+[    4.282449] Loading compiled-in X.509 certificates
+
+[    4.294842] Key type .fscrypt registered
+
+[    4.294879] Key type fscrypt-provisioning registered
+
+[    4.440450] Key type encrypted registered
+
+[    4.440576] AppArmor: AppArmor sha1 policy hashing enabled
+
+[    4.441054] ima: No TPM chip found, activating TPM-bypass!
+
+[    4.441197] ima: Allocated hash algorithm: sha256
+
+[    4.442907] ima: No architecture policies found
+
+[    4.443355] evm: Initialising EVM extended attributes:
+
+[    4.443383] evm: security.selinux
+
+[    4.443419] evm: security.SMACK64 (disabled)
+
+[    4.443430] evm: security.SMACK64EXEC (disabled)
+
+[    4.443441] evm: security.SMACK64TRANSMUTE (disabled)
+
+[    4.443451] evm: security.SMACK64MMAP (disabled)
+
+[    4.443461] evm: security.apparmor
+
+[    4.443470] evm: security.ima
+
+[    4.443484] evm: security.capability
+
+[    4.443509] evm: HMAC attrs: 0x1
+
+[    5.465629] Freeing unused kernel image (initmem) memory: 4032K
+
+[    5.472814] Write protected read-only-after-init data: 128k
+
+[    5.472942] Run /init as init process
+
+[    5.631366] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving 256 bits of creditable seed for next boot
+Starting network: OK
+Linux version 6.5.0-rc5-next-20230809-cbl (nathan@dev-arch.m3-large-x86-01) (ClangBuiltLinux clang version 15.0.7 (https://github.com/llvm/llvm-project 8dfdcc7b7bf66834a761bd8de445840ef68e4d1a), GNU ld (GNU Binutils) 2.41) #1 SMP Sat Aug 12 03:40:20 UTC 2023
+Stopping network: OK
+Seeding 256 bits and crediting
+Saving 256 bits of creditable seed for next boot
+Stopping klogd: OK
+Stopping syslogd: OK
+umount: devtmpfs busy - remounted read-only
+umount: can't unmount /: Invalid argument
+
+The system is going down NOW!
+
+Sent SIGTERM to all processes
+
+Sent SIGKILL to all processes
+
+Requesting system poweroff
+$ timeout --foreground 3m stdbuf -eL -oL /usr/sbin/qemu-system-s390x -display none -nodefaults -M s390-ccw-virtio -kernel /home/nathan/tmp/build/cbl_lkt/linux-next/s390/arch/s390/boot/bzImage -initrd /home/nathan/cbl/llvm-kernel-testing/src/boot-utils/images/s390/rootfs.cpio -m 512m -serial mon:stdio
