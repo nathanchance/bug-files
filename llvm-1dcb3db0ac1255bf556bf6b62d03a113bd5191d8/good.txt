@@ -1,0 +1,594 @@
+$ llvm-readelf -p .comment sha256.o
+String dump of section '.comment':
+[     1] ClangBuiltLinux clang version 20.0.0git (https://github.com/llvm/llvm-project.git b4c0ef18226b7d1f82d71fc0171b99caec0d8d12)
+
+$ llvm-objdump --disassemble-symbols=sha256_transform_blocks -r sha256.o
+
+sha256.o:	file format elf64-x86-64
+
+Disassembly of section .text:
+
+00000000000000f0 <sha256_transform_blocks>:
+      f0: 55                           	pushq	%rbp
+      f1: 41 57                        	pushq	%r15
+      f3: 41 56                        	pushq	%r14
+      f5: 41 55                        	pushq	%r13
+      f7: 41 54                        	pushq	%r12
+      f9: 53                           	pushq	%rbx
+      fa: 48 81 ec 48 01 00 00         	subq	$0x148, %rsp            # imm = 0x148
+     101: 44 8b 37                     	movl	(%rdi), %r14d
+     104: 44 8b 6f 04                  	movl	0x4(%rdi), %r13d
+     108: 8b 47 08                     	movl	0x8(%rdi), %eax
+     10b: 89 44 24 1c                  	movl	%eax, 0x1c(%rsp)
+     10f: 8b 47 0c                     	movl	0xc(%rdi), %eax
+     112: 89 44 24 18                  	movl	%eax, 0x18(%rsp)
+     116: 8b 47 10                     	movl	0x10(%rdi), %eax
+     119: 89 44 24 14                  	movl	%eax, 0x14(%rsp)
+     11d: 8b 47 14                     	movl	0x14(%rdi), %eax
+     120: 89 44 24 10                  	movl	%eax, 0x10(%rsp)
+     124: 8b 47 18                     	movl	0x18(%rdi), %eax
+     127: 89 44 24 0c                  	movl	%eax, 0xc(%rsp)
+     12b: 48 89 7c 24 30               	movq	%rdi, 0x30(%rsp)
+     130: 8b 7f 1c                     	movl	0x1c(%rdi), %edi
+     133: 66 66 66 66 2e 0f 1f 84 00 00 00 00 00       	nopw	%cs:(%rax,%rax)
+     140: 89 54 24 2c                  	movl	%edx, 0x2c(%rsp)
+     144: 8b 06                        	movl	(%rsi), %eax
+     146: 0f c8                        	bswapl	%eax
+     148: 89 44 24 40                  	movl	%eax, 0x40(%rsp)
+     14c: 8b 46 04                     	movl	0x4(%rsi), %eax
+     14f: 0f c8                        	bswapl	%eax
+     151: 89 44 24 44                  	movl	%eax, 0x44(%rsp)
+     155: 8b 46 08                     	movl	0x8(%rsi), %eax
+     158: 0f c8                        	bswapl	%eax
+     15a: 89 44 24 48                  	movl	%eax, 0x48(%rsp)
+     15e: 8b 46 0c                     	movl	0xc(%rsi), %eax
+     161: 0f c8                        	bswapl	%eax
+     163: 89 44 24 4c                  	movl	%eax, 0x4c(%rsp)
+     167: 8b 46 10                     	movl	0x10(%rsi), %eax
+     16a: 0f c8                        	bswapl	%eax
+     16c: 89 44 24 50                  	movl	%eax, 0x50(%rsp)
+     170: 8b 46 14                     	movl	0x14(%rsi), %eax
+     173: 0f c8                        	bswapl	%eax
+     175: 89 44 24 54                  	movl	%eax, 0x54(%rsp)
+     179: 8b 46 18                     	movl	0x18(%rsi), %eax
+     17c: 0f c8                        	bswapl	%eax
+     17e: 89 44 24 58                  	movl	%eax, 0x58(%rsp)
+     182: 8b 46 1c                     	movl	0x1c(%rsi), %eax
+     185: 0f c8                        	bswapl	%eax
+     187: 89 44 24 5c                  	movl	%eax, 0x5c(%rsp)
+     18b: 8b 46 20                     	movl	0x20(%rsi), %eax
+     18e: 0f c8                        	bswapl	%eax
+     190: 89 44 24 60                  	movl	%eax, 0x60(%rsp)
+     194: 8b 46 24                     	movl	0x24(%rsi), %eax
+     197: 0f c8                        	bswapl	%eax
+     199: 89 44 24 64                  	movl	%eax, 0x64(%rsp)
+     19d: 8b 46 28                     	movl	0x28(%rsi), %eax
+     1a0: 0f c8                        	bswapl	%eax
+     1a2: 89 44 24 68                  	movl	%eax, 0x68(%rsp)
+     1a6: 8b 46 2c                     	movl	0x2c(%rsi), %eax
+     1a9: 0f c8                        	bswapl	%eax
+     1ab: 89 44 24 6c                  	movl	%eax, 0x6c(%rsp)
+     1af: 8b 46 30                     	movl	0x30(%rsi), %eax
+     1b2: 0f c8                        	bswapl	%eax
+     1b4: 89 44 24 70                  	movl	%eax, 0x70(%rsp)
+     1b8: 8b 46 34                     	movl	0x34(%rsi), %eax
+     1bb: 0f c8                        	bswapl	%eax
+     1bd: 89 44 24 74                  	movl	%eax, 0x74(%rsp)
+     1c1: 8b 46 38                     	movl	0x38(%rsi), %eax
+     1c4: 0f c8                        	bswapl	%eax
+     1c6: 89 44 24 78                  	movl	%eax, 0x78(%rsp)
+     1ca: 48 89 74 24 38               	movq	%rsi, 0x38(%rsp)
+     1cf: 8b 46 3c                     	movl	0x3c(%rsi), %eax
+     1d2: 0f c8                        	bswapl	%eax
+     1d4: 89 44 24 7c                  	movl	%eax, 0x7c(%rsp)
+     1d8: b8 17 00 00 00               	movl	$0x17, %eax
+     1dd: 0f 1f 00                     	nopl	(%rax)
+     1e0: 8b 54 84 1c                  	movl	0x1c(%rsp,%rax,4), %edx
+     1e4: 89 d1                        	movl	%edx, %ecx
+     1e6: c1 c1 0f                     	roll	$0xf, %ecx
+     1e9: 41 89 d0                     	movl	%edx, %r8d
+     1ec: 41 c1 c0 0d                  	roll	$0xd, %r8d
+     1f0: 41 31 c8                     	xorl	%ecx, %r8d
+     1f3: 89 d1                        	movl	%edx, %ecx
+     1f5: c1 e9 0a                     	shrl	$0xa, %ecx
+     1f8: 44 31 c1                     	xorl	%r8d, %ecx
+     1fb: 03 4c 84 08                  	addl	0x8(%rsp,%rax,4), %ecx
+     1ff: 8b 6c 84 e8                  	movl	-0x18(%rsp,%rax,4), %ebp
+     203: 44 8b 54 84 ec               	movl	-0x14(%rsp,%rax,4), %r10d
+     208: 41 89 e8                     	movl	%ebp, %r8d
+     20b: 41 c1 c0 19                  	roll	$0x19, %r8d
+     20f: 41 89 e9                     	movl	%ebp, %r9d
+     212: 41 c1 c1 0e                  	roll	$0xe, %r9d
+     216: 45 31 c1                     	xorl	%r8d, %r9d
+     219: 41 89 e8                     	movl	%ebp, %r8d
+     21c: 41 c1 e8 03                  	shrl	$0x3, %r8d
+     220: 03 4c 84 e4                  	addl	-0x1c(%rsp,%rax,4), %ecx
+     224: 45 31 c8                     	xorl	%r9d, %r8d
+     227: 44 01 c1                     	addl	%r8d, %ecx
+     22a: 89 4c 84 24                  	movl	%ecx, 0x24(%rsp,%rax,4)
+     22e: 44 8b 4c 84 20               	movl	0x20(%rsp,%rax,4), %r9d
+     233: 45 89 c8                     	movl	%r9d, %r8d
+     236: 41 c1 c0 0f                  	roll	$0xf, %r8d
+     23a: 45 89 cb                     	movl	%r9d, %r11d
+     23d: 41 c1 c3 0d                  	roll	$0xd, %r11d
+     241: 45 31 c3                     	xorl	%r8d, %r11d
+     244: 45 89 c8                     	movl	%r9d, %r8d
+     247: 41 c1 e8 0a                  	shrl	$0xa, %r8d
+     24b: 44 89 d3                     	movl	%r10d, %ebx
+     24e: c1 c3 19                     	roll	$0x19, %ebx
+     251: 45 31 d8                     	xorl	%r11d, %r8d
+     254: 45 89 d3                     	movl	%r10d, %r11d
+     257: 41 c1 c3 0e                  	roll	$0xe, %r11d
+     25b: 41 31 db                     	xorl	%ebx, %r11d
+     25e: 44 89 d3                     	movl	%r10d, %ebx
+     261: c1 eb 03                     	shrl	$0x3, %ebx
+     264: 44 31 db                     	xorl	%r11d, %ebx
+     267: 03 6c 84 0c                  	addl	0xc(%rsp,%rax,4), %ebp
+     26b: 44 01 c5                     	addl	%r8d, %ebp
+     26e: 01 dd                        	addl	%ebx, %ebp
+     270: 89 6c 84 28                  	movl	%ebp, 0x28(%rsp,%rax,4)
+     274: 41 89 c8                     	movl	%ecx, %r8d
+     277: 41 c1 c0 0f                  	roll	$0xf, %r8d
+     27b: 41 89 cb                     	movl	%ecx, %r11d
+     27e: 41 c1 c3 0d                  	roll	$0xd, %r11d
+     282: 45 31 c3                     	xorl	%r8d, %r11d
+     285: 41 89 c8                     	movl	%ecx, %r8d
+     288: 41 c1 e8 0a                  	shrl	$0xa, %r8d
+     28c: 45 31 d8                     	xorl	%r11d, %r8d
+     28f: 44 8b 7c 84 f0               	movl	-0x10(%rsp,%rax,4), %r15d
+     294: 45 89 fb                     	movl	%r15d, %r11d
+     297: 41 c1 c3 19                  	roll	$0x19, %r11d
+     29b: 44 89 fb                     	movl	%r15d, %ebx
+     29e: c1 c3 0e                     	roll	$0xe, %ebx
+     2a1: 44 31 db                     	xorl	%r11d, %ebx
+     2a4: 45 89 fb                     	movl	%r15d, %r11d
+     2a7: 41 c1 eb 03                  	shrl	$0x3, %r11d
+     2ab: 41 31 db                     	xorl	%ebx, %r11d
+     2ae: 44 03 54 84 10               	addl	0x10(%rsp,%rax,4), %r10d
+     2b3: 45 01 da                     	addl	%r11d, %r10d
+     2b6: 41 89 eb                     	movl	%ebp, %r11d
+     2b9: 41 c1 c3 0f                  	roll	$0xf, %r11d
+     2bd: 45 01 c2                     	addl	%r8d, %r10d
+     2c0: 41 89 e8                     	movl	%ebp, %r8d
+     2c3: 41 c1 c0 0d                  	roll	$0xd, %r8d
+     2c7: 44 89 54 84 2c               	movl	%r10d, 0x2c(%rsp,%rax,4)
+     2cc: 45 31 d8                     	xorl	%r11d, %r8d
+     2cf: c1 ed 0a                     	shrl	$0xa, %ebp
+     2d2: 44 31 c5                     	xorl	%r8d, %ebp
+     2d5: 44 8b 64 84 f4               	movl	-0xc(%rsp,%rax,4), %r12d
+     2da: 45 89 e0                     	movl	%r12d, %r8d
+     2dd: 41 c1 c0 19                  	roll	$0x19, %r8d
+     2e1: 45 89 e3                     	movl	%r12d, %r11d
+     2e4: 41 c1 c3 0e                  	roll	$0xe, %r11d
+     2e8: 45 31 c3                     	xorl	%r8d, %r11d
+     2eb: 45 89 e0                     	movl	%r12d, %r8d
+     2ee: 41 c1 e8 03                  	shrl	$0x3, %r8d
+     2f2: 44 03 7c 84 14               	addl	0x14(%rsp,%rax,4), %r15d
+     2f7: 45 31 d8                     	xorl	%r11d, %r8d
+     2fa: 45 01 c7                     	addl	%r8d, %r15d
+     2fd: 41 01 ef                     	addl	%ebp, %r15d
+     300: 44 89 7c 84 30               	movl	%r15d, 0x30(%rsp,%rax,4)
+     305: 45 89 d0                     	movl	%r10d, %r8d
+     308: 41 c1 c0 0f                  	roll	$0xf, %r8d
+     30c: 45 89 d3                     	movl	%r10d, %r11d
+     30f: 41 c1 c3 0d                  	roll	$0xd, %r11d
+     313: 45 31 c3                     	xorl	%r8d, %r11d
+     316: 41 c1 ea 0a                  	shrl	$0xa, %r10d
+     31a: 8b 6c 84 f8                  	movl	-0x8(%rsp,%rax,4), %ebp
+     31e: 41 89 e8                     	movl	%ebp, %r8d
+     321: 41 c1 c0 19                  	roll	$0x19, %r8d
+     325: 45 31 da                     	xorl	%r11d, %r10d
+     328: 41 89 eb                     	movl	%ebp, %r11d
+     32b: 41 c1 c3 0e                  	roll	$0xe, %r11d
+     32f: 45 31 c3                     	xorl	%r8d, %r11d
+     332: 41 89 e8                     	movl	%ebp, %r8d
+     335: 41 c1 e8 03                  	shrl	$0x3, %r8d
+     339: 45 31 d8                     	xorl	%r11d, %r8d
+     33c: 44 03 64 84 18               	addl	0x18(%rsp,%rax,4), %r12d
+     341: 45 01 c4                     	addl	%r8d, %r12d
+     344: 45 01 d4                     	addl	%r10d, %r12d
+     347: 44 89 64 84 34               	movl	%r12d, 0x34(%rsp,%rax,4)
+     34c: 45 89 f8                     	movl	%r15d, %r8d
+     34f: 41 c1 c0 0f                  	roll	$0xf, %r8d
+     353: 45 89 fa                     	movl	%r15d, %r10d
+     356: 41 c1 c2 0d                  	roll	$0xd, %r10d
+     35a: 45 31 c2                     	xorl	%r8d, %r10d
+     35d: 41 c1 ef 0a                  	shrl	$0xa, %r15d
+     361: 45 31 d7                     	xorl	%r10d, %r15d
+     364: 44 8b 5c 84 fc               	movl	-0x4(%rsp,%rax,4), %r11d
+     369: 44 8b 14 84                  	movl	(%rsp,%rax,4), %r10d
+     36d: 45 89 d8                     	movl	%r11d, %r8d
+     370: 41 c1 c0 19                  	roll	$0x19, %r8d
+     374: 44 89 db                     	movl	%r11d, %ebx
+     377: c1 c3 0e                     	roll	$0xe, %ebx
+     37a: 44 31 c3                     	xorl	%r8d, %ebx
+     37d: 45 89 d8                     	movl	%r11d, %r8d
+     380: 41 c1 e8 03                  	shrl	$0x3, %r8d
+     384: 41 31 d8                     	xorl	%ebx, %r8d
+     387: 01 d5                        	addl	%edx, %ebp
+     389: 44 01 c5                     	addl	%r8d, %ebp
+     38c: 44 01 fd                     	addl	%r15d, %ebp
+     38f: 44 89 e2                     	movl	%r12d, %edx
+     392: c1 c2 0f                     	roll	$0xf, %edx
+     395: 89 6c 84 38                  	movl	%ebp, 0x38(%rsp,%rax,4)
+     399: 45 89 e0                     	movl	%r12d, %r8d
+     39c: 41 c1 c0 0d                  	roll	$0xd, %r8d
+     3a0: 41 31 d0                     	xorl	%edx, %r8d
+     3a3: 44 89 d2                     	movl	%r10d, %edx
+     3a6: c1 c2 19                     	roll	$0x19, %edx
+     3a9: 41 c1 ec 0a                  	shrl	$0xa, %r12d
+     3ad: 44 89 d3                     	movl	%r10d, %ebx
+     3b0: c1 c3 0e                     	roll	$0xe, %ebx
+     3b3: 45 31 c4                     	xorl	%r8d, %r12d
+     3b6: 31 d3                        	xorl	%edx, %ebx
+     3b8: 44 89 d2                     	movl	%r10d, %edx
+     3bb: c1 ea 03                     	shrl	$0x3, %edx
+     3be: 31 da                        	xorl	%ebx, %edx
+     3c0: 45 01 cb                     	addl	%r9d, %r11d
+     3c3: 41 01 d3                     	addl	%edx, %r11d
+     3c6: 45 01 e3                     	addl	%r12d, %r11d
+     3c9: 44 89 5c 84 3c               	movl	%r11d, 0x3c(%rsp,%rax,4)
+     3ce: 89 ea                        	movl	%ebp, %edx
+     3d0: c1 c2 0f                     	roll	$0xf, %edx
+     3d3: 41 89 e8                     	movl	%ebp, %r8d
+     3d6: 41 c1 c0 0d                  	roll	$0xd, %r8d
+     3da: 41 31 d0                     	xorl	%edx, %r8d
+     3dd: 8b 54 84 04                  	movl	0x4(%rsp,%rax,4), %edx
+     3e1: 41 89 d1                     	movl	%edx, %r9d
+     3e4: 41 c1 c1 19                  	roll	$0x19, %r9d
+     3e8: c1 ed 0a                     	shrl	$0xa, %ebp
+     3eb: 41 89 d3                     	movl	%edx, %r11d
+     3ee: 41 c1 c3 0e                  	roll	$0xe, %r11d
+     3f2: 44 31 c5                     	xorl	%r8d, %ebp
+     3f5: 45 31 cb                     	xorl	%r9d, %r11d
+     3f8: c1 ea 03                     	shrl	$0x3, %edx
+     3fb: 44 31 da                     	xorl	%r11d, %edx
+     3fe: 44 01 d2                     	addl	%r10d, %edx
+     401: 01 ca                        	addl	%ecx, %edx
+     403: 01 ea                        	addl	%ebp, %edx
+     405: 89 54 84 40                  	movl	%edx, 0x40(%rsp,%rax,4)
+     409: 48 8d 48 08                  	leaq	0x8(%rax), %rcx
+     40d: 48 83 c0 f9                  	addq	$-0x7, %rax
+     411: 48 83 f8 38                  	cmpq	$0x38, %rax
+     415: 48 89 c8                     	movq	%rcx, %rax
+     418: 0f 82 c2 fd ff ff            	jb	0x1e0 <sha256_transform_blocks+0xf0>
+     41e: 48 c7 c2 f8 ff ff ff         	movq	$-0x8, %rdx
+     425: 44 89 74 24 28               	movl	%r14d, 0x28(%rsp)
+     42a: 44 89 f0                     	movl	%r14d, %eax
+     42d: 44 89 6c 24 24               	movl	%r13d, 0x24(%rsp)
+     432: 45 89 e9                     	movl	%r13d, %r9d
+     435: 44 8b 6c 24 1c               	movl	0x1c(%rsp), %r13d
+     43a: 8b 4c 24 18                  	movl	0x18(%rsp), %ecx
+     43e: 8b 74 24 14                  	movl	0x14(%rsp), %esi
+     442: 44 8b 64 24 10               	movl	0x10(%rsp), %r12d
+     447: 44 8b 7c 24 0c               	movl	0xc(%rsp), %r15d
+     44c: 89 7c 24 20                  	movl	%edi, 0x20(%rsp)
+     450: 41 89 f0                     	movl	%esi, %r8d
+     453: 41 c1 c0 1a                  	roll	$0x1a, %r8d
+     457: 89 f3                        	movl	%esi, %ebx
+     459: c1 c3 15                     	roll	$0x15, %ebx
+     45c: 41 89 f3                     	movl	%esi, %r11d
+     45f: 41 c1 c3 07                  	roll	$0x7, %r11d
+     463: 45 89 fe                     	movl	%r15d, %r14d
+     466: 45 31 e6                     	xorl	%r12d, %r14d
+     469: 41 21 f6                     	andl	%esi, %r14d
+     46c: 89 c5                        	movl	%eax, %ebp
+     46e: c1 c5 1e                     	roll	$0x1e, %ebp
+     471: 44 31 c3                     	xorl	%r8d, %ebx
+     474: 41 89 c0                     	movl	%eax, %r8d
+     477: 41 c1 c0 13                  	roll	$0x13, %r8d
+     47b: 41 31 db                     	xorl	%ebx, %r11d
+     47e: 45 31 fe                     	xorl	%r15d, %r14d
+     481: 41 31 e8                     	xorl	%ebp, %r8d
+     484: 89 c3                        	movl	%eax, %ebx
+     486: 41 01 fb                     	addl	%edi, %r11d
+     489: c1 c3 0a                     	roll	$0xa, %ebx
+     48c: 4c 8d 15 00 00 00 00         	leaq	(%rip), %r10            # 0x493 <sha256_transform_blocks+0x3a3>
+		000000000000048f:  R_X86_64_PC32	.rodata-0x4
+     493: 45 03 5c 92 20               	addl	0x20(%r10,%rdx,4), %r11d
+     498: 44 31 c3                     	xorl	%r8d, %ebx
+     49b: 45 89 c8                     	movl	%r9d, %r8d
+     49e: 41 21 c0                     	andl	%eax, %r8d
+     4a1: 45 01 f3                     	addl	%r14d, %r11d
+     4a4: 44 89 cf                     	movl	%r9d, %edi
+     4a7: 09 c7                        	orl	%eax, %edi
+     4a9: 44 03 5c 94 60               	addl	0x60(%rsp,%rdx,4), %r11d
+     4ae: 44 21 ef                     	andl	%r13d, %edi
+     4b1: 44 09 c7                     	orl	%r8d, %edi
+     4b4: 01 df                        	addl	%ebx, %edi
+     4b6: 44 01 d9                     	addl	%r11d, %ecx
+     4b9: 44 01 df                     	addl	%r11d, %edi
+     4bc: 89 cb                        	movl	%ecx, %ebx
+     4be: c1 c3 1a                     	roll	$0x1a, %ebx
+     4c1: 41 89 c8                     	movl	%ecx, %r8d
+     4c4: 41 89 cb                     	movl	%ecx, %r11d
+     4c7: 41 c1 c0 15                  	roll	$0x15, %r8d
+     4cb: 44 89 e5                     	movl	%r12d, %ebp
+     4ce: 31 f5                        	xorl	%esi, %ebp
+     4d0: 41 c1 c3 07                  	roll	$0x7, %r11d
+     4d4: 21 cd                        	andl	%ecx, %ebp
+     4d6: 45 03 7c 92 24               	addl	0x24(%r10,%rdx,4), %r15d
+     4db: 44 31 e5                     	xorl	%r12d, %ebp
+     4de: 44 03 7c 94 64               	addl	0x64(%rsp,%rdx,4), %r15d
+     4e3: 41 89 fe                     	movl	%edi, %r14d
+     4e6: 41 01 ef                     	addl	%ebp, %r15d
+     4e9: 41 c1 c6 1e                  	roll	$0x1e, %r14d
+     4ed: 89 fd                        	movl	%edi, %ebp
+     4ef: 41 31 d8                     	xorl	%ebx, %r8d
+     4f2: c1 c5 13                     	roll	$0x13, %ebp
+     4f5: 44 31 f5                     	xorl	%r14d, %ebp
+     4f8: 45 31 c3                     	xorl	%r8d, %r11d
+     4fb: 41 89 f8                     	movl	%edi, %r8d
+     4fe: 41 c1 c0 0a                  	roll	$0xa, %r8d
+     502: 41 31 e8                     	xorl	%ebp, %r8d
+     505: 89 fb                        	movl	%edi, %ebx
+     507: 21 c3                        	andl	%eax, %ebx
+     509: 89 fd                        	movl	%edi, %ebp
+     50b: 45 01 df                     	addl	%r11d, %r15d
+     50e: 09 c5                        	orl	%eax, %ebp
+     510: 44 21 cd                     	andl	%r9d, %ebp
+     513: 09 dd                        	orl	%ebx, %ebp
+     515: 44 01 c5                     	addl	%r8d, %ebp
+     518: 45 01 fd                     	addl	%r15d, %r13d
+     51b: 41 01 ef                     	addl	%ebp, %r15d
+     51e: 45 89 e8                     	movl	%r13d, %r8d
+     521: 44 89 eb                     	movl	%r13d, %ebx
+     524: 45 89 eb                     	movl	%r13d, %r11d
+     527: 89 cd                        	movl	%ecx, %ebp
+     529: 41 c1 c0 1a                  	roll	$0x1a, %r8d
+     52d: 31 f5                        	xorl	%esi, %ebp
+     52f: 44 21 ed                     	andl	%r13d, %ebp
+     532: c1 c3 15                     	roll	$0x15, %ebx
+     535: 45 03 64 92 28               	addl	0x28(%r10,%rdx,4), %r12d
+     53a: 41 c1 c3 07                  	roll	$0x7, %r11d
+     53e: 31 f5                        	xorl	%esi, %ebp
+     540: 44 03 64 94 68               	addl	0x68(%rsp,%rdx,4), %r12d
+     545: 41 01 ec                     	addl	%ebp, %r12d
+     548: 44 89 fd                     	movl	%r15d, %ebp
+     54b: c1 c5 1e                     	roll	$0x1e, %ebp
+     54e: 44 31 c3                     	xorl	%r8d, %ebx
+     551: 45 89 f8                     	movl	%r15d, %r8d
+     554: 41 c1 c0 13                  	roll	$0x13, %r8d
+     558: 41 31 e8                     	xorl	%ebp, %r8d
+     55b: 44 89 fd                     	movl	%r15d, %ebp
+     55e: c1 c5 0a                     	roll	$0xa, %ebp
+     561: 41 31 db                     	xorl	%ebx, %r11d
+     564: 44 89 fb                     	movl	%r15d, %ebx
+     567: 21 fb                        	andl	%edi, %ebx
+     569: 45 89 fe                     	movl	%r15d, %r14d
+     56c: 44 31 c5                     	xorl	%r8d, %ebp
+     56f: 41 09 fe                     	orl	%edi, %r14d
+     572: 41 21 c6                     	andl	%eax, %r14d
+     575: 41 09 de                     	orl	%ebx, %r14d
+     578: 45 01 dc                     	addl	%r11d, %r12d
+     57b: 41 01 ee                     	addl	%ebp, %r14d
+     57e: 45 01 e1                     	addl	%r12d, %r9d
+     581: 45 01 f4                     	addl	%r14d, %r12d
+     584: 45 89 c8                     	movl	%r9d, %r8d
+     587: 44 89 cb                     	movl	%r9d, %ebx
+     58a: 45 89 cb                     	movl	%r9d, %r11d
+     58d: 41 c1 c0 1a                  	roll	$0x1a, %r8d
+     591: 44 89 ed                     	movl	%r13d, %ebp
+     594: 31 cd                        	xorl	%ecx, %ebp
+     596: c1 c3 15                     	roll	$0x15, %ebx
+     599: 41 03 74 92 2c               	addl	0x2c(%r10,%rdx,4), %esi
+     59e: 41 c1 c3 07                  	roll	$0x7, %r11d
+     5a2: 44 21 cd                     	andl	%r9d, %ebp
+     5a5: 03 74 94 6c                  	addl	0x6c(%rsp,%rdx,4), %esi
+     5a9: 31 cd                        	xorl	%ecx, %ebp
+     5ab: 45 89 e6                     	movl	%r12d, %r14d
+     5ae: 41 c1 c6 1e                  	roll	$0x1e, %r14d
+     5b2: 01 ee                        	addl	%ebp, %esi
+     5b4: 44 89 e5                     	movl	%r12d, %ebp
+     5b7: c1 c5 13                     	roll	$0x13, %ebp
+     5ba: 44 31 c3                     	xorl	%r8d, %ebx
+     5bd: 45 89 e0                     	movl	%r12d, %r8d
+     5c0: 41 c1 c0 0a                  	roll	$0xa, %r8d
+     5c4: 41 31 db                     	xorl	%ebx, %r11d
+     5c7: 44 31 f5                     	xorl	%r14d, %ebp
+     5ca: 44 89 e3                     	movl	%r12d, %ebx
+     5cd: 44 21 fb                     	andl	%r15d, %ebx
+     5d0: 41 31 e8                     	xorl	%ebp, %r8d
+     5d3: 44 89 e5                     	movl	%r12d, %ebp
+     5d6: 44 09 fd                     	orl	%r15d, %ebp
+     5d9: 21 fd                        	andl	%edi, %ebp
+     5db: 44 01 de                     	addl	%r11d, %esi
+     5de: 09 dd                        	orl	%ebx, %ebp
+     5e0: 44 01 c5                     	addl	%r8d, %ebp
+     5e3: 01 f0                        	addl	%esi, %eax
+     5e5: 01 ee                        	addl	%ebp, %esi
+     5e7: 89 c3                        	movl	%eax, %ebx
+     5e9: 41 89 c3                     	movl	%eax, %r11d
+     5ec: 44 89 cd                     	movl	%r9d, %ebp
+     5ef: 41 89 c0                     	movl	%eax, %r8d
+     5f2: 44 31 ed                     	xorl	%r13d, %ebp
+     5f5: 21 c5                        	andl	%eax, %ebp
+     5f7: c1 c3 1a                     	roll	$0x1a, %ebx
+     5fa: 41 03 4c 92 30               	addl	0x30(%r10,%rdx,4), %ecx
+     5ff: 41 c1 c3 15                  	roll	$0x15, %r11d
+     603: 03 4c 94 70                  	addl	0x70(%rsp,%rdx,4), %ecx
+     607: 41 c1 c0 07                  	roll	$0x7, %r8d
+     60b: 44 31 ed                     	xorl	%r13d, %ebp
+     60e: 01 e9                        	addl	%ebp, %ecx
+     610: 89 f5                        	movl	%esi, %ebp
+     612: 41 31 db                     	xorl	%ebx, %r11d
+     615: c1 c5 1e                     	roll	$0x1e, %ebp
+     618: 89 f3                        	movl	%esi, %ebx
+     61a: 41 89 ce                     	movl	%ecx, %r14d
+     61d: c1 c3 13                     	roll	$0x13, %ebx
+     620: 31 eb                        	xorl	%ebp, %ebx
+     622: 45 31 d8                     	xorl	%r11d, %r8d
+     625: 41 89 f3                     	movl	%esi, %r11d
+     628: 41 c1 c3 0a                  	roll	$0xa, %r11d
+     62c: 41 31 db                     	xorl	%ebx, %r11d
+     62f: 89 f3                        	movl	%esi, %ebx
+     631: 44 21 e3                     	andl	%r12d, %ebx
+     634: 89 f1                        	movl	%esi, %ecx
+     636: 45 01 c6                     	addl	%r8d, %r14d
+     639: 44 09 e1                     	orl	%r12d, %ecx
+     63c: 44 21 f9                     	andl	%r15d, %ecx
+     63f: 09 d9                        	orl	%ebx, %ecx
+     641: 44 01 d9                     	addl	%r11d, %ecx
+     644: 44 01 f7                     	addl	%r14d, %edi
+     647: 89 fb                        	movl	%edi, %ebx
+     649: 41 89 fb                     	movl	%edi, %r11d
+     64c: 44 01 f1                     	addl	%r14d, %ecx
+     64f: 41 89 f8                     	movl	%edi, %r8d
+     652: 89 c5                        	movl	%eax, %ebp
+     654: c1 c3 1a                     	roll	$0x1a, %ebx
+     657: 44 31 cd                     	xorl	%r9d, %ebp
+     65a: 21 fd                        	andl	%edi, %ebp
+     65c: 41 c1 c3 15                  	roll	$0x15, %r11d
+     660: 45 03 6c 92 34               	addl	0x34(%r10,%rdx,4), %r13d
+     665: 41 c1 c0 07                  	roll	$0x7, %r8d
+     669: 44 31 cd                     	xorl	%r9d, %ebp
+     66c: 44 03 6c 94 74               	addl	0x74(%rsp,%rdx,4), %r13d
+     671: 41 31 db                     	xorl	%ebx, %r11d
+     674: 41 01 ed                     	addl	%ebp, %r13d
+     677: 89 cb                        	movl	%ecx, %ebx
+     679: c1 c3 1e                     	roll	$0x1e, %ebx
+     67c: 44 89 ed                     	movl	%r13d, %ebp
+     67f: 41 89 ce                     	movl	%ecx, %r14d
+     682: 41 c1 c6 13                  	roll	$0x13, %r14d
+     686: 41 89 ca                     	movl	%ecx, %r10d
+     689: 41 c1 c2 0a                  	roll	$0xa, %r10d
+     68d: 45 31 d8                     	xorl	%r11d, %r8d
+     690: 44 01 c5                     	addl	%r8d, %ebp
+     693: 41 89 c8                     	movl	%ecx, %r8d
+     696: 41 21 f0                     	andl	%esi, %r8d
+     699: 41 31 de                     	xorl	%ebx, %r14d
+     69c: 41 89 cd                     	movl	%ecx, %r13d
+     69f: 41 09 f5                     	orl	%esi, %r13d
+     6a2: 45 21 e5                     	andl	%r12d, %r13d
+     6a5: 45 31 f2                     	xorl	%r14d, %r10d
+     6a8: 45 09 c5                     	orl	%r8d, %r13d
+     6ab: 45 01 d5                     	addl	%r10d, %r13d
+     6ae: 41 01 ef                     	addl	%ebp, %r15d
+     6b1: 41 01 ed                     	addl	%ebp, %r13d
+     6b4: 45 89 fa                     	movl	%r15d, %r10d
+     6b7: 45 89 f8                     	movl	%r15d, %r8d
+     6ba: 41 c1 c2 1a                  	roll	$0x1a, %r10d
+     6be: 44 89 fd                     	movl	%r15d, %ebp
+     6c1: 41 89 fe                     	movl	%edi, %r14d
+     6c4: 41 c1 c0 15                  	roll	$0x15, %r8d
+     6c8: 41 31 c6                     	xorl	%eax, %r14d
+     6cb: 45 21 fe                     	andl	%r15d, %r14d
+     6ce: c1 c5 07                     	roll	$0x7, %ebp
+     6d1: 8b 5c 94 78                  	movl	0x78(%rsp,%rdx,4), %ebx
+     6d5: 4c 8d 1d 00 00 00 00         	leaq	(%rip), %r11            # 0x6dc <sha256_transform_blocks+0x5ec>
+		00000000000006d8:  R_X86_64_PC32	.rodata-0x4
+     6dc: 41 03 5c 93 38               	addl	0x38(%r11,%rdx,4), %ebx
+     6e1: 41 31 c6                     	xorl	%eax, %r14d
+     6e4: 44 01 cb                     	addl	%r9d, %ebx
+     6e7: 44 8b 5c 94 7c               	movl	0x7c(%rsp,%rdx,4), %r11d
+     6ec: 44 01 f3                     	addl	%r14d, %ebx
+     6ef: 45 31 d0                     	xorl	%r10d, %r8d
+     6f2: 45 89 e9                     	movl	%r13d, %r9d
+     6f5: 41 c1 c1 1e                  	roll	$0x1e, %r9d
+     6f9: 44 31 c5                     	xorl	%r8d, %ebp
+     6fc: 45 89 e8                     	movl	%r13d, %r8d
+     6ff: 41 c1 c0 13                  	roll	$0x13, %r8d
+     703: 01 eb                        	addl	%ebp, %ebx
+     705: 45 89 ea                     	movl	%r13d, %r10d
+     708: 41 c1 c2 0a                  	roll	$0xa, %r10d
+     70c: 45 31 c8                     	xorl	%r9d, %r8d
+     70f: 44 89 ed                     	movl	%r13d, %ebp
+     712: 21 cd                        	andl	%ecx, %ebp
+     714: 45 89 e9                     	movl	%r13d, %r9d
+     717: 45 31 c2                     	xorl	%r8d, %r10d
+     71a: 41 09 c9                     	orl	%ecx, %r9d
+     71d: 41 21 f1                     	andl	%esi, %r9d
+     720: 41 09 e9                     	orl	%ebp, %r9d
+     723: 45 01 d1                     	addl	%r10d, %r9d
+     726: 41 01 dc                     	addl	%ebx, %r12d
+     729: 45 89 e6                     	movl	%r12d, %r14d
+     72c: 45 89 e0                     	movl	%r12d, %r8d
+     72f: 41 01 d9                     	addl	%ebx, %r9d
+     732: 4c 8d 15 00 00 00 00         	leaq	(%rip), %r10            # 0x739 <sha256_transform_blocks+0x649>
+		0000000000000735:  R_X86_64_PC32	.rodata-0x4
+     739: 45 03 5c 92 3c               	addl	0x3c(%r10,%rdx,4), %r11d
+     73e: 41 c1 c6 1a                  	roll	$0x1a, %r14d
+     742: 45 89 e2                     	movl	%r12d, %r10d
+     745: 41 01 c3                     	addl	%eax, %r11d
+     748: 41 c1 c0 15                  	roll	$0x15, %r8d
+     74c: 44 89 f8                     	movl	%r15d, %eax
+     74f: 31 f8                        	xorl	%edi, %eax
+     751: 41 c1 c2 07                  	roll	$0x7, %r10d
+     755: 44 21 e0                     	andl	%r12d, %eax
+     758: 31 f8                        	xorl	%edi, %eax
+     75a: 41 01 c3                     	addl	%eax, %r11d
+     75d: 45 31 f0                     	xorl	%r14d, %r8d
+     760: 44 89 c8                     	movl	%r9d, %eax
+     763: c1 c0 1e                     	roll	$0x1e, %eax
+     766: 45 31 c2                     	xorl	%r8d, %r10d
+     769: 45 89 c8                     	movl	%r9d, %r8d
+     76c: 41 c1 c0 13                  	roll	$0x13, %r8d
+     770: 45 01 d3                     	addl	%r10d, %r11d
+     773: 45 89 ca                     	movl	%r9d, %r10d
+     776: 41 c1 c2 0a                  	roll	$0xa, %r10d
+     77a: 41 31 c0                     	xorl	%eax, %r8d
+     77d: 44 89 cb                     	movl	%r9d, %ebx
+     780: 44 21 eb                     	andl	%r13d, %ebx
+     783: 44 89 c8                     	movl	%r9d, %eax
+     786: 45 31 c2                     	xorl	%r8d, %r10d
+     789: 44 09 e8                     	orl	%r13d, %eax
+     78c: 21 c8                        	andl	%ecx, %eax
+     78e: 09 d8                        	orl	%ebx, %eax
+     790: 44 01 d0                     	addl	%r10d, %eax
+     793: 44 01 de                     	addl	%r11d, %esi
+     796: 44 01 d8                     	addl	%r11d, %eax
+     799: 48 83 c2 08                  	addq	$0x8, %rdx
+     79d: 48 83 fa 38                  	cmpq	$0x38, %rdx
+     7a1: 0f 82 a9 fc ff ff            	jb	0x450 <sha256_transform_blocks+0x360>
+     7a7: 44 8b 74 24 28               	movl	0x28(%rsp), %r14d
+     7ac: 41 01 c6                     	addl	%eax, %r14d
+     7af: 8b 44 24 24                  	movl	0x24(%rsp), %eax
+     7b3: 44 01 c8                     	addl	%r9d, %eax
+     7b6: 8b 54 24 1c                  	movl	0x1c(%rsp), %edx
+     7ba: 44 01 ea                     	addl	%r13d, %edx
+     7bd: 41 89 c5                     	movl	%eax, %r13d
+     7c0: 44 8b 44 24 18               	movl	0x18(%rsp), %r8d
+     7c5: 41 01 c8                     	addl	%ecx, %r8d
+     7c8: 8b 4c 24 14                  	movl	0x14(%rsp), %ecx
+     7cc: 01 f1                        	addl	%esi, %ecx
+     7ce: 8b 74 24 10                  	movl	0x10(%rsp), %esi
+     7d2: 44 01 e6                     	addl	%r12d, %esi
+     7d5: 44 8b 4c 24 0c               	movl	0xc(%rsp), %r9d
+     7da: 45 01 f9                     	addl	%r15d, %r9d
+     7dd: 8b 44 24 20                  	movl	0x20(%rsp), %eax
+     7e1: 01 f8                        	addl	%edi, %eax
+     7e3: 89 c7                        	movl	%eax, %edi
+     7e5: 48 8b 44 24 30               	movq	0x30(%rsp), %rax
+     7ea: 44 89 30                     	movl	%r14d, (%rax)
+     7ed: 44 89 68 04                  	movl	%r13d, 0x4(%rax)
+     7f1: 89 54 24 1c                  	movl	%edx, 0x1c(%rsp)
+     7f5: 89 50 08                     	movl	%edx, 0x8(%rax)
+     7f8: 44 89 44 24 18               	movl	%r8d, 0x18(%rsp)
+     7fd: 44 89 40 0c                  	movl	%r8d, 0xc(%rax)
+     801: 89 4c 24 14                  	movl	%ecx, 0x14(%rsp)
+     805: 89 48 10                     	movl	%ecx, 0x10(%rax)
+     808: 89 74 24 10                  	movl	%esi, 0x10(%rsp)
+     80c: 89 70 14                     	movl	%esi, 0x14(%rax)
+     80f: 44 89 4c 24 0c               	movl	%r9d, 0xc(%rsp)
+     814: 44 89 48 18                  	movl	%r9d, 0x18(%rax)
+     818: 89 78 1c                     	movl	%edi, 0x1c(%rax)
+     81b: 48 8b 74 24 38               	movq	0x38(%rsp), %rsi
+     820: 48 83 c6 40                  	addq	$0x40, %rsi
+     824: 8b 54 24 2c                  	movl	0x2c(%rsp), %edx
+     828: ff ca                        	decl	%edx
+     82a: 0f 85 10 f9 ff ff            	jne	0x140 <sha256_transform_blocks+0x50>
+     830: 48 8d 5c 24 40               	leaq	0x40(%rsp), %rbx
+     835: ba 00 01 00 00               	movl	$0x100, %edx            # imm = 0x100
+     83a: 48 89 df                     	movq	%rbx, %rdi
+     83d: 31 f6                        	xorl	%esi, %esi
+     83f: e8 00 00 00 00               	callq	0x844 <sha256_transform_blocks+0x754>
+		0000000000000840:  R_X86_64_PLT32	memset-0x4
+     844: 48 81 c4 48 01 00 00         	addq	$0x148, %rsp            # imm = 0x148
+     84b: 5b                           	popq	%rbx
+     84c: 41 5c                        	popq	%r12
+     84e: 41 5d                        	popq	%r13
+     850: 41 5e                        	popq	%r14
+     852: 41 5f                        	popq	%r15
+     854: 5d                           	popq	%rbp
+     855: c3                           	retq
+     856: 66 2e 0f 1f 84 00 00 00 00 00	nopw	%cs:(%rax,%rax)

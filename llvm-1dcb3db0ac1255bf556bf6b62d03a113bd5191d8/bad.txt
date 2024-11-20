@@ -1,0 +1,13 @@
+$ llvm-readelf -p .comment sha256.o
+String dump of section '.comment':
+[     1] ClangBuiltLinux clang version 20.0.0git (https://github.com/llvm/llvm-project.git 1dcb3db0ac1255bf556bf6b62d03a113bd5191d8)
+
+$ llvm-objdump --disassemble-symbols=sha256_transform_blocks -r sha256.o
+
+sha256.o:	file format elf64-x86-64
+
+Disassembly of section .text:
+
+00000000000000e0 <sha256_transform_blocks>:
+      e0: 0f 0b                        	ud2
+      e2: 66 66 66 66 66 2e 0f 1f 84 00 00 00 00 00    	nopw	%cs:(%rax,%rax)
